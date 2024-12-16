@@ -8,6 +8,7 @@
 	name = "raw gold"
 	icon_state = "oregold1"
 	smeltresult = /obj/item/ingot/gold
+	macerator_result = /obj/item/dust/gold
 	sellprice = 10
 
 /obj/item/rogueore/gold/Initialize()
@@ -19,6 +20,7 @@
 	name = "raw silver"
 	icon_state = "oresilv1"
 	smeltresult = /obj/item/ingot/silver
+	macerator_result = /obj/item/dust/silver
 	sellprice = 8
 
 /obj/item/rogueore/silver/Initialize()
@@ -30,6 +32,7 @@
 	name = "raw iron"
 	icon_state = "oreiron1"
 	smeltresult = /obj/item/ingot/iron
+	macerator_result = /obj/item/dust/iron
 	sellprice = 5
 
 /obj/item/rogueore/iron/Initialize()
@@ -41,6 +44,7 @@
 	name = "raw copper"
 	icon_state = "orecop1"
 	smeltresult = /obj/item/ingot/copper
+	macerator_result = /obj/item/dust/copper
 	sellprice = 2
 
 /obj/item/rogueore/copper/Initialize()
@@ -52,6 +56,7 @@
 	desc = "A mass of soft, almost malleable white ore."
 	icon_state = "oretin1"
 	smeltresult = /obj/item/ingot/tin
+	macerator_result = /obj/item/dust/tin
 	sellprice = 4
 
 /obj/item/rogueore/tin/Initialize()
@@ -175,3 +180,44 @@
 	icon_state = "ingotblacksteel"
 	smeltresult = /obj/item/ingot/blacksteel
 	sellprice = 90
+
+/obj/item/crushedore
+	name = "crushed ore"
+	icon = 'icons/roguetown/items/ore.dmi'
+	icon_state = "crushedore"
+	w_class = WEIGHT_CLASS_NORMAL
+
+/obj/item/crushedore/gold
+	name = "crushed gold"
+	desc = "A pile of glittering crushed gold"
+	icon_state = "crushedgold"
+	smeltresult = /obj/item/ingot/gold
+	sellprice = 10
+
+/obj/item/crushedore/iron
+	name = "crushed iron"
+	desc = "A pile of crushed iron."
+	icon_state = "crushediron"
+	smeltresult = /obj/item/ingot/iron
+	sellprice = 5
+
+/obj/item/crushedore/copper
+	name = "crushed copper"
+	desc = "A pile of crushed copper."
+	icon_state = "crushedcopper"
+	smeltresult = /obj/item/ingot/copper
+	sellprice = 2
+
+/obj/item/crushedore/tin
+	name = "crushed tin"
+	desc = "A pile of crushed tin."
+	icon_state = "crushedtin"
+	smeltresult = /obj/item/ingot/tin
+	sellprice = 4
+
+/obj/item/crushed/silver
+	name = "crushed silver"
+	desc = "A pile of glistening crushed silver."
+	icon_state = "crushedsilver"
+	smeltresult = /obj/item/ingot/silver
+	sellprice = 8

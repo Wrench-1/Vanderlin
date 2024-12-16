@@ -121,6 +121,8 @@
 	var/metalizer_result
 	/// The smelting result, used by the smelter or by the portable smelter
 	var/smeltresult
+	/// The result when the handheld macerator is used on this item
+	var/macerator_result
 
 /obj/item/contraption/wood_metalizer/attack_obj(obj/O, mob/living/user)
 	..()
@@ -147,6 +149,48 @@
 		var/obj/I = O
 		new I.metalizer_result(get_turf(I))
 		qdel(I)
+	flick(on_icon, src)
+	current_charge -= 1
+	shake_camera(user, 1, 1)
+	playsound(src, 'sound/magic/swap.ogg', 100, TRUE)
+	user.mind.add_sleep_experience(/datum/skill/craft/engineering, (user.STAINT / 2))
+	if(misfire_chance && prob(max(0, misfire_chance - user.stat_roll(STATKEY_LCK,2,10) - skill)))
+		misfire(O, user)
+	if(!current_charge)
+		addtimer(CALLBACK(src, PROC_REF(battery_collapse), O, user), rand(5))
+	return
+
+/obj/item/contraption/macerator
+	name = "handheld macerator"
+	desc = "Crushes ores with the power of engineering, doubling the yield per ore. Just watch your fingers."
+
+	/*To be changed when sprites available*/
+	icon_state = "metalizer"
+	on_icon = "metalizer_flick"
+	off_icon = "metalizer_off"
+	w_class = WEIGHT_CLASS_BULKY
+	smeltresult = /obj/item/ingot/bronze
+	misfire_chance = 15
+	charge_per_source = 5
+
+/obj/item/contraption/macerator/attack_obj(obj/O, mob/living/user)
+	..()
+	if (!current_charge)
+		return
+	if (!O.macerator_result)
+		to_chat(user, span_info("The [name] refuses to function."))
+		playsound(user, 'sound/items/flint.ogg', 100, FALSE)
+		flick(off_icon, src)
+		var/datum/effect_system/spark_spread/S = new()
+		var/turf/front = get_turf(O)
+		S.set_up(1, 1, front)
+		S.start()
+		return
+	var/skill = user.mind.get_skill_level(/datum/skill/craft/engineering)
+	var/obj/I = O
+	new I.macerator_result(get_turf(I))
+	new I.macerator_result(get_turf(I))
+	qdel(I)
 	flick(on_icon, src)
 	current_charge -= 1
 	shake_camera(user, 1, 1)
