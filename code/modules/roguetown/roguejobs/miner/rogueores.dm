@@ -8,7 +8,7 @@
 	name = "raw gold"
 	icon_state = "oregold1"
 	smeltresult = /obj/item/ingot/gold
-	macerator_result = /obj/item/dust/gold
+	macerator_result = /obj/item/crushedore/gold
 	sellprice = 10
 
 /obj/item/rogueore/gold/Initialize()
@@ -20,7 +20,7 @@
 	name = "raw silver"
 	icon_state = "oresilv1"
 	smeltresult = /obj/item/ingot/silver
-	macerator_result = /obj/item/dust/silver
+	macerator_result = /obj/item/crushedore/silver
 	sellprice = 8
 
 /obj/item/rogueore/silver/Initialize()
@@ -32,7 +32,7 @@
 	name = "raw iron"
 	icon_state = "oreiron1"
 	smeltresult = /obj/item/ingot/iron
-	macerator_result = /obj/item/dust/iron
+	macerator_result = /obj/item/crushedore/iron
 	sellprice = 5
 
 /obj/item/rogueore/iron/Initialize()
@@ -44,7 +44,7 @@
 	name = "raw copper"
 	icon_state = "orecop1"
 	smeltresult = /obj/item/ingot/copper
-	macerator_result = /obj/item/dust/copper
+	macerator_result = /obj/item/crushedore/copper
 	sellprice = 2
 
 /obj/item/rogueore/copper/Initialize()
@@ -56,7 +56,7 @@
 	desc = "A mass of soft, almost malleable white ore."
 	icon_state = "oretin1"
 	smeltresult = /obj/item/ingot/tin
-	macerator_result = /obj/item/dust/tin
+	macerator_result = /obj/item/crushedore/tin
 	sellprice = 4
 
 /obj/item/rogueore/tin/Initialize()
@@ -215,7 +215,7 @@
 	smeltresult = /obj/item/ingot/tin
 	sellprice = 4
 
-/obj/item/crushed/silver
+/obj/item/crushedore/silver
 	name = "crushed silver"
 	desc = "A pile of glistening crushed silver."
 	icon_state = "crushedsilver"
