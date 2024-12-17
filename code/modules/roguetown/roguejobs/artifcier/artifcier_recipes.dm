@@ -127,6 +127,14 @@
 	hammers_per_item = 10
 	craftdiff = 3
 
+/datum/artificer_recipe/contraptions/macerator
+	name = "Handheld Macerator (+2 Bronze Cogs)"
+	required_item = /obj/item/ingot/bronze
+	additional_items = list(/obj/item/roguegear, /obj/item/roguegear)
+	created_item = /obj/item/contraption/macerator
+	hammers_per_item = 12
+	craftdiff = 4
+
 // --------- WEAPON -----------
 
 /datum/artificer_recipe/wood/weapons //Again, a bit silly, but is important
