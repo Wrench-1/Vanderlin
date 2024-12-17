@@ -194,7 +194,7 @@
 	flick(on_icon, src)
 	current_charge -= 1
 	shake_camera(user, 1, 1)
-	playsound(src, 'sound/magic/swap.ogg', 100, TRUE)
+	playsound(src, 'sound/foley/smash_rock.ogg', 50, TRUE)
 	user.mind.add_sleep_experience(/datum/skill/craft/engineering, (user.STAINT / 2))
 	if(misfire_chance && prob(max(0, misfire_chance - user.stat_roll(STATKEY_LCK,2,10) - skill)))
 		misfire(O, user)
