@@ -289,3 +289,12 @@
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
 	allowed_race = list("human", "tiefling", "elf", "aasimar")
 	inhand_mod = FALSE
+
+/obj/item/clothing/cloak/silver
+	name = "silver tabard"
+	desc = "A tabard with silver adornments"
+	icon_state = "silvertabard"
+	icon = 'icons/roguetown/clothing/special/martyr.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
+	sellprice = 0 //unsure of price yet

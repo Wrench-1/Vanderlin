@@ -91,3 +91,14 @@
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/evilarmor.dmi'
 	sellprice = 0 // See above comment
+
+//.............. Silver Platelegs .................//
+
+/obj/item/clothing/pants/platelegs/silver
+	name = "silver platelegs"
+	desc = "Platelegs crafted from silver"
+	icon_state = "silverlegs"
+	icon = 'icons/roguetown/clothing/special/martyr.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
+	sellprice = 0 //unsure of price yet
