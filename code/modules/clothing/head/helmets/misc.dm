@@ -384,6 +384,7 @@
 	icon_state = "silverbascinet"
 	icon = 'icons/roguetown/clothing/special/martyr.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/martyrbascinet.dmi'
+	smeltresult = /obj/item/ingot/silver
 	sellprice = 0 //unsure of price yet
 	worn_x_dimension = 64
 	worn_y_dimension = 64

@@ -101,4 +101,5 @@
 	icon = 'icons/roguetown/clothing/special/martyr.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
 	sleeved = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
+	smeltresult = /obj/item/ingot/silver
 	sellprice = 0 //unsure of price yet
