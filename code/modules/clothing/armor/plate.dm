@@ -137,11 +137,12 @@
 //.............. Silver Armor .................//
 
 /obj/item/clothing/armor/plate/full/silver
-	name = "silver fullplate"
-	desc = "Full plate crafted from silver"
+	name = "holy silver fullplate"
+	desc = "A finely forged set of silver Full plate, blessed by the Ten's holy magic and polished to perfection."
 	icon_state = "silverarmor"
-	icon = 'icons/roguetown/clothing/special/martyr.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
-	sleeved = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
+	icon = 'icons/roguetown/clothing/special/holysilver.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/holysilver.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/holysilver.dmi'
 	smeltresult = /obj/item/ingot/silver
-	sellprice = 0 //unsure of price yet
+	item_weight = 12 * SILVER_MULTIPLIER
+	sellprice = VALUE_SILVER_ITEM * 3

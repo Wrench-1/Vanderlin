@@ -291,10 +291,9 @@
 	inhand_mod = FALSE
 
 /obj/item/clothing/cloak/silver
-	name = "silver tabard"
-	desc = "A tabard with silver adornments"
+	name = "holy silver tabard"
+	desc = "A finely crafted tabard made with silver adornments, and blessed with the Ten's holy magic."
 	icon_state = "silvertabard"
-	icon = 'icons/roguetown/clothing/special/martyr.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
-	sleeved = 'icons/roguetown/clothing/special/onmob/martyr.dmi'
-	sellprice = 0 //unsure of price yet
+	icon = 'icons/roguetown/clothing/special/holysilver.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/holysilver.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/holysilver.dmi'
