@@ -309,3 +309,13 @@
 	name = "menear necklace"
 	desc = "A grim necklace made to show off the wearer's macabre collection of cut off humen ears."
 	icon_state = "menears"
+
+/obj/item/clothing/neck/leathercollar
+	name = "leather collar"
+	desc = "A fashionable piece of neckwear popular among Hollow-Kin."
+	icon_state = "collar"
+
+/obj/item/clothing/neck/bellcollar
+	name = "bell collar"
+	desc = "A leather collar with a small bell attached, popular among Hollow-Kin."
+	icon_state = "bell_collar"
