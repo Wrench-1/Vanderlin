@@ -31,7 +31,7 @@
 /datum/outfit/job/adept // Base outfit for Adepts, before loadouts
 	shoes = /obj/item/clothing/shoes/boots
 	beltr = /obj/item/storage/belt/pouch/coins/poor
-	mask = /obj/item/clothing/face/facemask
+	mask = /obj/item/clothing/face/facemask/silver
 	pants = /obj/item/clothing/pants/trou/leather
 	shirt = /obj/item/clothing/shirt/undershirt/black
 	wrists = /obj/item/clothing/neck/psycross/silver
