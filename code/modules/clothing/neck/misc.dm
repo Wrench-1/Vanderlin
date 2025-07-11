@@ -66,6 +66,41 @@
 	body_parts_covered = NECK|HAIR|EARS|HEAD
 	prevent_crits = MINOR_CRITICALS
 
+/obj/item/clothing/neck/leathercollar
+	name = "leather collar"
+	desc = "A fashionable piece of neckwear popular among Hollow-Kin."
+	icon_state = "collar"
+	blocksound = SOFTHIT
+	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'sound/foley/cloth_rip.ogg'
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	sewrepair = TRUE
+	anvilrepair = null
+	resistance_flags = FLAMMABLE
+	smeltresult = /obj/item/ash
+
+	armor = ARMOR_LEATHER
+	max_integrity = INTEGRITY_WORST
+	prevent_crits = CUT_AND_MINOR_CRITS
+
+/obj/item/clothing/neck/bellcollar
+	name = "bell collar"
+	desc = "A leather collar with a small bell attached, popular among Hollow-Kin."
+	icon_state = "bell_collar"
+	blocksound = SOFTHIT
+	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'sound/foley/cloth_rip.ogg'
+	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	sewrepair = TRUE
+	anvilrepair = null
+	resistance_flags = FLAMMABLE
+	smeltresult = /obj/item/ash
+
+	armor = ARMOR_LEATHER
+	max_integrity = INTEGRITY_WORST
+	prevent_crits = CUT_AND_MINOR_CRITS
 
 //..................................................................................................................................
 /*---------------\
@@ -309,13 +344,3 @@
 	name = "menear necklace"
 	desc = "A grim necklace made to show off the wearer's macabre collection of cut off humen ears."
 	icon_state = "menears"
-
-/obj/item/clothing/neck/leathercollar
-	name = "leather collar"
-	desc = "A fashionable piece of neckwear popular among Hollow-Kin."
-	icon_state = "collar"
-
-/obj/item/clothing/neck/bellcollar
-	name = "bell collar"
-	desc = "A leather collar with a small bell attached, popular among Hollow-Kin."
-	icon_state = "bell_collar"

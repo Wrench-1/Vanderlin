@@ -397,18 +397,18 @@
 	craftdiff = 2
 
 /datum/repeatable_crafting_recipe/leather/leathercollar
-	name = "leather collar x2"
+	name = "leather collar x4"
 	requirements = list(/obj/item/natural/hide/cured = 1,
 				/obj/item/natural/fibers = 2)
-	output_amount = 2
+	output_amount = 4
 	output = /obj/item/clothing/neck/leathercollar
 	craftdiff = 2
 
 /datum/repeatable_crafting_recipe/leather/bellcollar
-	name = "bell collar x2"
+	name = "bell collar x4"
 	requirements = list(/obj/item/natural/hide/cured = 1,
 				/obj/item/natural/fibers = 2)
-	output_amount = 2
+	output_amount = 4
 	output = /obj/item/clothing/neck/bellcollar
 	craftdiff = 2
 
