@@ -52,6 +52,7 @@
 	belt = /obj/item/storage/belt/leather
 	armor = /obj/item/clothing/armor/chainmail
 	cloak = /obj/item/clothing/cloak/tabard/adept
+	head = /obj/item/clothing/head/adeptcowl
 	neck = /obj/item/clothing/neck/chaincoif
 	beltl = /obj/item/weapon/mace/spiked
 	backr = /obj/item/weapon/shield/wood/adept
@@ -97,6 +98,7 @@
 	//Armor for class
 	belt = /obj/item/storage/belt/leather
 	armor = /obj/item/clothing/armor/leather/splint
+	head = /obj/item/clothing/head/adeptcowl
 	neck = /obj/item/clothing/neck/gorget
 	backr = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 	backl = /obj/item/ammo_holder/quiver/arrows
