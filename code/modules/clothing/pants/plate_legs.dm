@@ -95,12 +95,11 @@
 //.............. Silver Platelegs .................//
 
 /obj/item/clothing/pants/platelegs/silver
-	name = "holy silver platelegs"
-	desc = "A finely forged pair of silver Plateleggings that have been blessed by the Ten's holy magic."
+	name = "silver platelegs"
+	desc = "A finely forged pair of silver plateleggings, offering additional protection against blunt force."
 	icon_state = "silverlegs"
-	icon = 'icons/roguetown/clothing/special/holysilver.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/holysilver.dmi'
-	sleeved = 'icons/roguetown/clothing/special/onmob/holysilver.dmi'
+	armor = ARMOR_PLATE_SILVER
+	allowed_age = list("Adult","Middle-Aged","Old","Immortal") //placeholder until younglings have onmob sprites for this item
 	smeltresult = /obj/item/ingot/silver
 	item_weight = 9 * SILVER_MULTIPLIER
-	sellprice = VALUE_SILVER_ARMOR //unsure of price yet
+	sellprice = VALUE_SILVER_ARMOR

@@ -137,12 +137,11 @@
 //.............. Silver Armor .................//
 
 /obj/item/clothing/armor/plate/full/silver
-	name = "holy silver fullplate"
-	desc = "A finely forged set of silver Full plate, blessed by the Ten's holy magic and polished to perfection."
+	name = "silver fullplate"
+	desc = "A finely forged set of full silver plate, with long tassets protecting the legs."
 	icon_state = "silverarmor"
-	icon = 'icons/roguetown/clothing/special/holysilver.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/holysilver.dmi'
-	sleeved = 'icons/roguetown/clothing/special/onmob/holysilver.dmi'
+	armor = ARMOR_PLATE_SILVER
+	allowed_age = list("Adult","Middle-Aged","Old","Immortal") //placeholder until younglings have onmob sprites for this item
 	smeltresult = /obj/item/ingot/silver
 	item_weight = 12 * SILVER_MULTIPLIER
 	sellprice = VALUE_SILVER_ITEM * 3

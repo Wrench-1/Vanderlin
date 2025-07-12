@@ -290,10 +290,10 @@
 	allowed_race = list("human", "tiefling", "elf", "aasimar")
 	inhand_mod = FALSE
 
-/obj/item/clothing/cloak/silver
-	name = "holy silver tabard"
-	desc = "A finely crafted tabard made with silver adornments, and blessed with the Ten's holy magic."
-	icon_state = "silvertabard"
-	icon = 'icons/roguetown/clothing/special/holysilver.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/holysilver.dmi'
-	sleeved = 'icons/roguetown/clothing/special/onmob/holysilver.dmi'
+/obj/item/clothing/cloak/silktabard
+	name = "fine silk tabard"
+	desc = "A finely crafted long tabard weaved from silk. Fashionable, and a symbol of status and wealth."
+	icon_state = "silktabard"
+	item_state = "silktabard"
+	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
+	allowed_age = list("Adult","Middle-Aged","Old","Immortal") //placeholder until younglings have onmob sprites for this item

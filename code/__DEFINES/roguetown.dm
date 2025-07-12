@@ -249,7 +249,6 @@ GLOBAL_LIST_EMPTY(job_respawn_delays)
 #define VALUE_CHEAP_STEEL_HELMET 	VALUE_STEEL_SMALL_ITEM
 #define VALUE_STEEL_HELMET			VALUE_STEEL_ITEM
 #define VALUE_SILVER_RING			VALUE_SILVER_TINY_ITEM
-#define VALUE_SILVER_HELMET			VALUE_SILVER_ITEM
 #define VALUE_GOLD_RING				VALUE_GOLD_TINY_ITEM
 #define VALUE_MUSC_INSTRUMENT		VALUE_COMMON_GOODS
 #define VALUE_RARE_MUSIC_INSTRUMENT	VALUE_COSTLY_THING
@@ -328,6 +327,7 @@ Thing can move up or down an armor class by significant changes to coverage & cr
 // Heavy AC
 #define ARMOR_PLATE_BAD		list("blunt" = 75, "slash" = 75, "stab" = 75, "piercing" = 55, "fire" = 0, "acid" = 0)
 #define ARMOR_PLATE			list("blunt" = 85, "slash" = 85, "stab" = 85, "piercing" = 70, "fire" = 0, "acid" = 0)
+#define ARMOR_PLATE_SILVER	list("blunt" = 85, "slash" = 85, "stab" = 85, "piercing" = 80, "fire" = 0, "acid" = 0) //GIVE FEEDBACK ON THESE ARMOR VALUES PLEASE
 #define ARMOR_PLATE_GOOD	list("blunt" = 90, "slash" = 90, "stab" = 90, "piercing" = 85, "fire" = 0, "acid" = 0)
 
 

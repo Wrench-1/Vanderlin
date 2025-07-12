@@ -379,13 +379,14 @@
 //................. Silver Bascinet .............. //
 
 /obj/item/clothing/head/helmet/visored/silver
-	name = "holy silver bascinet"
-	desc = "A finely forged silver bascinet, perfectly polished and blessed with the Ten's holy magic."
+	name = "silver bascinet"
+	desc = "A finely forged silver bascinet, with adjustable visor to protect the face."
 	icon_state = "silverbascinet"
-	icon = 'icons/roguetown/clothing/special/holysilver.dmi'
-	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/holysilver_64x64.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
 	smeltresult = /obj/item/ingot/silver
-	sellprice = VALUE_SILVER_HELMET
+	armor = ARMOR_PLATE_SILVER
+	allowed_age = list("Adult","Middle-Aged","Old","Immortal") //placeholder until younglings have onmob sprites for this item
+	sellprice = VALUE_SILVER_ARMOR
 	item_weight = 6 * SILVER_MULTIPLIER
 	worn_x_dimension = 64
 	worn_y_dimension = 64
