@@ -671,18 +671,18 @@
 	last_used = 0
 	is_silver = TRUE
 
-/obj/item/weapon/sword/long/holysword
+/obj/item/weapon/sword/long/decorated
 	force = 15
 	force_wielded = 30
 	possible_item_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust, /datum/intent/sword/strike)
 	gripped_intents = list(/datum/intent/sword/cut, /datum/intent/sword/thrust/long, /datum/intent/sword/strike, /datum/intent/sword/chop/long)
-	icon_state = "holysword"
-	name = "holy silver sword"
-	desc = "A finely crafted silver longsword with a decorated golden hilt, and blessed with the power of the Ten."
+	icon_state = "declong"
+	name = "decorated silver longsword"
+	desc = "A finely crafted silver longsword with a decorated golden hilt."
 	max_blade_int = 200
 	max_integrity = 300
 	smeltresult = /obj/item/ingot/silver
-	sellprice = 380
+	sellprice = 160
 	last_used = 0
 	is_silver = TRUE
 
