@@ -89,10 +89,10 @@
 	desc = "A leather collar with a small bell attached, popular among Hollow-Kin."
 	icon_state = "bell_collar"
 	blocksound = SOFTHIT
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
+	equip_sound = SFX_JINGLE_BELLS
+	pickup_sound = SFX_JINGLE_BELLS
 	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	drop_sound = SFX_JINGLE_BELLS
 	sewrepair = TRUE
 	anvilrepair = null
 	resistance_flags = FLAMMABLE
@@ -101,6 +101,10 @@
 	armor = ARMOR_LEATHER
 	max_integrity = INTEGRITY_WORST
 	prevent_crits = CUT_AND_MINOR_CRITS
+
+/obj/item/clothing/neck/bellcollar/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = list(SFX_JINGLE_BELLS))
 
 //..................................................................................................................................
 /*---------------\
