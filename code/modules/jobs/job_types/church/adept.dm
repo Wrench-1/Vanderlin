@@ -50,7 +50,6 @@
 	..()
 	//Armor for class
 	belt = /obj/item/storage/belt/leather
-	head = /obj/item/clothing/neck/chaincoif
 	armor = /obj/item/clothing/armor/chainmail
 	cloak = /obj/item/clothing/cloak/tabard/adept
 	head = /obj/item/clothing/head/adeptcowl
