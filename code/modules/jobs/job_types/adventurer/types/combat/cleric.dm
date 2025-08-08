@@ -85,7 +85,7 @@
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
 		if(/datum/patron/divine/xylix)
 			wrists = /obj/item/clothing/neck/psycross/silver/xylix
-			cloak = /obj/item/clothing/cloak/tabard/crusader
+			cloak = /obj/item/clothing/cloak/stabard/templar/xylix
 			H.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
 		if(/datum/patron/inhumen/graggar) // Heretical Patrons
 			cloak = /obj/item/clothing/cloak/raincloak/mortus
