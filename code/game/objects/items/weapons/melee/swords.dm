@@ -1537,26 +1537,43 @@
 		. += "A hollow replica of the usual longsword design presumebly made for showsake, useless in real battle"
 
 
-/obj/item/weapon/sword/sabre/mulyeog
-	force = 25
+//A weapon meant to be used with two hands.
+/obj/item/weapon/sword/katana
+	name = "katana"
+	desc = "A foreign sword."
+	icon_state = "eastsword1"
+	force_wielded = 28
+	possible_item_intents = list(/datum/intent/katana/cut/one_hand_cut, /datum/intent/sword/strike)
+	gripped_intents = list(/datum/intent/katana/cut, /datum/intent/katana/arc, /datum/intent/sword/strike, /datum/intent/katana/precision_cut)
+	swingsound = BLADEWOOSH_MED
+	parrysound = "bladedmedium"
+	pickup_sound = "brandish_blade"
+	wlength = WLENGTH_NORMAL
+	wdefense = GOOD_PARRY
+	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_HIP
+	melt_amount = 75
+	melting_material = /datum/material/steel
+
+
+/obj/item/weapon/sword/katana/mulyeog
 	name = "foreign straight blade"
 	desc = "A foreign sword used by cut-throats & thugs. There's a red tassel on the hilt."
 	icon_state = "eastsword1"
-	melt_amount = 75
-	melting_material = /datum/material/steel
-	wdefense = GOOD_PARRY
 
-/obj/item/weapon/sword/sabre/mulyeog/rumahench
+/obj/item/weapon/sword/katana/mulyeog/rumahench
 	name = "hwang blade"
 	desc = "A foreign steel sword with cloud patterns on the groove."
 	icon_state = "eastsword2"
 
-/obj/item/weapon/sword/sabre/mulyeog/rumacaptain
-	force = 30
+/obj/item/weapon/sword/katana/mulyeog/rumacaptain
+	force = 25
+	force_wielded = 30
 	name = "samjeongdo"
 	desc = "A gold-stained with cloud patterns on the groove. One of a kind."
 	icon_state = "eastsword3"
-	max_integrity = 180
+	wdefense = GREAT_PARRY
+
+
 
 /obj/item/weapon/sword/sabre/hook
 	name = "hook sword"
