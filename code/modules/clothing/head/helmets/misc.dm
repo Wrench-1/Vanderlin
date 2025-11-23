@@ -12,6 +12,7 @@
 	max_integrity = INTEGRITY_STRONGEST
 	item_weight = 5.5 * STEEL_MULTIPLIER
 
+
 //................ Skull Cap ............... //
 /obj/item/clothing/head/helmet/skullcap
 	name = "skull cap"
