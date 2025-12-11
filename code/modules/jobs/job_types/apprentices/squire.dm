@@ -24,8 +24,9 @@
 	selection_color = "#304529"
 	advclass_cat_rolls = list(CTAG_SQUIRE = 20)
 	can_have_apprentices = FALSE
-
+	cmode_music = 'sound/music/cmode/garrison/CombatManAtArms.ogg'
 	exp_types_granted = list(EXP_TYPE_GARRISON)
+
 
 /datum/outfit/squire
 	shirt = /obj/item/clothing/shirt/undershirt/colored/guard

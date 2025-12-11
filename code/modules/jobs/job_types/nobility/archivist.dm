@@ -13,7 +13,7 @@
 
 	allowed_races = RACES_PLAYER_NONDISCRIMINATED
 	blacklisted_species = list(SPEC_ID_HALFLING)
-
+	cmode_music = 'sound/music/cmode/nobility/CombatCourtMagician.ogg'
 	outfit = /datum/outfit/archivist
 	spells = list(
 		/datum/action/cooldown/spell/undirected/learn,
