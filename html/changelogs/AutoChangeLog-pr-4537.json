@@ -1,0 +1,1 @@
+{"author":"wgtjunior743","delete-after":true,"changes":[{"bugfix":"Custom Waves with one or more job only saving the first job of the outfit for all of them"},{"bugfix":"Custom outfits being repeating and appearing more than once when selecting an outfit for a job"},{"bugfix":"Jobs that were imported not transfering the language properly to chars."}]}
