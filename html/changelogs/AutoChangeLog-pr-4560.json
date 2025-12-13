@@ -1,0 +1,1 @@
+{"author":"KevinfromHP","delete-after":true,"changes":[{"bugfix":"fixed a bug where assassins would delete the body of a target when it no longer had a soul in it."}]}
