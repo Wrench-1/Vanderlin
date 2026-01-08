@@ -314,8 +314,8 @@
 	weight = 50
 
 /datum/special_trait/tavernbrawler/on_apply(mob/living/carbon/human/character)
-	character.clamped_adjust_skillrank(/datum/skill/combat/wrestling, 3, 4, TRUE)
-	character.clamped_adjust_skillrank(/datum/skill/combat/unarmed, 3, 4, TRUE)
+	character.clamped_adjust_skillrank(/datum/skill/combat/wrestling, 2, 3, TRUE)
+	character.clamped_adjust_skillrank(/datum/skill/combat/unarmed, 2, 3, TRUE)
 	character.change_stat(STATKEY_STR, 1)
 	character.change_stat(STATKEY_END, 1)
 	character.change_stat(STATKEY_CON, 1)
@@ -642,7 +642,7 @@
 	character.adjust_skillrank(/datum/skill/combat/axesmaces, 1, TRUE)
 	character.adjust_skillrank(/datum/skill/combat/bows, 3, TRUE)
 	character.adjust_skillrank(/datum/skill/combat/crossbows, 2, TRUE)
-	character.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
+	character.adjust_skillrank(/datum/skill/combat/wrestling, 1, TRUE)
 	character.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 	character.adjust_skillrank(/datum/skill/combat/swords, 2, TRUE)
 	character.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
