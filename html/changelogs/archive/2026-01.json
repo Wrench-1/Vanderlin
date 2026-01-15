@@ -256,5 +256,17 @@
                 "balance": "Psydonian helmets have a 180\u00b0 Field Of View"
             }
         ]
+    },
+    "2026-01-15": {
+        "YellowHarlequin": [
+            {
+                "image": "added streaks to hair_gradients.dmi"
+            }
+        ],
+        "CheffieGithub": [
+            {
+                "bugfix": "Fixed potential issues with spell channelling and death"
+            }
+        ]
     }
 }
