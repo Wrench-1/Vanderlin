@@ -465,5 +465,15 @@
                 "rscadd": "Flinging feces fouls foes."
             }
         ]
+    },
+    "2026-01-26": {
+        "TerraGS": [
+            {
+                "bugfix": "Looking up into nullspace no longer runtimes"
+            },
+            {
+                "refactor": "replaces the transparent turf subtype with a turf transparency element"
+            }
+        ]
     }
 }
