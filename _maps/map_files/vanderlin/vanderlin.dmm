@@ -27547,6 +27547,7 @@
 	pixel_y = 5
 	},
 /obj/item/recipe_book/medical,
+/obj/item/recipe_book/medical,
 /turf/open/floor/churchrough,
 /area/indoors/town/clinic_large)
 "nkk" = (
@@ -35595,10 +35596,6 @@
 /obj/structure/bars/bent,
 /turf/open/floor/carpet/green,
 /area/indoors/town/merc_guild)
-"rjV" = (
-/obj/item/recipe_book/medical,
-/turf/open/floor/cobble,
-/area/outdoors/town)
 "rkq" = (
 /obj/structure/window/solid,
 /turf/open/floor/concrete,
@@ -110221,7 +110218,7 @@ hZn
 hZn
 hZn
 hZn
-rjV
+hZn
 hZn
 hZn
 epY
