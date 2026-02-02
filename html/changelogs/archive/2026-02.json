@@ -33,5 +33,15 @@
                 "bugfix": "Fixed Knave Bandit not spawning with Quiver."
             }
         ]
+    },
+    "2026-02-02": {
+        "MrTCo1": [
+            {
+                "rscadd": "New Court Physician Drip"
+            },
+            {
+                "rscadd": "New Court Physician Canesword"
+            }
+        ]
     }
 }
