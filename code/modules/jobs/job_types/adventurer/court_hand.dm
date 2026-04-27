@@ -1,4 +1,4 @@
-/datum/job/adventurer/courtagent
+/*/datum/job/adventurer/courtagent
 	title = JOB_COURT_AGENT
 	tutorial = "Whether acquired by merit, shrewd negotiation or fulfilled bounties, \
 	you have found yourself under the underhanded employ of the Hand. \
@@ -27,4 +27,4 @@
 /datum/job/adventurer/courtagent/after_spawn(mob/living/spawned, client/player_client)
 	if(ishuman(spawned))
 		GLOB.roundstart_court_agents += spawned.real_name
-	..()
+	..()*/

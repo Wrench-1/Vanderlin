@@ -3039,6 +3039,7 @@
 #include "code\modules\jobs\job_types\nobility\archivist.dm"
 #include "code\modules\jobs\job_types\nobility\captain.dm"
 #include "code\modules\jobs\job_types\nobility\consort.dm"
+#include "code\modules\jobs\job_types\nobility\courtagent.dm"
 #include "code\modules\jobs\job_types\nobility\courtphys.dm"
 #include "code\modules\jobs\job_types\nobility\hand.dm"
 #include "code\modules\jobs\job_types\nobility\lord.dm"
