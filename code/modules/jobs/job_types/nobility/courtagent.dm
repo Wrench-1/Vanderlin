@@ -8,8 +8,8 @@
 	department_flag = NOBLEMEN
 	job_flags = (JOB_EQUIP_RANK | JOB_SHOW_IN_CREDITS | JOB_NEW_PLAYER_JOINABLE)
 	faction = FACTION_TOWN
-	total_positions = 3
-	spawn_positions = 3
+	total_positions = 2
+	spawn_positions = 2
 	bypass_lastclass = TRUE
 
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_IMMORTAL)
@@ -68,6 +68,12 @@
 		/datum/attribute/skill/misc/reading = 10
 	)
 
+/datum/attribute_holder/sheet/job/courtagent/bruiser/barehanded
+	raw_attribute_list = list()
+	clamped_adjustment = list(
+		/datum/attribute/skill/combat/unarmed = list(40, 40)
+	)
+
 /datum/job/advclass/courtagent/bruiser
 	title = "Bruiser"
 	tutorial = "You are one of the Hand's loyal Agents. \
@@ -82,8 +88,6 @@
 	name = "Bruiser"
 	cloak = /obj/item/clothing/cloak/raincloak
 	armor = /obj/item/clothing/armor/leather/splint
-	gloves = /obj/item/clothing/gloves/bandages/pugilist
-	beltl = /obj/item/weapon/knuckles
 	backr = /obj/item/storage/backpack/satchel/black
 	backpack_contents = list(
 		/obj/item/key/manor = 1,
@@ -91,6 +95,21 @@
 		/obj/item/lockpickring/mundane = 1,
 		/obj/item/storage/belt/pouch/coins/poor = 1
 	)
+
+/datum/job/advclass/courtagent/bruiser/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
+	. = ..()
+
+	var/static/list/weapons = list("Steel Knuckles", "Steel Katar", "Bare Handed")
+	var/weapon_choice = browser_input_list(spawned, "CHOSE YOUR WEAPON.", "SERVE THE CROWN.", weapons)
+
+	switch(weapon_choice)
+		if("Steel Knuckles")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/knuckles, ITEM_SLOT_BELT_L, TRUE)
+		if("Steel Katar")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/katar, ITEM_SLOT_BELT_L, TRUE)
+		if("Bare Handed")
+			spawned.equip_to_slot_or_del(new /obj/item/clothing/gloves/bandages/pugilist, ITEM_SLOT_GLOVES, TRUE)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bruiser/barehanded)
 
 /datum/attribute_holder/sheet/job/courtagent/hitman
 	raw_attribute_list = list(
@@ -101,7 +120,6 @@
 		/datum/attribute/skill/combat/unarmed = 20,
 		/datum/attribute/skill/combat/wrestling = 30,
 		/datum/attribute/skill/combat/knives = 30,
-		/datum/attribute/skill/combat/bows = 30,
 		/datum/attribute/skill/misc/athletics = 30,
 		/datum/attribute/skill/misc/swimming = 20,
 		/datum/attribute/skill/misc/sneaking = 50,
@@ -109,6 +127,18 @@
 		/datum/attribute/skill/misc/lockpicking = 50,
 		/datum/attribute/skill/craft/crafting = 10,
 		/datum/attribute/skill/misc/reading = 10
+	)
+
+/datum/attribute_holder/sheet/job/courtagent/hitman/shortbow
+	raw_attribute_list = list()
+	clamped_adjustment = list(
+		/datum/attribute/skill/combat/bows = list(30, 30)
+	)
+
+/datum/attribute_holder/sheet/job/courtagent/hitman/crossbow
+	raw_attribute_list = list()
+	clamped_adjustment = list(
+		/datum/attribute/skill/combat/crossbows = list(30, 30)
 	)
 
 /datum/job/advclass/courtagent/hitman
@@ -128,8 +158,6 @@
 	armor = /obj/item/clothing/armor/leather/splint
 	gloves = /obj/item/clothing/gloves/fingerless
 	wrists = /obj/item/clothing/wrists/bracers/leather
-	beltl = /obj/item/ammo_holder/quiver/arrows
-	backl = /obj/item/gun/ballistic/bow
 	backr = /obj/item/storage/backpack/satchel/black
 	backpack_contents = list(
 		/obj/item/key/manor = 1,
@@ -137,6 +165,22 @@
 		/obj/item/lockpickring/mundane = 1,
 		/obj/item/storage/belt/pouch/coins/poor = 1
 	)
+
+/datum/job/advclass/courtagent/hitman/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
+	. = ..()
+
+	var/static/list/weapons = list("Shortbow", "Crossbow")
+	var/weapon_choice = browser_input_list(spawned, "CHOSE YOUR WEAPON.", "SERVE THE CROWN.", weapons)
+
+	switch(weapon_choice)
+		if("Shortbow")
+			spawned.equip_to_slot_or_del(new /obj/item/gun/ballistic/bow, ITEM_SLOT_BACK_L, TRUE)
+			spawned.equip_to_slot_or_del(new /obj/item/ammo_holder/quiver/arrows, ITEM_SLOT_BELT_L, TRUE)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/hitman/shortbow)
+		if("Crossbow")
+			spawned.equip_to_slot_or_del(new /obj/item/gun/ballistic/bow/cross, ITEM_SLOT_BACK_L, TRUE)
+			spawned.equip_to_slot_or_del(new /obj/item/ammo_holder/quiver/bolts, ITEM_SLOT_BELT_L, TRUE)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/hitman/crossbow)
 
 /datum/attribute_holder/sheet/job/courtagent/investigator
 	raw_attribute_list = list(
@@ -173,7 +217,6 @@
 	gloves = /obj/item/clothing/gloves/fingerless
 	armor = /obj/item/clothing/armor/leather/jacket/leathercoat/black
 	wrists = /obj/item/clothing/wrists/bracers/leather
-	beltl = /obj/item/weapon/sword/sabre
 	backr = /obj/item/storage/backpack/satchel/black
 	backpack_contents = list(
 		/obj/item/key/manor = 1,
@@ -181,3 +224,17 @@
 		/obj/item/lockpickring/mundane = 1,
 		/obj/item/storage/belt/pouch/coins/poor = 1
 	)
+
+/datum/job/advclass/courtagent/investigator/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
+	. = ..()
+
+	var/static/list/weapons = list("Sabre", "Rapier", "Shortsword")
+	var/weapon_choice = browser_input_list(spawned, "CHOSE YOUR WEAPON.", "SERVE THE CROWN.", weapons)
+
+	switch(weapon_choice)
+		if("Sabre")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/sabre, ITEM_SLOT_BELT_L, TRUE)
+		if("Rapier")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/rapier, ITEM_SLOT_BELT_L, TRUE)
+		if("Shortsword")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/short, ITEM_SLOT_BELT_L, TRUE)
