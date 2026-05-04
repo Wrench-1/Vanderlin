@@ -44,7 +44,7 @@
 /datum/outfit/courtagent
 	name = "Court Agent Base"
 	shirt = /obj/item/clothing/shirt/undershirt/colored/black
-	belt = /obj/item/storage/belt/leather/black
+	belt = /obj/item/storage/belt/leather/black/courtagent
 	pants = /obj/item/clothing/pants/trou/leather
 	shoes = /obj/item/clothing/shoes/boots
 
@@ -90,9 +90,6 @@
 	armor = /obj/item/clothing/armor/leather/splint
 	backr = /obj/item/storage/backpack/satchel/black
 	backpack_contents = list(
-		/obj/item/key/manor = 1,
-		/obj/item/weapon/knife/dagger/steel = 1,
-		/obj/item/lockpickring/mundane = 1,
 		/obj/item/storage/belt/pouch/coins/poor = 1
 	)
 
@@ -160,9 +157,6 @@
 	wrists = /obj/item/clothing/wrists/bracers/leather
 	backr = /obj/item/storage/backpack/satchel/black
 	backpack_contents = list(
-		/obj/item/key/manor = 1,
-		/obj/item/weapon/knife/dagger/steel = 1,
-		/obj/item/lockpickring/mundane = 1,
 		/obj/item/storage/belt/pouch/coins/poor = 1
 	)
 
@@ -219,9 +213,6 @@
 	wrists = /obj/item/clothing/wrists/bracers/leather
 	backr = /obj/item/storage/backpack/satchel/black
 	backpack_contents = list(
-		/obj/item/key/manor = 1,
-		/obj/item/weapon/knife/dagger/steel = 1,
-		/obj/item/lockpickring/mundane = 1,
 		/obj/item/storage/belt/pouch/coins/poor = 1
 	)
 
