@@ -184,7 +184,7 @@
 			spawned.equip_to_slot_or_del(new /obj/item/ammo_holder/quiver/bolts, ITEM_SLOT_BELT_L, TRUE)
 			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/hitman/crossbow)
 
-/datum/attribute_holder/sheet/job/courtagent/investigator
+/datum/attribute_holder/sheet/job/courtagent/mystic
 	raw_attribute_list = list(
 		STAT_PERCEPTION = 3,
 		STAT_INTELLIGENCE = 3,
@@ -205,20 +205,20 @@
 		/datum/attribute/skill/misc/reading = 30
 	)
 
-/datum/job/advclass/courtagent/investigator
-	title = "Arcane Investigator"
+/datum/job/advclass/courtagent/mystic
+	title = "Mystic Spy"
 	tutorial = "You are one of the Hand's loyal Agents. \
 	Before becoming an Agent, you were a Mage of the Mages Guild. However due to some complications with your colleagues, you were cast aside. \
 	Now you work for the Hand, using your knowledge of Magic and the Arcane to more effectively spy on people. \
-	You have been supplied with gadgets to aid in investigations, along with the spells you already knew from your time with the Guild."
-	outfit = /datum/outfit/courtagent/investigator
+	You have been supplied with gadgets to aid in your work, along with the spells you already knew from your time with the Guild."
+	outfit = /datum/outfit/courtagent/mystic
 	category_tags = list(CTAG_COURTAGENT)
 	allowed_patrons = list(/datum/patron/divine/noc, /datum/patron/inhumen/zizo)
 
-	attribute_sheet = /datum/attribute_holder/sheet/job/courtagent/investigator
+	attribute_sheet = /datum/attribute_holder/sheet/job/courtagent/mystic
 
-/datum/outfit/courtagent/investigator
-	name = "Arcane Investigator"
+/datum/outfit/courtagent/mystic
+	name = "Mystic Spy"
 	head = /obj/item/clothing/head/roguehood/colored/black
 	gloves = /obj/item/clothing/gloves/fingerless
 	armor = /obj/item/clothing/shirt/robe/colored/black
