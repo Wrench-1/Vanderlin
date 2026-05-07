@@ -28,9 +28,9 @@
 	)
 
 	traits = list(
-		TRAIT_DODGEEXPERT,
 		TRAIT_STEELHEARTED,
-		TRAIT_FOREIGNER
+		TRAIT_FOREIGNER,
+		TRAIT_KEENEARS
 	)
 	verbs = list(
 		/mob/living/carbon/human/proc/torture_victim
@@ -83,6 +83,10 @@
 	category_tags = list(CTAG_COURTAGENT)
 
 	attribute_sheet = /datum/attribute_holder/sheet/job/courtagent/bruiser
+
+	traits = list(
+		TRAIT_DODGEEXPERT
+	)
 
 /datum/outfit/courtagent/bruiser
 	name = "Bruiser"
@@ -149,6 +153,10 @@
 
 	attribute_sheet = /datum/attribute_holder/sheet/job/courtagent/hitman
 
+	traits = list(
+		TRAIT_DODGEEXPERT
+	)
+
 /datum/outfit/courtagent/hitman
 	name = "Hitman"
 	cloak = /obj/item/clothing/cloak/raincloak
@@ -178,54 +186,47 @@
 
 /datum/attribute_holder/sheet/job/courtagent/investigator
 	raw_attribute_list = list(
-		STAT_PERCEPTION = 4,
-		STAT_INTELLIGENCE = 2,
-		STAT_SPEED = 3,
+		STAT_PERCEPTION = 3,
+		STAT_INTELLIGENCE = 3,
+		STAT_STRENGTH = -2,
+		STAT_CONSTITUTION = -1,
+		STAT_ENDURANCE = 1,
 		/datum/attribute/skill/combat/unarmed = 20,
 		/datum/attribute/skill/combat/wrestling = 20,
-		/datum/attribute/skill/combat/knives = 30,
-		/datum/attribute/skill/combat/swords = 30,
+		/datum/attribute/skill/combat/knives = 20,
+		/datum/attribute/skill/combat/polearms = 20,
+		/datum/attribute/skill/magic/arcane = 30,
 		/datum/attribute/skill/misc/athletics = 30,
 		/datum/attribute/skill/misc/swimming = 20,
-		/datum/attribute/skill/misc/sneaking = 40,
-		/datum/attribute/skill/misc/climbing = 50,
-		/datum/attribute/skill/misc/lockpicking = 50,
+		/datum/attribute/skill/misc/sneaking = 30,
+		/datum/attribute/skill/misc/climbing = 30,
+		/datum/attribute/skill/misc/lockpicking = 30,
 		/datum/attribute/skill/craft/crafting = 20,
 		/datum/attribute/skill/misc/reading = 30
 	)
 
 /datum/job/advclass/courtagent/investigator
-	title = "Investigator"
+	title = "Arcane Investigator"
 	tutorial = "You are one of the Hand's loyal Agents. \
-	You always were able to pick out little details in the environment and in people that others tended to miss out on. \
-	You heard conversations you shouldn’t have, and even managed to track down missing people by piecing together clues. \
-	Now you work for the Hand and the Court, and as luck would have it the Mages Guild has supplied you with gadgets to help in your investigations."
+	Before becoming an Agent, you were a Mage of the Mages Guild. However due to some complications with your colleagues, you were cast aside. \
+	Now you work for the Hand, using your knowledge of Magic and the Arcane to more effectively spy on people. \
+	You have been supplied with gadgets to aid in investigations, along with the spells you already knew from your time with the Guild."
 	outfit = /datum/outfit/courtagent/investigator
 	category_tags = list(CTAG_COURTAGENT)
+	allowed_patrons = list(/datum/patron/divine/noc, /datum/patron/inhumen/zizo)
 
 	attribute_sheet = /datum/attribute_holder/sheet/job/courtagent/investigator
 
 /datum/outfit/courtagent/investigator
-	name = "Investigator"
-	head = /obj/item/clothing/head/helmet/leather/tricorn
+	name = "Arcane Investigator"
+	head = /obj/item/clothing/head/roguehood/colored/black
 	gloves = /obj/item/clothing/gloves/fingerless
-	armor = /obj/item/clothing/armor/leather/jacket/leathercoat/black
+	armor = /obj/item/clothing/shirt/robe/colored/black
 	wrists = /obj/item/clothing/wrists/bracers/leather
 	backr = /obj/item/storage/backpack/satchel/black
+	backl = /obj/item/weapon/polearm/woodstaff
 	backpack_contents = list(
-		/obj/item/storage/belt/pouch/coins/poor = 1
+		/obj/item/storage/belt/pouch/coins/poor = 1,
+		/obj/item/book/granter/spellbook/apprentice = 1,
+		/obj/item/chalk = 1
 	)
-
-/datum/job/advclass/courtagent/investigator/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
-	. = ..()
-
-	var/static/list/weapons = list("Sabre", "Rapier", "Shortsword")
-	var/weapon_choice = browser_input_list(spawned, "CHOSE YOUR WEAPON.", "SERVE THE CROWN.", weapons)
-
-	switch(weapon_choice)
-		if("Sabre")
-			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/sabre, ITEM_SLOT_BELT_L, TRUE)
-		if("Rapier")
-			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/rapier, ITEM_SLOT_BELT_L, TRUE)
-		if("Shortsword")
-			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/short, ITEM_SLOT_BELT_L, TRUE)
