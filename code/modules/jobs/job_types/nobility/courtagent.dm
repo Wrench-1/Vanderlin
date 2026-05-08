@@ -233,7 +233,7 @@
 		/obj/item/chalk = 1
 	)
 
-/datum/attribute_holder/sheet/job/courtagent/bodyguard
+/datum/attribute_holder/sheet/job/courtagent/combatant
 	raw_attribute_list = list(
 		STAT_STRENGTH = 2,
 		STAT_CONSTITUTION = 2,
@@ -251,54 +251,54 @@
 		/datum/attribute/skill/misc/reading = 10,
 	)
 
-/datum/attribute_holder/sheet/job/courtagent/bodyguard/swordshield
+/datum/attribute_holder/sheet/job/courtagent/combatant/swordshield
 	raw_attribute_list = list()
 	clamped_adjustment = list(
 		/datum/attribute/skill/combat/swords = list(30, 30),
 		/datum/attribute/skill/combat/shields = list(30, 30)
 	)
 
-/datum/attribute_holder/sheet/job/courtagent/bodyguard/rapier
+/datum/attribute_holder/sheet/job/courtagent/combatant/rapier
 	raw_attribute_list = list()
 	clamped_adjustment = list(
 		/datum/attribute/skill/combat/swords = list(30, 30)
 	)
 
-/datum/attribute_holder/sheet/job/courtagent/bodyguard/axesmaces
+/datum/attribute_holder/sheet/job/courtagent/combatant/axesmaces
 	raw_attribute_list = list()
 	clamped_adjustment = list(
 		/datum/attribute/skill/combat/axesmaces = list(30, 30)
 	)
 
-/datum/attribute_holder/sheet/job/courtagent/bodyguard/spear
+/datum/attribute_holder/sheet/job/courtagent/combatant/spear
 	raw_attribute_list = list()
 	clamped_adjustment = list(
 		/datum/attribute/skill/combat/polearms = list(30, 30)
 	)
 
-/datum/attribute_holder/sheet/job/courtagent/bodyguard/whipsflails
+/datum/attribute_holder/sheet/job/courtagent/combatant/whipsflails
 	raw_attribute_list = list()
 	clamped_adjustment = list(
 		/datum/attribute/skill/combat/whipsflails = list(30, 30)
 	)
 
 
-/datum/job/advclass/courtagent/bodyguard
-	title = "Bodyguard"
+/datum/job/advclass/courtagent/combatant
+	title = "Combatant"
 	tutorial = "You are one of the Hand's loyal Agents. \
 	While your colleagues specialise in the more subtle arts, you specialise in sheer brute strength. \
 	A born fighter from an early age, you are now tasked by the Hand to provide personal protection where the Hand deems it necessary. \
 	Little do your charges know who you also report to. No one suspects their bodyguard to hear all their dirty little secrets, surely."
-	outfit = /datum/outfit/courtagent/bodyguard
+	outfit = /datum/outfit/courtagent/combatant
 	category_tags = list(CTAG_COURTAGENT)
 
-	attribute_sheet = /datum/attribute_holder/sheet/job/courtagent/bodyguard
+	attribute_sheet = /datum/attribute_holder/sheet/job/courtagent/combatant
 
 	traits = list(
 		TRAIT_MEDIUMARMOR
 	)
 
-/datum/outfit/courtagent/bodyguard
+/datum/outfit/courtagent/combatant
 	head = /obj/item/clothing/head/helmet/leather/headscarf
 	gloves = /obj/item/clothing/gloves/leather
 	shirt = /obj/item/clothing/armor/gambeson/light/colored/black
@@ -311,7 +311,7 @@
 		/obj/item/storage/belt/pouch/coins/poor = 1
 	)
 
-/datum/job/advclass/courtagent/bodyguard/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
+/datum/job/advclass/courtagent/combatant/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 
 	var/static/list/weapons = list("Sword & Shield", "Rapier", "Axe", "Mace", "Spear", "Flail", "Whip")
@@ -321,22 +321,22 @@
 		if("Sword & Shield")
 			spawned.equip_to_slot_or_del(new /obj/item/weapon/shield/heater, ITEM_SLOT_BACK_L, TRUE)
 			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/scimitar/messer, ITEM_SLOT_BELT_L, TRUE)
-			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/swordshield)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/combatant/swordshield)
 		if("Rapier")
 			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/rapier, ITEM_SLOT_BELT_L, TRUE)
-			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/rapier)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/combatant/rapier)
 		if("Axe")
 			spawned.equip_to_slot_or_del(new /obj/item/weapon/axe/iron, ITEM_SLOT_BELT_L, TRUE)
-			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/axesmaces)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/combatant/axesmaces)
 		if("Mace")
 			spawned.equip_to_slot_or_del(new /obj/item/weapon/mace/spiked, ITEM_SLOT_BELT_L, TRUE)
-			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/axesmaces)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/combatant/axesmaces)
 		if("Spear")
 			spawned.equip_to_slot_or_del(new /obj/item/weapon/polearm/spear, ITEM_SLOT_BACK_L, TRUE)
-			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/spear)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/combatant/spear)
 		if("Flail")
 			spawned.equip_to_slot_or_del(new /obj/item/weapon/flail, ITEM_SLOT_BELT_L, TRUE)
-			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/whipsflails)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/combatant/whipsflails)
 		if("Whip")
 			spawned.equip_to_slot_or_del(new /obj/item/weapon/whip, ITEM_SLOT_BELT_L, TRUE)
-			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/whipsflails)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/combatant/whipsflails)
