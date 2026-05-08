@@ -43,7 +43,6 @@
 
 /datum/outfit/courtagent
 	name = "Court Agent Base"
-	shirt = /obj/item/clothing/shirt/undershirt/colored/black
 	belt = /obj/item/storage/belt/leather/black/courtagent
 	pants = /obj/item/clothing/pants/trou/leather
 	shoes = /obj/item/clothing/shoes/boots
@@ -91,6 +90,7 @@
 /datum/outfit/courtagent/bruiser
 	name = "Bruiser"
 	cloak = /obj/item/clothing/cloak/raincloak
+	shirt = /obj/item/clothing/shirt/undershirt/colored/black
 	armor = /obj/item/clothing/armor/leather/splint
 	backr = /obj/item/storage/backpack/satchel/black
 	backpack_contents = list(
@@ -160,6 +160,7 @@
 /datum/outfit/courtagent/hitman
 	name = "Hitman"
 	cloak = /obj/item/clothing/cloak/raincloak
+	shirt = /obj/item/clothing/shirt/undershirt/colored/black
 	armor = /obj/item/clothing/armor/leather/splint
 	gloves = /obj/item/clothing/gloves/fingerless
 	wrists = /obj/item/clothing/wrists/bracers/leather
@@ -221,6 +222,7 @@
 	name = "Mystic Spy"
 	head = /obj/item/clothing/head/roguehood/colored/black
 	gloves = /obj/item/clothing/gloves/fingerless
+	shirt = /obj/item/clothing/shirt/undershirt/colored/black
 	armor = /obj/item/clothing/shirt/robe/colored/black
 	wrists = /obj/item/clothing/wrists/bracers/leather
 	backr = /obj/item/storage/backpack/satchel/black
@@ -230,3 +232,111 @@
 		/obj/item/book/granter/spellbook/apprentice = 1,
 		/obj/item/chalk = 1
 	)
+
+/datum/attribute_holder/sheet/job/courtagent/bodyguard
+	raw_attribute_list = list(
+		STAT_STRENGTH = 2,
+		STAT_CONSTITUTION = 2,
+		STAT_ENDURANCE = 1,
+		STAT_INTELLIGENCE = -2,
+		/datum/attribute/skill/combat/unarmed = 20,
+		/datum/attribute/skill/combat/wrestling = 20,
+		/datum/attribute/skill/combat/knives = 20,
+		/datum/attribute/skill/misc/athletics = 30,
+		/datum/attribute/skill/misc/swimming = 20,
+		/datum/attribute/skill/misc/sneaking = 30,
+		/datum/attribute/skill/misc/climbing = 30,
+		/datum/attribute/skill/misc/lockpicking = 30,
+		/datum/attribute/skill/craft/crafting = 10,
+		/datum/attribute/skill/misc/reading = 10,
+	)
+
+/datum/attribute_holder/sheet/job/courtagent/bodyguard/swordshield
+	raw_attribute_list = list()
+	clamped_adjustment = list(
+		/datum/attribute/skill/combat/swords = list(30, 30),
+		/datum/attribute/skill/combat/shields = list(30, 30)
+	)
+
+/datum/attribute_holder/sheet/job/courtagent/bodyguard/rapier
+	raw_attribute_list = list()
+	clamped_adjustment = list(
+		/datum/attribute/skill/combat/swords = list(30, 30)
+	)
+
+/datum/attribute_holder/sheet/job/courtagent/bodyguard/axesmaces
+	raw_attribute_list = list()
+	clamped_adjustment = list(
+		/datum/attribute/skill/combat/axesmaces = list(30, 30)
+	)
+
+/datum/attribute_holder/sheet/job/courtagent/bodyguard/spear
+	raw_attribute_list = list()
+	clamped_adjustment = list(
+		/datum/attribute/skill/combat/polearms = list(30, 30)
+	)
+
+/datum/attribute_holder/sheet/job/courtagent/bodyguard/whipsflails
+	raw_attribute_list = list()
+	clamped_adjustment = list(
+		/datum/attribute/skill/combat/whipsflails = list(30, 30)
+	)
+
+
+/datum/job/advclass/courtagent/bodyguard
+	title = "Bodyguard"
+	tutorial = "You are one of the Hand's loyal Agents. \
+	While your colleagues specialise in the more subtle arts, you specialise in sheer brute strength. \
+	A born fighter from an early age, you are now tasked by the Hand to provide personal protection where the Hand deems it necessary. \
+	Little do your charges know who you also report to. No one suspects their bodyguard to hear all their dirty little secrets, surely."
+	outfit = /datum/outfit/courtagent/bodyguard
+	category_tags = list(CTAG_COURTAGENT)
+
+	attribute_sheet = /datum/attribute_holder/sheet/job/courtagent/bodyguard
+
+	traits = list(
+		TRAIT_MEDIUMARMOR
+	)
+
+/datum/outfit/courtagent/bodyguard
+	head = /obj/item/clothing/head/helmet/leather/headscarf
+	gloves = /obj/item/clothing/gloves/leather
+	shirt = /obj/item/clothing/armor/gambeson/light/colored/black
+	armor = /obj/item/clothing/armor/brigandine/light
+	neck = /obj/item/clothing/neck/gorget
+	cloak = /obj/item/clothing/cloak/raincloak
+	wrists = /obj/item/clothing/wrists/bracers/leather
+	backr = /obj/item/storage/backpack/satchel/black
+	backpack_contents = list(
+		/obj/item/storage/belt/pouch/coins/poor = 1
+	)
+
+/datum/job/advclass/courtagent/bodyguard/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
+	. = ..()
+
+	var/static/list/weapons = list("Sword & Shield", "Rapier", "Axe", "Mace", "Spear", "Flail", "Whip")
+	var/weapon_choice = browser_input_list(spawned, "CHOSE YOUR WEAPON.", "SERVE THE CROWN.", weapons)
+
+	switch(weapon_choice)
+		if("Sword & Shield")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/shield/heater, ITEM_SLOT_BACK_L, TRUE)
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/scimitar/messer, ITEM_SLOT_BELT_L, TRUE)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/swordshield)
+		if("Rapier")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/rapier, ITEM_SLOT_BELT_L, TRUE)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/rapier)
+		if("Axe")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/axe/iron, ITEM_SLOT_BELT_L, TRUE)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/axesmaces)
+		if("Mace")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/mace/spiked, ITEM_SLOT_BELT_L, TRUE)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/axesmaces)
+		if("Spear")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/polearm/spear, ITEM_SLOT_BACK_L, TRUE)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/spear)
+		if("Flail")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/flail, ITEM_SLOT_BELT_L, TRUE)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/whipsflails)
+		if("Whip")
+			spawned.equip_to_slot_or_del(new /obj/item/weapon/whip, ITEM_SLOT_BELT_L, TRUE)
+			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bodyguard/whipsflails)
