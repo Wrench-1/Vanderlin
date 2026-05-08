@@ -150,12 +150,27 @@
 			bleed_rate += 5
 	return bleed_rate
 
+/obj/item/bodypart/proc/skeletonized_mod(bclass)
+	if(!skeletonized)
+		return 1
+	switch(bclass)
+		if(WOUND_BLUNT)
+			return 1.25
+		if(WOUND_SLASH)
+			return 0.7
+		if(WOUND_BITE)
+			return 1.1
+		if(WOUND_PIERCE)
+			return 0.8
+		else
+			return 1
+
 /// Called in two cases, as an override to an attack after IE apply_damage on a zone. Or After an attack to return a wound.
 /obj/item/bodypart/proc/bodypart_attacked_by(bclass, dam, mob/living/user, zone_precise, silent = FALSE, crit_message = FALSE, list/modifiers = list(), incoming_germ, organ_bonus, pre_applied = FALSE)
 	if(!bclass || !dam || !owner || (owner.status_flags & GODMODE))
 		return
 	dam *= damage_multiplier
-	if(dam < 5)
+	if(dam < 5 && bclass != WOUND_INTERNAL_BRUISE)
 		if(CEILING(dam, 1) < 5)
 			return
 		dam = CEILING(dam, 1)
@@ -194,10 +209,12 @@
 			if(BCLASS_LASHING)
 				wounding_type = WOUND_LASH
 
+	dam *= skeletonized_mod(wounding_type)
+
 	if(wounding_type == WOUND_NONE)
 		return
 
-	if((zone_precise in list(BODY_ZONE_PRECISE_L_EYE, BODY_ZONE_PRECISE_L_EYE)) && wounding_type == WOUND_PIERCE)
+	if((zone_precise in list(BODY_ZONE_PRECISE_L_EYE, BODY_ZONE_PRECISE_R_EYE)) && wounding_type == WOUND_PIERCE)
 		organ_bonus = CANT_ORGAN
 
 	if(organ_bonus != CANT_ORGAN)
