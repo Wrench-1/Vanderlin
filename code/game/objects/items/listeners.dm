@@ -18,6 +18,7 @@
 	grid_height = 32
 	item_weight = 50 GRAMS
 	var/speaking = FALSE
+	var/inqwhisperer = TRUE
 	var/fakename = "secret whisperer"
 
 /obj/item/speakerinq/Initialize()
@@ -34,7 +35,7 @@
 	playsound(loc, 'sound/misc/beep.ogg', 100, FALSE, -1)
 	speaking = !speaking
 	update_appearance(UPDATE_ICON_STATE)
-	to_chat(user, span_info("I [speaking ? "unsilence" : "silence"] the whisperer."))
+	to_chat(user, span_info("I [speaking ? "unsilence" : "silence"] the [inqwhisperer ? "whisperer" : "conch shell"]."))
 
 /obj/item/speakerinq/update_icon_state()
 	. = ..()
@@ -101,8 +102,10 @@
 	item_weight = 80 GRAMS
 	var/label = null
 	var/inqdesc = null
+	var/agentdesc = null
 	var/hidden = FALSE
 	var/active = FALSE
+	var/inqlistener = TRUE
 	var/datum/status_effect/bugged/effect
 
 /obj/item/listeningdevice/examine(mob/user)
@@ -116,21 +119,30 @@
 	. = ..()
 	become_hearing_sensitive()
 	inqdesc = "An ever-attentive ear... [span_notice("This ear hasn't been bent. It's unlabelled.")]"
+	agentdesc = "An iridescent pearl... [span_notice("This pearl hasn't been activated. It's unlabelled.")]"
 
 /obj/item/listeningdevice/Destroy()
 	lose_hearing_sensitivity()
 	return ..()
 
 /obj/item/listeningdevice/attack_self(mob/living/user)
-	var/input = input(user, "SIX LETTERS", "BEND AN EAR")
+	var/input = input(user, "SIX LETTERS", "[inqlistener ? "BEND AN EAR" : "HEAR SECRETS"]")
 	if(!input)
 		label = null
 		inqdesc = "An ever-attentive ear... [span_notice("This ear hasn't been bent. It's unlabelled.")]"
-		desc = inqdesc
+		agentdesc = "An iridescent pearl... [span_notice("This pearl hasn't been activated. It's unlabelled.")]"
+		if(inqlistener == TRUE)
+			desc = inqdesc
+		else
+			desc = agentdesc
 		return
 	label = uppertext(trim(input, 7))
 	inqdesc = "An ever-attentive ear... [span_notice("This ear's been bent. It's labelled as [label].")]"
-	desc = inqdesc
+	agentdesc = "An iridescent pearl... [span_notice("This pearl has been activated. It's labelled as [label].")]"
+	if(inqlistener == TRUE)
+		desc = inqdesc
+	else
+		desc = agentdesc
 
 /obj/item/listeningdevice/attack_hand_secondary(mob/user, list/modifiers)
 	if(!hidden)
@@ -169,7 +181,7 @@
 	user.changeNext_move(CLICK_CD_MELEE)
 	playsound(loc, 'sound/misc/bug.ogg', 50, FALSE, -1)
 	active = !active
-	to_chat(user, span_info("I [active ? "undeafen" : "deafen"] the Listener."))
+	to_chat(user, span_info("I [active ? "undeafen" : "deafen"] the [inqlistener ? "Listener" : "Pearl"]."))
 	update_appearance(UPDATE_ICON_STATE)
 
 /obj/item/listeningdevice/update_icon_state()
@@ -193,6 +205,58 @@
 	if(length(raw_message) > 100)
 		raw_message = "<small>[raw_message]</small>"
 	for(var/obj/item/speakerinq/S in SSroguemachine.scomm_machines)
-		S.name = label ? "#[label]" : "#NOTSET"
-		S.repeat_message(raw_message, src, usedcolor, message_language)
-		S.name = (S.fakename)
+		if(S.inqwhisperer == TRUE)
+			S.name = label ? "#[label]" : "#NOTSET"
+			S.repeat_message(raw_message, src, usedcolor, message_language)
+			S.name = (S.fakename)
+
+/obj/item/speakerinq/courtagent
+	name = "whispering conch"
+	desc = "Ever whispering secrets into your ears..."
+	//icon_state = "scomite"
+	slot_flags = ITEM_SLOT_HIP
+	fakename = "whispering conch"
+	inqwhisperer = FALSE
+
+/obj/item/speakerinq/courtagent/equipped(mob/user, slot)
+	. = ..()
+	switch(slot)
+		if(ITEM_SLOT_BELT_L)
+			fakename = "conch shell"
+			name = fakename
+		if(ITEM_SLOT_BELT_R)
+			fakename = "conch shell"
+			name = fakename
+	return TRUE
+
+/obj/item/listeningdevice/courtagent
+	name = "listening pearl"
+	desc = "An iridescent pearl..."
+	//icon_state = "listeningstone"
+	inqlistener = FALSE
+
+/obj/item/listeningdevice/courtagent/examine(mob/user)
+	. = ..()
+	if(HAS_TRAIT(user, TRAIT_COURTAGENT))
+		desc = agentdesc
+	else
+		desc = initial(desc)
+
+/obj/item/listeningdevice/courtagent/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, message_mode, original_message)
+	if(!active)
+		return
+	if(!ishuman(speaker))
+		return
+	var/mob/living/carbon/human/H = speaker
+	var/usedcolor = H.voice_color
+	if(H.voicecolor_override)
+		usedcolor = H.voicecolor_override
+	if(!raw_message)
+		return
+	if(length(raw_message) > 100)
+		raw_message = "<small>[raw_message]</small>"
+	for(var/obj/item/speakerinq/courtagent/S in SSroguemachine.scomm_machines)
+		if(S.inqwhisperer == FALSE)
+			S.name = label ? "#[label]" : "#NOTSET"
+			S.repeat_message(raw_message, src, usedcolor, message_language)
+			S.name = (S.fakename)

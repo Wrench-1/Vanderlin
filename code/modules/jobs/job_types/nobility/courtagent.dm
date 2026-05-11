@@ -28,6 +28,7 @@
 	)
 
 	traits = list(
+		TRAIT_COURTAGENT,
 		TRAIT_STEELHEARTED,
 		TRAIT_FOREIGNER,
 		TRAIT_KEENEARS
@@ -230,7 +231,9 @@
 	backpack_contents = list(
 		/obj/item/storage/belt/pouch/coins/poor = 1,
 		/obj/item/book/granter/spellbook/apprentice = 1,
-		/obj/item/chalk = 1
+		/obj/item/chalk = 1,
+		/obj/item/speakerinq/courtagent = 1,
+		/obj/item/listeningdevice/courtagent = 2
 	)
 
 /datum/attribute_holder/sheet/job/courtagent/protector
