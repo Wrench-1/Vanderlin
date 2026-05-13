@@ -213,7 +213,7 @@
 /obj/item/speakerinq/courtagent
 	name = "whispering conch"
 	desc = "Ever whispering secrets into your ears..."
-	//icon_state = "scomite"
+	icon_state = "whispershell"
 	slot_flags = ITEM_SLOT_HIP
 	fakename = "whispering conch"
 	inqwhisperer = FALSE
@@ -232,7 +232,7 @@
 /obj/item/listeningdevice/courtagent
 	name = "listening pearl"
 	desc = "An iridescent pearl..."
-	//icon_state = "listeningstone"
+	icon_state = "listenpearl"
 	inqlistener = FALSE
 
 /obj/item/listeningdevice/courtagent/examine(mob/user)
