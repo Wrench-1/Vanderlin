@@ -27,6 +27,10 @@
 		EXP_TYPE_LIVING = 300,
 	)
 
+	mind_traits = list(
+		TRAIT_KNOW_KEEP_DOORS,
+		TRAIT_KNOWCOURTAGENTS
+	)
 	traits = list(
 		TRAIT_COURTAGENT,
 		TRAIT_STEELHEARTED,
@@ -39,7 +43,7 @@
 
 /datum/job/courtagent/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	if(ishuman(spawned))
-		GLOB.roundstart_court_agents += spawned.real_name
+		GLOB.court_agents += spawned.real_name
 	. = ..()
 
 /datum/outfit/courtagent
