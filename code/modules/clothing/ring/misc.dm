@@ -381,3 +381,28 @@
 	else
 		. += "An uncomfortably heavy ring of thaumic iron. Specifically made for apothecaries upon graduation. \n \
 		This gives them the right to both extract and manipulate lux, so long as they follow Pestra's teachings."
+
+/obj/item/clothing/ring/courtagent_ring
+	name = "court agent's signet ring"
+	icon_state = "ring_s" //placeholder
+	desc = "A silver signet ring, engraved with the sigil of the Hand and enchanted with magicks that wards away pickpockets. \
+	\n This ring is proof that its barer is under the personal employment of the Hand."
+	var/fakename = "court agent's signet ring"
+
+/obj/item/clothing/ring/courtagent_ring/Initialize()
+	. = ..()
+	ADD_TRAIT (src, TRAIT_HARD_TO_STEAL, TRAIT_GENERIC)
+
+/obj/item/clothing/ring/courtagent_ring/equipped(mob/living/carbon/user, slot)
+	. = ..()
+	switch(slot)
+		if(ITEM_SLOT_RING)
+			fakename = "silver ring"
+			name = fakename
+	return TRUE
+
+/obj/item/clothing/ring/courtagent_ring/dropped(mob/user, silent)
+	. = ..()
+	name = initial(name)
+	sleeved = null
+	mob_overlay_icon = null

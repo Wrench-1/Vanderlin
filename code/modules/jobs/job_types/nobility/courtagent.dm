@@ -51,6 +51,7 @@
 	belt = /obj/item/storage/belt/leather/black/courtagent
 	pants = /obj/item/clothing/pants/trou/leather
 	shoes = /obj/item/clothing/shoes/boots
+	ring = /obj/item/clothing/ring/courtagent_ring
 
 /datum/job/advclass/courtagent
 	exp_types_granted = list(EXP_TYPE_NOBLE, EXP_TYPE_COMBAT)
