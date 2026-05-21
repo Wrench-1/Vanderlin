@@ -32,6 +32,7 @@
 
 	mind_traits = list(
 		TRAIT_KNOW_KEEP_DOORS,
+		TRAIT_KNOW_COURTAGENT_DOORS,
 		TRAIT_KNOWCOURTAGENTS
 	)
 	traits = list(

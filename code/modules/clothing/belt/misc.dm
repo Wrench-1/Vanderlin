@@ -93,7 +93,7 @@
 
 /obj/item/storage/belt/leather/black/courtagent
 		populate_contents = list(
-		/obj/item/key/manor,
+		/obj/item/storage/keyring/courtagent,
 		/obj/item/weapon/knife/dagger/steel,
 		/obj/item/lockpickring/mundane,
 	)
