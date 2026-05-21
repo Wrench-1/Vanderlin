@@ -596,18 +596,20 @@
 	var/mob/living/attacked_target = target
 	if(!attacked_target.client)
 		return
-	if(attacked_target.real_name in GLOB.court_agents)
+	if(HAS_TRAIT(attacked_target, TRAIT_COURTAGENT))
+		to_chat(user, span_warning("They are already an Agent of the Court."))
 		return
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = TARGET_GHOST
 		if(H.family_datum == SSfamilytree.ruling_family)
-			to_chat(user, span_warning("I can't turn a member of the royal family into a finger"))
+			to_chat(user, span_warning("I can't turn a member of the royal family into a finger."))
 			return
 	var/choice = tgui_alert(attacked_target, "Do you wish to become one of the Hand's fingers?", "Binding Contract", list("Yes", "No"))
 	if(choice != "Yes")
 		return
 
 	GLOB.court_agents += attacked_target.real_name
+	ADD_TRAIT (attacked_target, TRAIT_COURTAGENT, TRAIT_GENERIC)
 
 	if(!HAS_TRAIT(attacked_target, TRAIT_KNOWCOURTAGENTS))
 		ADD_TRAIT (attacked_target.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
