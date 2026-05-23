@@ -11472,7 +11472,7 @@
 /turf/open/floor/cobble/alt,
 /area/under/town/sewer)
 "fuE" = (
-/obj/structure/mirror,
+/obj/structure/mirror/courtagent,
 /turf/open/floor/tile,
 /area/indoors/town/keep/courtagent)
 "fuK" = (
@@ -20195,6 +20195,7 @@
 /obj/item/clothing/ring/feldsher_ring,
 /obj/item/clothing/ring/silver/makers_guild,
 /obj/item/clothing/ring/gold/guild_mercator,
+/obj/machinery/light/fueled/torchholder/r,
 /turf/open/floor/tile,
 /area/indoors/town/keep/courtagent)
 "jwT" = (
