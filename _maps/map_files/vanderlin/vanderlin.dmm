@@ -4320,6 +4320,10 @@
 /obj/item/clothing/pants/tights/sailor,
 /obj/item/clothing/neck/bellcollar,
 /obj/item/clothing/neck/leathercollar,
+/obj/item/clothing/face/spectacles/sglasses,
+/obj/item/clothing/face/spectacles/sglasses,
+/obj/item/clothing/face/spectacles,
+/obj/item/clothing/face/spectacles,
 /turf/open/floor/tile,
 /area/indoors/town/keep/courtagent)
 "cbu" = (
@@ -39172,6 +39176,19 @@
 /obj/structure/fluff/walldeco/vinez,
 /turf/open/floor/dirt/road,
 /area/under/town/sewer)
+"sbZ" = (
+/obj/structure/closet/keyrack{
+	pixel_y = -32;
+	pixel_x = 0
+	},
+/obj/effect/mapping_helpers/access/keyset/manor/courtagent,
+/obj/effect/mapping_helpers/access/locker,
+/obj/item/key/courtagent,
+/obj/item/key/courtagent,
+/obj/item/key/courtagent,
+/obj/item/key/courtagent,
+/turf/open/floor/tile,
+/area/indoors/town/keep/courtagent)
 "sca" = (
 /obj/structure/fluff/statue/tdummy,
 /obj/machinery/light/fueled/wallfire/candle,
@@ -79358,7 +79375,7 @@ xWE
 xWE
 pxE
 poG
-poG
+sbZ
 xWE
 pww
 kIH
