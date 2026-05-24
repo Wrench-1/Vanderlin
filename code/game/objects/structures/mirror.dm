@@ -168,7 +168,7 @@
 					should_update = TRUE
 
 		if("honorific")
-			var/list/honorifics = list("Lord", "Lady", "Sir", "Dame", "Ritter", "Count", "Countess", "Emir", "Clear honorific")
+			var/list/honorifics = list("Lord", "Lady", "Sir", "Dame", "Ritter", "Ritterin", "Count", "Countess", "Emir", "Clear honorific")
 			var/chosenHonorific = browser_input_list(user, "Select False Honorific", "HONORIFICS", honorifics)
 
 			if(chosenHonorific == "Clear honorific")
