@@ -610,6 +610,7 @@
 
 	GLOB.court_agents += attacked_target.real_name
 	ADD_TRAIT (attacked_target, TRAIT_COURTAGENT, TRAIT_GENERIC)
+	ADD_TRAIT (attacked_target, TRAIT_KNOW_COURTAGENT_DOORS, TRAIT_GENERIC)
 
 	if(!HAS_TRAIT(attacked_target, TRAIT_KNOWCOURTAGENTS))
 		ADD_TRAIT (attacked_target.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
