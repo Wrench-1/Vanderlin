@@ -465,102 +465,11 @@
 			playsound(src, 'sound/items/write.ogg', 100, FALSE)
 			return
 
-/*
-/obj/item/paper/scroll/frumentarii/roundstart/Initialize()
-	. = ..()
-	if(SSticker.current_state < GAME_STATE_PLAYING)
-		SSticker.OnRoundstart(CALLBACK(src, PROC_REF(get_agents)))
-	else
-		get_agents()
-
-/obj/item/paper/scroll/frumentarii/roundstart/proc/get_agents()
-	for(var/CA in GLOB.roundstart_court_agents)
-		fingers[CA] = TRUE
-	rebuild_info()
-
-/obj/item/paper/scroll/frumentarii
-	name = "frumentarii scroll"
-	desc = "A list of the hand's fingers. Strike a candidate with this to allow them servitude. Use a writing utensil to cross out a finger."
-
-	//assoc list of TRUE and FALSE. TRUE indicates the agent is an active finger while FALSE is a severed finger
-	var/list/fingers = list()
-	var/names = 5
-	writable = FALSE
-	resistance_flags = FIRE_PROOF // let's maybe not burn this
-
-/obj/item/paper/scroll/frumentarii/afterattack(atom/target, mob/living/user, proximity_flag, list/modifiers)
-	. = ..()
-	if(!user.mind)
-		return
-	if(!HAS_TRAIT(user, TRAIT_NOBLE_BLOOD) && !HAS_TRAIT(user, TRAIT_NOBLE_POWER))
-		return
-	if(length(fingers) >= names)
-		to_chat(user, span_notice("[src] is full"))
-		return
-	if(!isliving(target))
-		return
-	var/mob/living/attacked_target = target
-	if(!attacked_target.client)
-		return
-	if(attacked_target.real_name in fingers)
-		return
-	if(ishuman(target))
-		var/mob/living/carbon/human/H = target
-		if(H.family_datum == SSfamilytree.ruling_family)
-			to_chat(user, span_warning("I can't turn a member of the royal family into a finger."))
-			return
-
-	var/choice = tgui_alert(attacked_target, "Do you wish to become one of the Hand's fingers?", "Binding Contract", list("Yes", "No"))
-	if(choice != "Yes")
-		return
-
-	fingers[attacked_target.real_name] = TRUE
-	user.mind.cached_frumentarii = fingers
-	rebuild_info()
-
-/obj/item/paper/scroll/frumentarii/attackby(obj/item/P, mob/living/carbon/human/user, list/modifiers)
-	. = ..()
-	if(istype(P, /obj/item/natural/thorn) || istype(P, /obj/item/natural/feather))
-		if(!open)
-			return
-		var/list/choices = list()
-		for(var/F in fingers)
-			if(fingers[F] == TRUE)
-				choices[F] = F
-			else
-				choices["<s>[F]</s>"] = F
-		var/choice = browser_input_list(user, "Reattach/Sever a Finger", "THE LIST", choices)
-		if(!choice || QDELETED(src) || QDELETED(user))
-			return
-		var/finger = choices[choice]
-		fingers[finger] = !fingers[finger]
-		user.mind.cached_frumentarii = fingers
-		playsound(src, 'sound/items/write.ogg', 50, FALSE, -4, ignore_walls = FALSE)
-	rebuild_info()
-
-/obj/item/paper/scroll/frumentarii/read(mob/user)
-	. = ..()
-	user.mind.cached_frumentarii += fingers
-
-/obj/item/paper/scroll/frumentarii/proc/rebuild_info()
-	info = null
-	info += "<div style='vertical-align:top'>"
-	info += "<h2 style='color:#06080F;font-family:\"Segoe Script\"'>Known Agents</h2>"
-	info += "<hr/>"
-
-	for(var/F in fingers)
-		if(fingers[F])
-			info += "<li style='color:#06080F;font-size:11px;font-family:\"Segoe Script\"'>[F]</li><br/>"
-		else
-			info += "<s><li style='color:#610018;font-size:11px;font-family:\"Segoe Script\"'>[F]</li></s><br/>"
-	info += "</div>"
-*/
-
 /obj/item/frumentarii
 	name = "frumentarii scroll"
-	desc = "A list of the hand's fingers. Strike a candidate with this to allow them servitude. Use a writing utensil to cross out a finger."
+	desc = "An enchanted scroll, showing a list of the hand's fingers. Strike a candidate with this to allow them servitude. Use a writing utensil to cross out a finger."
 	icon = 'icons/roguetown/items/misc.dmi'
-	icon_state = "slip" //placeholder
+	icon_state = "frumentarii_scroll"
 	throwforce = 0
 	w_class = WEIGHT_CLASS_TINY
 	throw_range = 2

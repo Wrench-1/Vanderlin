@@ -67,8 +67,8 @@
 		/datum/attribute/skill/misc/athletics = 30,
 		/datum/attribute/skill/misc/swimming = 20,
 		/datum/attribute/skill/misc/sneaking = 40,
-		/datum/attribute/skill/misc/climbing = 50,
-		/datum/attribute/skill/misc/lockpicking = 50,
+		/datum/attribute/skill/misc/climbing = 40,
+		/datum/attribute/skill/misc/lockpicking = 40,
 		/datum/attribute/skill/craft/crafting = 10,
 		/datum/attribute/skill/misc/reading = 10
 	)

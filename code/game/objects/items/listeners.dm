@@ -35,7 +35,7 @@
 	playsound(loc, 'sound/misc/beep.ogg', 100, FALSE, -1)
 	speaking = !speaking
 	update_appearance(UPDATE_ICON_STATE)
-	to_chat(user, span_info("I [speaking ? "unsilence" : "silence"] the [inqwhisperer ? "whisperer" : "conch shell"]."))
+	to_chat(user, span_info("I [speaking ? "unsilence" : "silence"] the [inqwhisperer ? "whisperer" : "clam"]."))
 
 /obj/item/speakerinq/update_icon_state()
 	. = ..()
@@ -119,7 +119,7 @@
 	. = ..()
 	become_hearing_sensitive()
 	inqdesc = "An ever-attentive ear... [span_notice("This ear hasn't been bent. It's unlabelled.")]"
-	agentdesc = "An iridescent pearl... [span_notice("This pearl hasn't been activated. It's unlabelled.")]"
+	agentdesc = "A black pearl... [span_notice("This pearl hasn't been activated. It's unlabelled.")]"
 
 /obj/item/listeningdevice/Destroy()
 	lose_hearing_sensitivity()
@@ -130,7 +130,7 @@
 	if(!input)
 		label = null
 		inqdesc = "An ever-attentive ear... [span_notice("This ear hasn't been bent. It's unlabelled.")]"
-		agentdesc = "An iridescent pearl... [span_notice("This pearl hasn't been activated. It's unlabelled.")]"
+		agentdesc = "A black pearl... [span_notice("This pearl hasn't been activated. It's unlabelled.")]"
 		if(inqlistener == TRUE)
 			desc = inqdesc
 		else
@@ -211,28 +211,28 @@
 			S.name = (S.fakename)
 
 /obj/item/speakerinq/courtagent
-	name = "whispering conch"
+	name = "whispering clam"
 	desc = "Ever whispering secrets into your ears..."
-	icon_state = "whispershell"
+	icon_state = "cosmic_clam"
 	slot_flags = ITEM_SLOT_HIP
-	fakename = "whispering conch"
+	fakename = "whispering clam"
 	inqwhisperer = FALSE
 
 /obj/item/speakerinq/courtagent/equipped(mob/user, slot)
 	. = ..()
 	switch(slot)
 		if(ITEM_SLOT_BELT_L)
-			fakename = "conch shell"
+			fakename = "clam"
 			name = fakename
 		if(ITEM_SLOT_BELT_R)
-			fakename = "conch shell"
+			fakename = "clam"
 			name = fakename
 	return TRUE
 
 /obj/item/listeningdevice/courtagent
 	name = "listening pearl"
-	desc = "An iridescent pearl..."
-	icon_state = "listenpearl"
+	desc = "A black pearl..."
+	icon_state = "midnight_pearl"
 	inqlistener = FALSE
 
 /obj/item/listeningdevice/courtagent/examine(mob/user)
