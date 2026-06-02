@@ -38,7 +38,7 @@
 
 
 	var/list/options = list()
-	if(magickMirror == TRUE && HAS_TRAIT(user, TRAIT_COURTAGENT))
+	if(magickMirror == TRUE && HAS_TRAIT(H, TRAIT_COURTAGENT))
 		options = list("hairstyle", "facial hairstyle", "hair color", "skin", "detail", "eye color", "honorific")
 	else
 		options = list("hairstyle", "facial hairstyle", "hair color", "skin", "detail", "eye color")
