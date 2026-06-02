@@ -172,7 +172,7 @@
 			var/chosenHonorific = browser_input_list(user, "Select False Honorific", "HONORIFICS", honorifics)
 
 			if(chosenHonorific == "Clear honorific")
-				user.honorary = null
+				H.honorary = null
 			else
 				user.honorary = chosenHonorific
 
