@@ -387,7 +387,7 @@
 	icon_state = "ring_agent"
 	desc = "A silver signet ring, engraved with the sigil of the Hand and enchanted with magicks that wards away pickpockets. \
 	\n This ring is proof that its barer is under the personal employment of the Hand."
-	var/fakename = "court agent's signet ring"
+	var/fakename = /obj/item/clothing/ring/signet/silver::name
 
 /obj/item/clothing/ring/courtagent_ring/Initialize()
 	. = ..()
