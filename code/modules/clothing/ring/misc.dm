@@ -386,7 +386,7 @@
 	name = "Finger's Crown"
 	icon_state = "ring_agent"
 	desc = "A silver signet ring, engraved with the sigil of the Hand and enchanted with magicks that wards away pickpockets when worn on the finger. \
-	\n This ring is proof that its barer is under the personal employment of the Hand. A Crown for one's Finger."
+	\nThis ring is proof that its barer is under the personal employment of the Hand. A Crown for one's Finger."
 	var/fakename = /obj/item/clothing/ring/signet/silver::name
 	var/fakedesc = "A silver signet ring, enchanted with magicks that wards away pickpockets when worn on the finger."
 
