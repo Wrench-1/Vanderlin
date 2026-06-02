@@ -174,7 +174,7 @@
 			if(chosenHonorific == "Clear honorific")
 				H.honorary = null
 			else
-				user.honorary = chosenHonorific
+				H.honorary = chosenHonorific
 
 	if(should_update)
 		H.update_body()
