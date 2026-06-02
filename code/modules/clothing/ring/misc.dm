@@ -397,7 +397,6 @@
 	. = ..()
 	switch(slot)
 		if(ITEM_SLOT_RING)
-			fakename = "silver ring"
 			name = fakename
 	return TRUE
 
