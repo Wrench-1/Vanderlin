@@ -391,7 +391,7 @@
 
 /obj/item/clothing/ring/courtagent_ring/Initialize()
 	. = ..()
-	ADD_TRAIT (src, TRAIT_HARD_TO_STEAL, TRAIT_GENERIC)
+	ADD_TRAIT(src, TRAIT_HARD_TO_STEAL, INNATE_TRAIT)
 
 /obj/item/clothing/ring/courtagent_ring/equipped(mob/living/carbon/user, slot)
 	. = ..()
