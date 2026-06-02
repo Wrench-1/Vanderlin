@@ -476,7 +476,6 @@
 	throw_speed = 1
 	slot_flags = null
 	var/maxAgents = 5
-	var/list/fingers = list()
 	resistance_flags = FIRE_PROOF // let's maybe not burn this
 
 /obj/item/frumentarii/examine(mob/user)
