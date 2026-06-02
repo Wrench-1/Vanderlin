@@ -25,7 +25,7 @@
 	if(icon_state == "mirror_broke" && !obj_broken)
 		atom_break(null, TRUE, mapload)
 
-/obj/structure/mirror/attack_hand(mob/living/carbon/human/user)
+/obj/structure/mirror/attack_hand(mob/living/user)
 	. = ..()
 	if(.)
 		return
