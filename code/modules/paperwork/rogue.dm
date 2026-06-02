@@ -475,7 +475,7 @@
 	throw_range = 2
 	throw_speed = 1
 	slot_flags = null
-	var/maxAgents = 5
+	var/max_agents = 5
 	resistance_flags = FIRE_PROOF // let's maybe not burn this
 
 /obj/item/frumentarii/examine(mob/user)
@@ -497,7 +497,7 @@
 		return
 	if(!HAS_TRAIT(user, TRAIT_NOBLE_BLOOD) && !HAS_TRAIT(user, TRAIT_NOBLE_POWER))
 		return
-	if(GLOB.court_agents.len >= maxAgents)
+	if(GLOB.court_agents.len >= max_agents)
 		to_chat(user, span_notice("[src] is full"))
 	if(!isliving(target))
 		return

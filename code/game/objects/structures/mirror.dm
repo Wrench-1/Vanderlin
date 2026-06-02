@@ -11,14 +11,14 @@
 	break_sound = "glassbreak"
 	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
 	SET_BASE_PIXEL(0, 32)
-	var/magickMirror = FALSE
+	var/magick_mirror = FALSE
 
 /obj/structure/mirror/fancy
 	icon_state = "fancymirror"
 
 /obj/structure/mirror/courtagent
 	name = "magick mirror"
-	magickMirror = TRUE
+	magick_mirror = TRUE
 
 /obj/structure/mirror/Initialize(mapload)
 	. = ..()
@@ -38,7 +38,7 @@
 
 
 	var/list/options = list()
-	if(magickMirror == TRUE && HAS_TRAIT(H, TRAIT_COURTAGENT))
+	if(magick_mirror == TRUE && HAS_TRAIT(H, TRAIT_COURTAGENT))
 		options = list("hairstyle", "facial hairstyle", "hair color", "skin", "detail", "eye color", "honorific")
 	else
 		options = list("hairstyle", "facial hairstyle", "hair color", "skin", "detail", "eye color")
