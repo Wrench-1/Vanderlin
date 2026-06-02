@@ -161,6 +161,8 @@
 		TRAIT_DODGEEXPERT
 	)
 
+	languages = list(/datum/language/thievescant)
+
 /datum/outfit/hand/spymaster
 	name = "Spymaster (Hand)"
 	shirt = /obj/item/clothing/armor/gambeson/hand/spy

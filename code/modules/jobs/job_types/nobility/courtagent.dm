@@ -41,6 +41,8 @@
 		/mob/living/carbon/human/proc/torture_victim
 	)
 
+	languages = list(/datum/language/thievescant)
+
 /datum/job/courtagent/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	if(ishuman(spawned))
 		GLOB.court_agents += spawned.real_name
