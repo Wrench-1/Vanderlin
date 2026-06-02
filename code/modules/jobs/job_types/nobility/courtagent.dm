@@ -46,7 +46,7 @@
 /datum/job/courtagent/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	if(ishuman(spawned))
 		GLOB.court_agents += spawned.real_name
-	. = ..()
+	return ..()
 
 /datum/outfit/courtagent
 	name = "Court Agent Base"
