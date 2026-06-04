@@ -240,8 +240,8 @@
 		/obj/item/storage/belt/pouch/coins/poor = 1,
 		/obj/item/book/granter/spellbook/apprentice = 1,
 		/obj/item/chalk = 1,
-		/obj/item/speakerinq/courtagent = 1,
-		/obj/item/listeningdevice/courtagent = 2,
+		/obj/item/speaker/agent = 1,
+		/obj/item/listeningdevice/agent = 2,
 		/obj/item/clothing/ring/courtagent_ring = 1
 	)
 

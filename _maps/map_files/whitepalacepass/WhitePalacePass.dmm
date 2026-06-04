@@ -29386,10 +29386,10 @@
 /area/indoors/town/cell)
 "swB" = (
 /obj/structure/table/wood/plain/alt,
-/obj/item/speakerinq,
+/obj/item/speaker/inq,
 /obj/item/inqarticles/bmirror,
-/obj/item/listeningdevice,
-/obj/item/listeningdevice,
+/obj/item/listeningdevice/inq,
+/obj/item/listeningdevice/inq,
 /turf/open/floor/naturalstone,
 /area/indoors/town/church/inquisition)
 "swJ" = (

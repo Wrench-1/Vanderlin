@@ -36540,9 +36540,9 @@
 /obj/item/rope/chain,
 /obj/item/rope/chain,
 /obj/machinery/light/fueled/wallfire/candle/blue/r,
-/obj/item/listeningdevice,
-/obj/item/listeningdevice,
-/obj/item/speakerinq,
+/obj/item/listeningdevice/inq,
+/obj/item/listeningdevice/inq,
+/obj/item/speaker/inq,
 /obj/item/inqarticles/bmirror,
 /turf/open/floor/churchmarble/violet,
 /area/indoors/town/church/inquisition)
