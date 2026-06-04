@@ -66,6 +66,12 @@
 	else
 		send_speech(message, 0, src, , spans, message_language=language)
 
+/obj/item/speaker/dropped(mob/user, silent)
+	. = ..()
+	name = initial(name)
+	sleeved = null
+	mob_overlay_icon = null
+
 /obj/item/listeningdevice //base class for listener
 	name = "base listener"
 	icon = 'icons/roguetown/items/misc.dmi'
@@ -140,12 +146,6 @@
 		icon_state = "[initial(icon_state)]_active"
 	else
 		icon_state = initial(icon_state)
-
-/obj/item/speaker/dropped(mob/user, silent)
-	. = ..()
-	name = initial(name)
-	sleeved = null
-	mob_overlay_icon = null
 
 /*
 	INQUISITOR LISTENING DEVICES
