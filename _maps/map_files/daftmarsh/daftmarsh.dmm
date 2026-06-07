@@ -3926,6 +3926,10 @@
 /obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/churchrough,
 /area/indoors/town/clinic_large)
+"ddS" = (
+/obj/structure/notice_board,
+/turf/open/floor/dirt,
+/area/under/town/sewer)
 "dey" = (
 /turf/open/floor/carpet/lord/left,
 /area/indoors/town/keep/halls/s)
@@ -6630,6 +6634,21 @@
 /obj/machinery/light/fueled/oven/south,
 /turf/open/floor/tile,
 /area/indoors/town/tavern)
+"fvl" = (
+/obj/structure/rack/shelf/biggest,
+/obj/item/inqarticles/indexer{
+	pixel_x = -4
+	},
+/obj/item/inqarticles/indexer{
+	pixel_x = 2
+	},
+/obj/item/speaker/inq,
+/obj/item/listeningdevice/inq,
+/obj/machinery/light/fueled/wallfire/candle/blue{
+	pixel_y = -32
+	},
+/turf/open/floor/churchmarble/purple,
+/area/indoors/town/church/inquisition)
 "fvC" = (
 /obj/structure/flora/newtree,
 /turf/open/floor/naturalstone,
@@ -13738,21 +13757,6 @@
 	},
 /turf/open/floor/wood/nosmooth,
 /area/outdoors/town)
-"lNG" = (
-/obj/structure/rack/shelf/biggest,
-/obj/item/inqarticles/indexer{
-	pixel_x = -4
-	},
-/obj/item/inqarticles/indexer{
-	pixel_x = 2
-	},
-/obj/item/speaker/inq,
-/obj/item/listeningdevice/inq,
-/obj/machinery/light/fueled/wallfire/candle/blue{
-	pixel_y = -32
-	},
-/turf/open/floor/churchmarble/purple,
-/area/indoors/town/church/inquisition)
 "lNR" = (
 /obj/effect/landmark/start/merchant,
 /obj/effect/decal/carpet/kover_black{
@@ -24529,10 +24533,6 @@
 /obj/structure/chair/stool,
 /turf/open/floor/blocks,
 /area/outdoors/town/roofs)
-"vHI" = (
-/obj/structure/notice_board,
-/turf/open/floor/dirt,
-/area/under/town/sewer)
 "vHM" = (
 /obj/structure/stairs/fancy/r,
 /turf/open/floor/carpet/lord/right,
@@ -43878,7 +43878,7 @@ eFB
 wCB
 gBo
 heL
-lNG
+fvl
 bMn
 dIg
 dIg
@@ -47534,7 +47534,7 @@ ssh
 mrC
 rVz
 uQY
-vHI
+ddS
 qBk
 qBk
 uDq

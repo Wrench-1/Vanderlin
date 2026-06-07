@@ -153,6 +153,25 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/closed/wall/mineral/stone,
 /area/indoors/town/noble_manor/red)
+"adD" = (
+/obj/structure/rack/shelf/biggest,
+/obj/structure/fluff/walldeco/church/line{
+	dir = 4
+	},
+/obj/structure/fluff/walldeco/church/line{
+	dir = 8
+	},
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/machinery/light/fueled/wallfire/candle/blue/r,
+/obj/item/listeningdevice,
+/obj/item/listeningdevice,
+/obj/item/speakerinq,
+/obj/item/inqarticles/bmirror,
+/turf/open/floor/churchmarble/violet,
+/area/indoors/town/church/inquisition)
 "adG" = (
 /obj/structure/fluff/clock,
 /turf/open/floor/herringbone,
@@ -1821,13 +1840,6 @@
 	pixel_y = -1
 	},
 /turf/open/floor/dirt,
-/area/outdoors/town)
-"aPP" = (
-/obj/structure/notice_board{
-	pixel_x = -7;
-	pixel_y = 30
-	},
-/turf/open/floor/cobblerock,
 /area/outdoors/town)
 "aPT" = (
 /obj/structure/stairs/fancy/l,
@@ -9675,6 +9687,13 @@
 /obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/carpet/lord/left,
 /area/under/town/basement)
+"evH" = (
+/obj/structure/notice_board{
+	pixel_x = -7;
+	pixel_y = 30
+	},
+/turf/open/floor/cobblerock,
+/area/outdoors/town)
 "evL" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -13382,6 +13401,16 @@
 /obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/carpet/royalblack,
 /area/indoors/town/keep/feast)
+"gnU" = (
+/obj/structure/notice_board{
+	pixel_x = -7;
+	pixel_y = 0
+	},
+/obj/effect/decal/borderfall{
+	dir = 1
+	},
+/turf/open/floor/concrete,
+/area/outdoors/town)
 "gnY" = (
 /obj/structure/chair/wood/alt/chair_noble/purple,
 /obj/effect/decal/carpet/kover_black,
@@ -16348,25 +16377,6 @@
 /obj/structure/handcart,
 /turf/open/floor/metal/alt,
 /area/indoors/town/shop)
-"hGs" = (
-/obj/structure/rack/shelf/biggest,
-/obj/structure/fluff/walldeco/church/line{
-	dir = 4
-	},
-/obj/structure/fluff/walldeco/church/line{
-	dir = 8
-	},
-/obj/item/rope/chain,
-/obj/item/rope/chain,
-/obj/item/rope/chain,
-/obj/item/rope/chain,
-/obj/machinery/light/fueled/wallfire/candle/blue/r,
-/obj/item/listeningdevice/inq,
-/obj/item/listeningdevice/inq,
-/obj/item/speaker/inq,
-/obj/item/inqarticles/bmirror,
-/turf/open/floor/churchmarble/violet,
-/area/indoors/town/church/inquisition)
 "hGA" = (
 /obj/structure/chair/stool{
 	dir = 1
@@ -32584,16 +32594,6 @@
 /obj/structure/fluff/nest,
 /turf/open/floor/grass,
 /area/outdoors/farm)
-"oLo" = (
-/obj/structure/notice_board{
-	pixel_x = -7;
-	pixel_y = 0
-	},
-/obj/effect/decal/borderfall{
-	dir = 1
-	},
-/turf/open/floor/concrete,
-/area/outdoors/town)
 "oLr" = (
 /obj/effect/decal/cleanable/debris/stone{
 	dir = 8
@@ -197000,7 +197000,7 @@ oAS
 qJD
 qJD
 urC
-oLo
+gnU
 wXp
 hZn
 vqJ
@@ -198275,7 +198275,7 @@ gAL
 gAL
 gAL
 gAL
-aPP
+evH
 czz
 czz
 hZn
@@ -204958,7 +204958,7 @@ aOv
 aOv
 bHs
 wNM
-hGs
+adD
 ibm
 qFx
 qFx

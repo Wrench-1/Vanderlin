@@ -11090,6 +11090,13 @@
 	},
 /turf/open/floor/blocks/newstone,
 /area/indoors/mountains/anvil/upperkeep)
+"cuF" = (
+/obj/structure/fluff/statue/knight/r,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave{
+	dir = 8
+	},
+/turf/open/floor/cobble,
+/area/indoors/mountains/anvil/keep)
 "cws" = (
 /obj/structure/rack,
 /obj/item/gun/ballistic/bow/cross/slur,
@@ -11236,11 +11243,6 @@
 	},
 /turf/open/floor/cobblerock,
 /area/indoors/town/church/inquisition)
-"dha" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
-/obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor/cobble,
-/area/indoors/mountains/anvil/keep)
 "dhi" = (
 /obj/machinery/light/fueled/smelter/great,
 /turf/open/floor/plasteel/maniac{
@@ -11645,6 +11647,25 @@
 	dir = 8
 	},
 /area/indoors/mountains/anvil/upperkeep)
+"faN" = (
+/obj/structure/rack/shelf/biggest,
+/obj/structure/fluff/walldeco/church/line{
+	dir = 4
+	},
+/obj/structure/fluff/walldeco/church/line{
+	dir = 8
+	},
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/machinery/light/fueled/wallfire/candle/blue/r,
+/obj/item/listeningdevice/inq,
+/obj/item/listeningdevice/inq,
+/obj/item/speaker/inq,
+/obj/item/inqarticles/bmirror,
+/turf/open/floor/churchbrick,
+/area/indoors/town/church/inquisition)
 "feL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/lootable_structure/grain_barrel,
@@ -11826,6 +11847,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/herringbone,
 /area/under/mountains/anvil/upper)
+"gus" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/cobble,
+/area/indoors/mountains/anvil/keep)
 "gBK" = (
 /obj/machinery/light/fueled/forge,
 /turf/open/floor/plasteel/maniac/damaged,
@@ -12406,13 +12432,6 @@
 /obj/structure/closet/crate/chest/wicker/random_soilson,
 /turf/open/floor/cobble,
 /area/indoors/mountains/anvil/upperkeep)
-"jwE" = (
-/obj/structure/fluff/statue/knight,
-/mob/living/carbon/human/species/goblin/npc/ambush/cave{
-	dir = 4
-	},
-/turf/open/floor/cobble,
-/area/indoors/mountains/anvil/keep)
 "jyT" = (
 /obj/machinery/light/fueled/firebowl/church,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -12898,13 +12917,6 @@
 "mHZ" = (
 /turf/open/floor/tile,
 /area/under/mountains/anvil/upper)
-"mLB" = (
-/obj/structure/fluff/statue/knight/r,
-/mob/living/carbon/human/species/goblin/npc/ambush/cave{
-	dir = 8
-	},
-/turf/open/floor/cobble,
-/area/indoors/mountains/anvil/keep)
 "mMV" = (
 /obj/structure/fluff/psycross/zizocross,
 /turf/open/floor/cobblerock/alt,
@@ -13839,25 +13851,6 @@
 	},
 /turf/open/floor/cobble,
 /area/indoors/mountains/anvil/upperkeep)
-"sAE" = (
-/obj/structure/rack/shelf/biggest,
-/obj/structure/fluff/walldeco/church/line{
-	dir = 4
-	},
-/obj/structure/fluff/walldeco/church/line{
-	dir = 8
-	},
-/obj/item/rope/chain,
-/obj/item/rope/chain,
-/obj/item/rope/chain,
-/obj/item/rope/chain,
-/obj/machinery/light/fueled/wallfire/candle/blue/r,
-/obj/item/listeningdevice/inq,
-/obj/item/listeningdevice/inq,
-/obj/item/speaker/inq,
-/obj/item/inqarticles/bmirror,
-/turf/open/floor/churchbrick,
-/area/indoors/town/church/inquisition)
 "sAV" = (
 /obj/structure/stairs/stone{
 	dir = 8
@@ -14246,6 +14239,13 @@
 /obj/structure/chair/wood/alt/chair_noble/purple,
 /turf/open/floor/carpet/lord/center,
 /area/indoors/mountains/anvil/upperkeep)
+"uvq" = (
+/obj/structure/fluff/statue/knight,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave{
+	dir = 4
+	},
+/turf/open/floor/cobble,
+/area/indoors/mountains/anvil/keep)
 "uwA" = (
 /obj/structure/mirror/fancy{
 	pixel_x = 31;
@@ -68706,7 +68706,7 @@ ahv
 ahv
 ahv
 aWI
-jwE
+uvq
 afn
 aWI
 aWI
@@ -70940,7 +70940,7 @@ aKq
 aaE
 aMC
 aEF
-dha
+gus
 aQE
 afn
 afn
@@ -71550,7 +71550,7 @@ aaE
 adn
 abZ
 abZ
-mLB
+cuF
 afn
 aTw
 afn
@@ -71940,7 +71940,7 @@ aWI
 aWI
 aWI
 aWI
-jwE
+uvq
 afn
 aQE
 afn
@@ -72145,7 +72145,7 @@ aWI
 afn
 adn
 afn
-mLB
+cuF
 aWI
 apS
 abZ
@@ -86593,7 +86593,7 @@ aVr
 aVr
 alC
 ado
-sAE
+faN
 aIS
 awI
 aFz

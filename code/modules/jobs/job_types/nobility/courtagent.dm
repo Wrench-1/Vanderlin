@@ -53,6 +53,7 @@
 	belt = /obj/item/storage/belt/leather/black/courtagent
 	pants = /obj/item/clothing/pants/trou/leather
 	shoes = /obj/item/clothing/shoes/boots
+	ring = /obj/item/clothing/ring/courtagent_ring
 
 /datum/job/advclass/courtagent
 	exp_types_granted = list(EXP_TYPE_NOBLE, EXP_TYPE_COMBAT)
@@ -101,8 +102,7 @@
 	armor = /obj/item/clothing/armor/leather/splint
 	backr = /obj/item/storage/backpack/satchel/black
 	backpack_contents = list(
-		/obj/item/storage/belt/pouch/coins/poor = 1,
-		/obj/item/clothing/ring/courtagent_ring = 1
+		/obj/item/storage/belt/pouch/coins/poor = 1
 	)
 
 /datum/job/advclass/courtagent/bruiser/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
@@ -174,8 +174,7 @@
 	wrists = /obj/item/clothing/wrists/bracers/leather
 	backr = /obj/item/storage/backpack/satchel/black
 	backpack_contents = list(
-		/obj/item/storage/belt/pouch/coins/poor = 1,
-		/obj/item/clothing/ring/courtagent_ring = 1
+		/obj/item/storage/belt/pouch/coins/poor = 1
 	)
 
 /datum/job/advclass/courtagent/hitman/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
@@ -241,8 +240,7 @@
 		/obj/item/book/granter/spellbook/apprentice = 1,
 		/obj/item/chalk = 1,
 		/obj/item/speaker/agent = 1,
-		/obj/item/listeningdevice/agent = 2,
-		/obj/item/clothing/ring/courtagent_ring = 1
+		/obj/item/listeningdevice/agent = 2
 	)
 
 /datum/attribute_holder/sheet/job/courtagent/protector
@@ -320,8 +318,7 @@
 	wrists = /obj/item/clothing/wrists/bracers/leather
 	backr = /obj/item/storage/backpack/satchel/black
 	backpack_contents = list(
-		/obj/item/storage/belt/pouch/coins/poor = 1,
-		/obj/item/clothing/ring/courtagent_ring = 1
+		/obj/item/storage/belt/pouch/coins/poor = 1
 	)
 
 /datum/job/advclass/courtagent/protector/on_roundstart(mob/living/carbon/human/spawned, client/player_client)
