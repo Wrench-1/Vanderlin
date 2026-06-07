@@ -475,13 +475,13 @@
 	throw_range = 2
 	throw_speed = 1
 	slot_flags = null
-	var/max_agents = 5
 	resistance_flags = FIRE_PROOF // let's maybe not burn this
+	var/max_agents = 5
 
 /obj/item/frumentarii/examine(mob/user)
 	. = ..()
 	if(!HAS_MIND_TRAIT(user, TRAIT_KNOWCOURTAGENTS))
-		ADD_TRAIT (user.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
+		ADD_TRAIT(user.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
 		user.playsound_local(user, 'sound/misc/notice (2).ogg', 100, FALSE)
 		to_chat(user, span_smallgreen("I now know the names and faces of the Court Agents working in the Kingdom"))
 	if(!length(GLOB.court_agents))
@@ -517,11 +517,11 @@
 		return
 
 	GLOB.court_agents += attacked_target.real_name
-	ADD_TRAIT (attacked_target, TRAIT_COURTAGENT, TRAIT_GENERIC)
-	ADD_TRAIT (attacked_target, TRAIT_KNOW_COURTAGENT_DOORS, TRAIT_GENERIC)
+	ADD_TRAIT(attacked_target, TRAIT_COURTAGENT, TRAIT_GENERIC)
+	ADD_TRAIT(attacked_target, TRAIT_KNOW_COURTAGENT_DOORS, TRAIT_GENERIC)
 
 	if(!HAS_TRAIT(attacked_target, TRAIT_KNOWCOURTAGENTS))
-		ADD_TRAIT (attacked_target.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
+		ADD_TRAIT(attacked_target.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
 		attacked_target.playsound_local(attacked_target, 'sound/misc/notice (2).ogg', 100, FALSE)
 		to_chat(attacked_target, span_smallgreen("I now know the names and faces of the Court Agents working in the Kingdom"))
 
