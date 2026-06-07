@@ -521,7 +521,7 @@
 	ADD_TRAIT(attacked_target, TRAIT_KNOW_COURTAGENT_DOORS, TRAIT_GENERIC)
 
 	if(!HAS_TRAIT(attacked_target, TRAIT_KNOWCOURTAGENTS))
-		ADD_TRAIT (attacked_target.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
+		ADD_TRAIT(attacked_target.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
 		attacked_target.playsound_local(attacked_target, 'sound/misc/notice (2).ogg', 100, FALSE)
 		to_chat(attacked_target, span_smallgreen("I now know the names and faces of the Court Agents working in the Kingdom"))
 
