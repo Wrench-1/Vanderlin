@@ -484,7 +484,7 @@
 		ADD_TRAIT (user.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
 		user.playsound_local(user, 'sound/misc/notice (2).ogg', 100, FALSE)
 		to_chat(user, span_smallgreen("I now know the names and faces of the Court Agents working in the Kingdom"))
-	if(!GLOB.court_agents.len)
+	if(!length(GLOB.court_agents))
 		to_chat(user, span_notice("There are no agents on the list currently in the Kingdom"))
 	else
 		to_chat(user, span_notice("Here are the currently active agents:"))
@@ -497,7 +497,7 @@
 		return
 	if(!HAS_TRAIT(user, TRAIT_NOBLE_BLOOD) && !HAS_TRAIT(user, TRAIT_NOBLE_POWER))
 		return
-	if(GLOB.court_agents.len >= max_agents)
+	if(length(GLOB.court_agents) >= max_agents)
 		to_chat(user, span_notice("[src] is full"))
 	if(!isliving(target))
 		return
@@ -530,7 +530,7 @@
 	if(istype(I, /obj/item/natural/thorn) || istype(I, /obj/item/natural/feather))
 		var/choice = tgui_alert(user, "What would you like to do?", "Reattach/Sever Finger", list("Reattach", "Sever"))
 		if(choice == "Reattach")
-			if(GLOB.ex_court_agents.len <= 0)
+			if(length(GLOB.ex_court_agents) <= 0)
 				to_chat(user, span_warning("There are no Ex-Fingers to reattach."))
 				return
 			else
@@ -541,7 +541,7 @@
 				GLOB.court_agents += reattachChoice
 				playsound(src, 'sound/items/write.ogg', 50, FALSE, -4, ignore_walls = FALSE)
 		else
-			if(GLOB.court_agents.len <= 0)
+			if(length(GLOB.court_agents) <= 0)
 				to_chat(user, span_warning("There are no Fingers to sever."))
 				return
 			else

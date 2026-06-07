@@ -62,7 +62,7 @@
 	addtimer(CALLBACK(src, PROC_REF(know_agents), H), 6 SECONDS)
 
 /datum/job/hand/proc/know_agents(mob/living/carbon/human/H)
-	if(!GLOB.court_agents.len)
+	if(!length(GLOB.court_agents))
 		to_chat(H, span_notice("You began the week with no agents."))
 	else
 		to_chat(H, span_notice("We began the week with these agents:"))
