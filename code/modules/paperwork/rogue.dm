@@ -481,7 +481,7 @@
 /obj/item/frumentarii/examine(mob/user)
 	. = ..()
 	if(!HAS_MIND_TRAIT(user, TRAIT_KNOWCOURTAGENTS))
-		ADD_TRAIT (user.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
+		ADD_TRAIT(user.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
 		user.playsound_local(user, 'sound/misc/notice (2).ogg', 100, FALSE)
 		to_chat(user, span_smallgreen("I now know the names and faces of the Court Agents working in the Kingdom"))
 	if(!GLOB.court_agents.len)
