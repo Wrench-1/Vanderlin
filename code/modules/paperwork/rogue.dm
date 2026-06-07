@@ -475,8 +475,8 @@
 	throw_range = 2
 	throw_speed = 1
 	slot_flags = null
-	var/max_agents = 5
 	resistance_flags = FIRE_PROOF // let's maybe not burn this
+	var/max_agents = 5
 
 /obj/item/frumentarii/examine(mob/user)
 	. = ..()
