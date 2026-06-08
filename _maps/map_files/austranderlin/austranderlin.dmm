@@ -168,7 +168,7 @@
 /obj/machinery/light/fueled/wallfire/candle/blue/r,
 /obj/item/listeningdevice/inq,
 /obj/item/listeningdevice/inq,
-/obj/item/speaker/inq,
+/obj/item/speakerinq,
 /obj/item/inqarticles/bmirror,
 /turf/open/floor/churchmarble/violet,
 /area/indoors/town/church/inquisition)
