@@ -511,18 +511,19 @@
 		var/mob/living/carbon/human/H = TARGET_GHOST
 		if(H.family_datum == SSfamilytree.ruling_family)
 			to_chat(user, span_warning("I can't turn a member of the royal family into a finger."))
-
-		var/choice = tgui_alert(attacked_target, "Do you wish to become one of the Hand's fingers?", "Binding Contract", list("Yes", "No"))
-		if(choice != "Yes")
 			return
+	var/choice = tgui_alert(attacked_target, "Do you wish to become one of the Hand's fingers?", "Binding Contract", list("Yes", "No"))
+	if(choice != "Yes")
+		return
 
-		GLOB.court_agents += attacked_target.real_name
-		ADD_TRAIT(attacked_target, TRAIT_COURTAGENT, TRAIT_GENERIC)
+	GLOB.court_agents += attacked_target.real_name
+	ADD_TRAIT(attacked_target, TRAIT_COURTAGENT, TRAIT_GENERIC)
+	ADD_TRAIT(attacked_target, TRAIT_KNOW_COURTAGENT_DOORS, TRAIT_GENERIC)
 
-		if(!HAS_TRAIT(attacked_target, TRAIT_KNOWCOURTAGENTS))
-			ADD_TRAIT(attacked_target.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
-			attacked_target.playsound_local(attacked_target, 'sound/misc/notice (2).ogg', 100, FALSE)
-			to_chat(attacked_target, span_smallgreen("I now know the names and faces of the Court Agents working in the Kingdom"))
+	if(!HAS_TRAIT(attacked_target, TRAIT_KNOWCOURTAGENTS))
+		ADD_TRAIT(attacked_target.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
+		attacked_target.playsound_local(attacked_target, 'sound/misc/notice (2).ogg', 100, FALSE)
+		to_chat(attacked_target, span_smallgreen("I now know the names and faces of the Court Agents working in the Kingdom"))
 
 /obj/item/frumentarii/attackby(obj/item/I, mob/living/user, list/modifiers)
 	if(!istype(I, /obj/item/natural/thorn) && !istype(I, /obj/item/natural/feather))
