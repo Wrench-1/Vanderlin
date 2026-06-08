@@ -511,46 +511,37 @@
 		var/mob/living/carbon/human/H = TARGET_GHOST
 		if(H.family_datum == SSfamilytree.ruling_family)
 			to_chat(user, span_warning("I can't turn a member of the royal family into a finger."))
-			return
-	var/choice = tgui_alert(attacked_target, "Do you wish to become one of the Hand's fingers?", "Binding Contract", list("Yes", "No"))
-	if(choice != "Yes")
+/obj/item/frumentarii/attackby(obj/item/I, mob/living/user, list/modifiers)
+	if(!istype(I, /obj/item/natural/thorn) && !istype(I, /obj/item/natural/feather))
+		return ..()
+
+	var/choice = tgui_alert(user, "What would you like to do?", "Reattach/Sever Finger", list("Reattach", "Sever"))
+	if(!choice)
 		return
 
-	GLOB.court_agents += attacked_target.real_name
-	ADD_TRAIT(attacked_target, TRAIT_COURTAGENT, TRAIT_GENERIC)
-	ADD_TRAIT(attacked_target, TRAIT_KNOW_COURTAGENT_DOORS, TRAIT_GENERIC)
-
-	if(!HAS_TRAIT(attacked_target, TRAIT_KNOWCOURTAGENTS))
-		ADD_TRAIT(attacked_target.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
-		attacked_target.playsound_local(attacked_target, 'sound/misc/notice (2).ogg', 100, FALSE)
-		to_chat(attacked_target, span_smallgreen("I now know the names and faces of the Court Agents working in the Kingdom"))
-
-/obj/item/frumentarii/attackby(obj/item/I, mob/living/user, list/modifiers)
-	. = ..()
-	if(istype(I, /obj/item/natural/thorn) || istype(I, /obj/item/natural/feather))
-		var/choice = tgui_alert(user, "What would you like to do?", "Reattach/Sever Finger", list("Reattach", "Sever"))
-		if(choice == "Reattach")
-			if(length(GLOB.ex_court_agents) <= 0)
-				to_chat(user, span_warning("There are no Ex-Fingers to reattach."))
-				return
-			else
-				var/reattachChoice = browser_input_list (user, "Reattach a Finger", "THE LIST", GLOB.ex_court_agents)
-				if(!reattachChoice || QDELETED(src) || QDELETED(user))
-					return
-				GLOB.ex_court_agents -= reattachChoice
-				GLOB.court_agents += reattachChoice
-				playsound(src, 'sound/items/write.ogg', 50, FALSE, -4, ignore_walls = FALSE)
+	if(choice == "Reattach")
+		if(GLOB.ex_court_agents.len <= 0)
+			to_chat(user, span_warning("There are no Ex-Fingers to reattach."))
+			return
 		else
-			if(length(GLOB.court_agents) <= 0)
-				to_chat(user, span_warning("There are no Fingers to sever."))
+			var/reattachChoice = browser_input_list (user, "Reattach a Finger", "THE LIST", GLOB.ex_court_agents)
+			if(!reattachChoice || QDELETED(src) || QDELETED(user))
 				return
-			else
-				var/severChoice = browser_input_list (user, "Sever a Finger", "THE LIST", GLOB.court_agents)
-				if(!severChoice || QDELETED(src) || QDELETED (user))
-					return
-				GLOB.court_agents -= severChoice
-				GLOB.ex_court_agents += severChoice
-				playsound(src, 'sound/items/write.ogg', 50, FALSE, -4, ignore_walls = FALSE)
+			GLOB.ex_court_agents -= reattachChoice
+			GLOB.court_agents += reattachChoice
+			playsound(src, 'sound/items/write.ogg', 50, FALSE, -4, ignore_walls = FALSE)
+			return
+
+	if(GLOB.court_agents.len <= 0)
+		to_chat(user, span_warning("There are no Fingers to sever."))
+		return
+	else
+		var/severChoice = browser_input_list (user, "Sever a Finger", "THE LIST", GLOB.court_agents)
+		if(!severChoice || QDELETED(src) || QDELETED (user))
+			return
+		GLOB.court_agents -= severChoice
+		GLOB.ex_court_agents += severChoice
+		playsound(src, 'sound/items/write.ogg', 50, FALSE, -4, ignore_walls = FALSE)
 
 /obj/item/paper/scroll/keep_plans
 	name = "keep architectural drawings"
