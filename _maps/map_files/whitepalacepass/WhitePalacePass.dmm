@@ -414,6 +414,9 @@
 /obj/structure/closet/crate/crafted_closet,
 /turf/open/floor/church,
 /area/indoors/town/church)
+"and" = (
+/turf/open/floor/carpet/lord/corner,
+/area/indoors/town/keep/courtagent)
 "ank" = (
 /obj/structure/door/fancy{
 	name = "Orphanage"
@@ -1642,6 +1645,10 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/herringbone,
 /area/indoors/town/keep)
+"bbi" = (
+/obj/machinery/light/fueled/torchholder/l,
+/turf/open/floor/herringbone,
+/area/under/cave)
 "bbl" = (
 /obj/structure/door/window{
 	name = "Bedrooms"
@@ -2564,6 +2571,12 @@
 /obj/structure/flora/grass/bush_meagre/tundra,
 /turf/open/floor/dirt/road,
 /area/outdoors/town)
+"bBh" = (
+/obj/machinery/light/fueled/torchholder{
+	dir = 1
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "bBr" = (
 /obj/machinery/light/fueled/wallfire/candle{
 	pixel_y = -32
@@ -2657,6 +2670,9 @@
 "bDU" = (
 /turf/closed/wall/mineral/decorstone,
 /area/indoors/town/keep/gate)
+"bDV" = (
+/turf/open/floor/carpet/lord/right,
+/area/indoors/town/keep/courtagent)
 "bEf" = (
 /turf/open/floor/ruinedwood,
 /area/indoors/town)
@@ -2958,6 +2974,10 @@
 /obj/structure/chair/wood/alt/chair3,
 /turf/open/floor/ruinedwood,
 /area/indoors/town/dwarfin)
+"bPu" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/herringbone,
+/area/under/town/basement)
 "bPG" = (
 /obj/machinery/light/fueled/wallfire/candle/r,
 /turf/open/floor/ruinedwood,
@@ -3318,6 +3338,13 @@
 	},
 /turf/open/floor/tile/kitchen,
 /area/indoors/town/church)
+"cas" = (
+/obj/machinery/light/fueled/torchholder{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/herringbone,
+/area/under/cave)
 "cbb" = (
 /obj/structure/vertical_gearbox,
 /turf/open/floor/cobblerock,
@@ -3504,6 +3531,11 @@
 	dir = 1
 	},
 /area/indoors/town/vault)
+"cgp" = (
+/obj/structure/table/wood/plain_alt,
+/obj/item/toy/cards/deck,
+/turf/open/floor/tile/kitchen,
+/area/indoors/town/keep/courtagent)
 "cgC" = (
 /obj/structure/fluff/walldeco/vinez/blue{
 	dir = 10
@@ -3799,6 +3831,10 @@
 /obj/effect/landmark/start/grabber,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/town/shop)
+"cqx" = (
+/obj/structure/ladder,
+/turf/open/floor/herringbone,
+/area/under/town/basement)
 "cqI" = (
 /obj/machinery/light/fueled/torchholder{
 	dir = 8
@@ -4034,6 +4070,11 @@
 /obj/structure/table/wood/plain_alt,
 /turf/open/floor/ruinedwood/spiral,
 /area/indoors/soilsons)
+"cxt" = (
+/turf/open/floor/carpet/lord/left{
+	dir = 1
+	},
+/area/indoors/town/keep/courtagent)
 "cxC" = (
 /obj/structure/closet/crate/drawer,
 /obj/item/weapon/knife/dagger/steel,
@@ -4404,6 +4445,14 @@
 /obj/item/natural/feather,
 /turf/open/floor/cobble,
 /area/outdoors/basin)
+"cNg" = (
+/obj/structure/table/wood/plain_alt,
+/obj/item/candle/scandle/lit{
+	pixel_x = -6;
+	pixel_y = 12
+	},
+/turf/open/floor/tile/kitchen,
+/area/indoors/town/keep/courtagent)
 "cNG" = (
 /obj/structure/bookcase/random,
 /turf/open/floor/ruinedwood/spiralfade,
@@ -4743,6 +4792,25 @@
 /obj/structure/fluff/statue/knight/interior,
 /turf/open/floor/blocks,
 /area/under/town/basement)
+"cZS" = (
+/obj/structure/rack/shelf/biggest,
+/obj/item/weapon/knife/dagger/steel{
+	pixel_x = 8;
+	pixel_y = -4
+	},
+/obj/item/weapon/knife/dagger/steel{
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/item/weapon/knife/dagger/steel{
+	pixel_x = -5;
+	pixel_y = 6
+	},
+/obj/machinery/light/fueled/torchholder{
+	dir = 4
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "cZT" = (
 /obj/structure/hotspring/border/eleven,
 /obj/effect/falling_sakura,
@@ -5638,6 +5706,10 @@
 	},
 /turf/open/floor/ruinedwood/spiralfade,
 /area/indoors/town/keep/heir/heir2)
+"dzj" = (
+/obj/machinery/light/fueled/wallfire/big_fireplace,
+/turf/closed/wall/mineral/decorstone,
+/area/indoors/town/keep/courtagent)
 "dzF" = (
 /obj/structure/stairs,
 /obj/machinery/light/fueled/wallfire/candle/l,
@@ -6366,6 +6438,12 @@
 "dVi" = (
 /turf/open/floor/hexstone,
 /area/indoors/town/smithy)
+"dVt" = (
+/obj/machinery/light/fueled/torchholder{
+	dir = 4
+	},
+/turf/open/floor/tile/masonic/single,
+/area/indoors/town/keep/courtagent)
 "dVA" = (
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/town/orphanage)
@@ -6643,6 +6721,32 @@
 /obj/machinery/light/fueled/wallfire/candle/blue/l,
 /turf/open/floor/cobble,
 /area/indoors/town/keep)
+"eeW" = (
+/obj/structure/closet/crate/crafted_closet{
+	name = "Miscellaneous Attire"
+	},
+/obj/item/clothing/shirt/undershirt/formal,
+/obj/item/clothing/pants/trou/formal,
+/obj/item/clothing/pants/trou/formal/shorts,
+/obj/item/storage/belt/leather/suspenders,
+/obj/item/clothing/shirt/dress/maid/servant,
+/obj/item/clothing/head/maidband,
+/obj/item/clothing/cloak/apron/maid,
+/obj/item/clothing/pants/tights/colored/white,
+/obj/item/clothing/head/helmet/leather/tricorn,
+/obj/item/clothing/armor/leather/jacket/sea,
+/obj/item/clothing/pants/tights/sailor,
+/obj/item/clothing/neck/bellcollar,
+/obj/item/clothing/neck/leathercollar,
+/obj/item/clothing/face/spectacles/sglasses,
+/obj/item/clothing/face/spectacles/sglasses,
+/obj/item/clothing/face/spectacles,
+/obj/item/clothing/face/spectacles,
+/obj/machinery/light/fueled/torchholder{
+	dir = 1
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "efn" = (
 /obj/structure/fluff/walldeco/vinez/blue{
 	dir = 5
@@ -7655,6 +7759,17 @@
 	},
 /turf/open/floor/tile/bath,
 /area/indoors/town/noble_manor/blue)
+"eFj" = (
+/obj/structure/table/wood/large_new{
+	dir = 9;
+	icon_state = "alt_largetable"
+	},
+/obj/item/arcyne_spellobject/scroll{
+	pixel_x = 16;
+	pixel_y = 0
+	},
+/turf/open/floor/carpet/lord/center,
+/area/indoors/town/keep/courtagent)
 "eFm" = (
 /obj/effect/decal/cleanable/blood/tracks{
 	dir = 4
@@ -8041,6 +8156,9 @@
 "eTY" = (
 /turf/open/openspace,
 /area/outdoors/town)
+"eUg" = (
+/turf/closed/wall/mineral/decorstone,
+/area/indoors/town/keep/courtagent)
 "eUl" = (
 /obj/effect/decal/cleanable/blood/tracks,
 /turf/open/floor/hay,
@@ -8925,6 +9043,12 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town/tavern)
+"fuO" = (
+/obj/structure/lever/hidden/courtagent{
+	redstone_id = "courtagent"
+	},
+/turf/closed/wall/mineral/decorstone,
+/area/outdoors/town/keep)
 "fuX" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -9506,6 +9630,11 @@
 /obj/structure/bars,
 /turf/open/floor/cobble,
 /area/indoors/town/keep/magician)
+"fOw" = (
+/obj/structure/closet/crate/drawer,
+/obj/item/clothing/face/shepherd/clothmask,
+/turf/open/floor/tile/masonic/single,
+/area/indoors/town/keep/courtagent)
 "fOD" = (
 /obj/machinery/light/fueled/wallfire/candle{
 	pixel_x = 32;
@@ -10314,6 +10443,12 @@
 "grs" = (
 /turf/open/floor/wood,
 /area/indoors/town/noble_manor/blue)
+"grA" = (
+/obj/effect/mapping_helpers/secret_door_creator/courtagent_hideout{
+	redstone_id = "courtagent"
+	},
+/turf/closed/wall/mineral/decorstone,
+/area/outdoors/town/keep)
 "grB" = (
 /obj/structure/bookcase/random,
 /obj/machinery/light/fueled/wallfire/candle{
@@ -10827,6 +10962,11 @@
 	},
 /turf/open/floor/hexstone,
 /area/indoors/villagegarrison)
+"gHN" = (
+/obj/structure/bed/mediocre,
+/obj/item/bedsheet/pelt,
+/turf/open/floor/tile/masonic/single,
+/area/indoors/town/keep/courtagent)
 "gIo" = (
 /obj/structure/trap/wall_projectile{
 	dir = 8
@@ -10951,6 +11091,9 @@
 /obj/item/broom,
 /turf/open/floor/church,
 /area/indoors/town/church)
+"gMD" = (
+/turf/open/floor/carpet/lord/left,
+/area/indoors/town/keep/courtagent)
 "gMZ" = (
 /turf/open/floor/ruinedwood/spiralfade,
 /area/indoors/town/tavern)
@@ -11623,6 +11766,25 @@
 /obj/structure/fluff/statue/tdummy,
 /turf/open/floor/dirt/road,
 /area/outdoors/town/keep)
+"hir" = (
+/obj/structure/closet/crate/chest{
+	name = "Amulets"
+	},
+/obj/item/clothing/neck/psycross/silver,
+/obj/item/clothing/neck/psycross/silver/divine/abyssor,
+/obj/item/clothing/neck/psycross/silver/divine/astrata,
+/obj/item/clothing/neck/psycross/silver/divine/dendor,
+/obj/item/clothing/neck/psycross/silver/divine/eora,
+/obj/item/clothing/neck/psycross/silver/divine/malum,
+/obj/item/clothing/neck/psycross/silver/divine/necra,
+/obj/item/clothing/neck/psycross/silver/divine/noc,
+/obj/item/clothing/neck/psycross/silver/divine/pestra,
+/obj/item/clothing/neck/psycross/silver/divine/ravox,
+/obj/item/clothing/neck/psycross/silver/divine/xylix,
+/obj/item/clothing/neck/mercator,
+/obj/item/clothing/neck/shalal/emir,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "hiy" = (
 /obj/structure/fluff/walldeco/psybanner{
 	pixel_y = 32
@@ -11709,6 +11871,13 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/wood,
 /area/indoors/town/noble_manor/yellow)
+"hlj" = (
+/obj/structure/fluff/walldeco/painting{
+	pixel_y = 0;
+	pixel_x = -32
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "hlu" = (
 /obj/structure/bars,
 /obj/structure/window/openclose,
@@ -12432,6 +12601,12 @@
 	},
 /turf/open/floor/hexstone,
 /area/indoors/town/clinic_large/apothecary)
+"hGr" = (
+/obj/machinery/light/fueled/torchholder{
+	dir = 4
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "hGD" = (
 /obj/structure/table/wood/plain_alt,
 /obj/item/key/graveyard,
@@ -12597,6 +12772,10 @@
 /obj/structure/chair/bench/ancientlog,
 /turf/open/floor/grass/cold,
 /area/outdoors/basin)
+"hNg" = (
+/obj/structure/chair/bench/coucha/r,
+/turf/open/floor/carpet/lord/center,
+/area/indoors/town/keep/courtagent)
 "hNs" = (
 /obj/structure/fake_machine/musicbox/tavern,
 /obj/structure/table/wood,
@@ -13418,6 +13597,10 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town/merc_guild)
+"ijw" = (
+/obj/structure/chair/stool,
+/turf/open/floor/tile/masonic/single,
+/area/indoors/town/keep/courtagent)
 "ijG" = (
 /obj/effect/decal/borderfall{
 	dir = 1
@@ -13482,6 +13665,26 @@
 "ikD" = (
 /turf/closed/wall/mineral/decorstone,
 /area/indoors/town/vault)
+"ikY" = (
+/obj/structure/closet/crate/crafted_closet{
+	name = "Yeoman Attire"
+	},
+/obj/item/clothing/head/articap,
+/obj/item/clothing/shirt/undershirt/artificer,
+/obj/item/clothing/pants/trou/artipants,
+/obj/item/clothing/armor/leather/jacket/artijacket,
+/obj/item/clothing/shoes/simpleshoes/buckle,
+/obj/item/clothing/shoes/simpleshoes/buckle,
+/obj/item/clothing/cloak/apron/brown,
+/obj/item/clothing/shirt/shortshirt,
+/obj/item/clothing/pants/trou,
+/obj/item/clothing/head/hatfur,
+/obj/item/clothing/head/chaperon/colored/greyscale/silk/random,
+/obj/item/clothing/shoes/gladiator,
+/obj/item/clothing/shirt/tunic/colored/blue,
+/obj/item/clothing/shirt/robe/merchant,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "ila" = (
 /turf/open/floor/ruinedwood/spiral,
 /area/indoors/town/shop)
@@ -14182,6 +14385,28 @@
 "iMl" = (
 /turf/open/floor/greenstone,
 /area/indoors/town/vault)
+"iMJ" = (
+/obj/structure/closet/crate/crafted_closet{
+	name = "Medical Attire"
+	},
+/obj/item/clothing/armor/gambeson/apothecary,
+/obj/item/clothing/pants/trou/apothecary,
+/obj/item/clothing/gloves/leather/apothecary,
+/obj/item/clothing/face/feld,
+/obj/item/clothing/gloves/leather/feld,
+/obj/item/clothing/head/roguehood/feld,
+/obj/item/clothing/neck/feld,
+/obj/item/clothing/shirt/robe/feld,
+/obj/item/clothing/face/phys,
+/obj/item/clothing/gloves/leather/phys,
+/obj/item/clothing/head/roguehood/phys,
+/obj/item/clothing/neck/phys,
+/obj/item/clothing/shirt/robe/phys,
+/obj/machinery/light/fueled/torchholder{
+	dir = 1
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "iML" = (
 /obj/structure/flora/ausbushes/lavendergrass,
 /turf/open/floor/grass/cold,
@@ -14251,6 +14476,17 @@
 /obj/machinery/light/fueled/wallfire/candle/lamp,
 /turf/open/floor/blocks,
 /area/indoors/town/cell)
+"iNY" = (
+/obj/structure/table/wood/large_new{
+	dir = 5;
+	icon_state = "alt_largetable"
+	},
+/obj/item/natural/feather{
+	pixel_x = -5;
+	pixel_y = 4
+	},
+/turf/open/floor/carpet/lord/center,
+/area/indoors/town/keep/courtagent)
 "iOv" = (
 /obj/structure/fluff/walldeco/vinez/blue{
 	dir = 10
@@ -14555,6 +14791,15 @@
 /obj/item/clothing/wrists/goldbracelet,
 /turf/open/floor/carpet/royalblack,
 /area/indoors/town/keep/lord_appt)
+"iXD" = (
+/obj/structure/chair/wood/alt{
+	dir = 4
+	},
+/obj/effect/landmark/start/courtagent{
+	dir = 4
+	},
+/turf/open/floor/carpet/lord/left,
+/area/indoors/town/keep/courtagent)
 "iXR" = (
 /obj/structure/door/green{
 	name = "Tomb Warden's Office"
@@ -15628,6 +15873,26 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/ruinedwood/spiral,
 /area/indoors/soilsons)
+"jMv" = (
+/obj/structure/rack/shelf/biggest,
+/obj/item/needle{
+	pixel_x = -4;
+	pixel_y = 5
+	},
+/obj/item/needle{
+	pixel_x = 3;
+	pixel_y = 3
+	},
+/obj/item/needle{
+	pixel_x = 10;
+	pixel_y = 1
+	},
+/obj/item/natural/bundle/cloth/full{
+	pixel_x = 1;
+	pixel_y = -7
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "jMw" = (
 /obj/structure/closet/crate/chest/old_crate,
 /obj/item/paper,
@@ -16290,6 +16555,10 @@
 /obj/effect/mapping_helpers/access/keyset/town/butcher,
 /turf/open/floor/ruinedwood/spiralfade,
 /area/indoors/soilsons)
+"khJ" = (
+/obj/structure/ladder,
+/turf/open/floor/herringbone,
+/area/under/cave)
 "kii" = (
 /obj/structure/chair/wood/alt{
 	dir = 4
@@ -17222,6 +17491,17 @@
 	climbdiff = 1
 	},
 /area/indoors/town/clinic_large/apothecary)
+"kIC" = (
+/obj/structure/chair/wood/alt{
+	dir = 1
+	},
+/obj/effect/landmark/start/courtagent{
+	dir = 1
+	},
+/turf/open/floor/carpet/lord/left{
+	dir = 1
+	},
+/area/indoors/town/keep/courtagent)
 "kJo" = (
 /obj/structure/bars,
 /turf/open/floor/blocks,
@@ -17320,6 +17600,13 @@
 /obj/item/clothing/armor/leather/jacket/sea,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/town/shop)
+"kNA" = (
+/obj/structure/table/wood/large_new{
+	icon_state = "alt_largetable";
+	dir = 6
+	},
+/turf/open/floor/carpet/lord/center,
+/area/indoors/town/keep/courtagent)
 "kNF" = (
 /obj/structure/gate/bars/preopen{
 	name = "White Palace Pass Gate";
@@ -17336,6 +17623,12 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town)
+"kNR" = (
+/obj/structure/bearpelt,
+/turf/open/floor/carpet/lord/right{
+	dir = 1
+	},
+/area/indoors/town/keep/courtagent)
 "kOf" = (
 /obj/structure/closet/crate/crafted_closet/inn,
 /obj/item/storage/backpack/satchel,
@@ -17603,6 +17896,11 @@
 	},
 /turf/open/floor/wood,
 /area/indoors/town)
+"kYS" = (
+/turf/open/floor/carpet/lord/corner{
+	dir = 4
+	},
+/area/indoors/town/keep/courtagent)
 "kYX" = (
 /obj/machinery/light/fueledstreet/blue/wall{
 	dir = 1
@@ -18460,6 +18758,11 @@
 /obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/blocks,
 /area/indoors/town/garrison)
+"lAj" = (
+/turf/open/floor/carpet/lord/right{
+	dir = 1
+	},
+/area/indoors/town/keep/courtagent)
 "lAy" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/cobble,
@@ -18810,6 +19113,14 @@
 /obj/structure/table/wood/treestump/burnt,
 /turf/open/water/swamp/deep,
 /area/outdoors/basin)
+"lMf" = (
+/obj/structure/door/iron{
+	name = "Court Agent Hideout"
+	},
+/obj/effect/mapping_helpers/access/locker,
+/obj/effect/mapping_helpers/access/keyset/manor/courtagent,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "lMA" = (
 /obj/machinery/light/fueled/wallfire/candle{
 	pixel_y = -32
@@ -19167,6 +19478,27 @@
 	},
 /turf/open/floor/dirt,
 /area/outdoors/town)
+"mal" = (
+/obj/structure/rack/shelf/biggest,
+/obj/machinery/light/fueled/torchholder/c,
+/obj/item/lockpickring/mundane{
+	pixel_x = 1;
+	pixel_y = 0
+	},
+/obj/item/lockpickring/mundane{
+	pixel_x = -9;
+	pixel_y = -10
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
+"maB" = (
+/obj/structure/door/iron/bars{
+	name = "Equipment Storage"
+	},
+/obj/effect/mapping_helpers/access/keyset/manor/courtagent,
+/obj/effect/mapping_helpers/access/locker,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "maY" = (
 /obj/item/reagent_containers/glass/bucket/wooden,
 /obj/item/reagent_containers/food/snacks/veg/potato_sliced,
@@ -20094,6 +20426,10 @@
 /obj/structure/chair/bench/couch/right/lord_primary,
 /turf/open/floor/carpet/royalblack,
 /area/indoors/town/steward)
+"mGU" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/herringbone,
+/area/under/cave)
 "mHg" = (
 /obj/machinery/light/fueled/hearth,
 /obj/machinery/light/fueled/oven{
@@ -20296,6 +20632,13 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/blocks,
 /area/indoors/town/cell)
+"mMC" = (
+/obj/structure/table/wood/large_new{
+	dir = 4;
+	icon_state = "alt_largetable"
+	},
+/turf/open/floor/carpet/lord/center,
+/area/indoors/town/keep/courtagent)
 "mMZ" = (
 /obj/structure/hotspring/border/nine,
 /turf/open/floor/cobblerock/alt,
@@ -20512,6 +20855,9 @@
 	dir = 1
 	},
 /turf/open/floor/cobble,
+/area/under/cave)
+"mTe" = (
+/turf/open/floor/herringbone,
 /area/under/cave)
 "mTU" = (
 /obj/structure/table/wood/large_new{
@@ -21071,6 +21417,12 @@
 	},
 /turf/open/floor/concrete,
 /area/indoors/town/merc_guild)
+"njq" = (
+/obj/structure/fluff/walldeco/customflag{
+	name = "White Palace Pass flag"
+	},
+/turf/closed/wall/mineral/decorstone,
+/area/indoors/town/keep/courtagent)
 "njz" = (
 /obj/structure/bed/wool,
 /obj/effect/landmark/start/farmer,
@@ -22431,6 +22783,19 @@
 /obj/structure/closet/crate/drawer,
 /turf/open/floor/wood,
 /area/indoors/town)
+"oiy" = (
+/obj/structure/closet/keyrack{
+	pixel_y = -32;
+	pixel_x = 0
+	},
+/obj/effect/mapping_helpers/access/keyset/manor/courtagent,
+/obj/effect/mapping_helpers/access/locker,
+/obj/item/key/courtagent,
+/obj/item/key/courtagent,
+/obj/item/key/courtagent,
+/obj/item/key/courtagent,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "oiD" = (
 /obj/effect/landmark/events/haunts,
 /turf/open/floor/cobblerock,
@@ -22715,6 +23080,10 @@
 	},
 /turf/closed/wall/mineral/decorstone,
 /area/indoors/town/keep/halls/s)
+"otF" = (
+/obj/structure/dye_bin,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "otK" = (
 /turf/open/floor/cobblerock,
 /area/under/cave)
@@ -22787,6 +23156,10 @@
 	},
 /turf/open/floor/cobblerock,
 /area/indoors/town/keep/halls/w)
+"owX" = (
+/obj/machinery/light/fueled/torchholder/l,
+/turf/open/floor/grass/cold,
+/area/outdoors/town/keep)
 "oxa" = (
 /obj/structure/flora/grass/bush/tundra,
 /turf/open/floor/grass/cold,
@@ -23288,6 +23661,15 @@
 	},
 /turf/open/floor/blocks,
 /area/indoors/town/garrison)
+"oMt" = (
+/obj/structure/chair/wood/alt{
+	dir = 8
+	},
+/obj/effect/landmark/start/courtagent{
+	dir = 8
+	},
+/turf/open/floor/carpet/lord/right,
+/area/indoors/town/keep/courtagent)
 "oMA" = (
 /turf/open/openspace,
 /area/indoors/town/orphanage)
@@ -23431,6 +23813,9 @@
 /obj/item/paper/scroll,
 /turf/open/floor/ruinedwood/spiralfade,
 /area/indoors/town/keep/magician)
+"oRo" = (
+/turf/open/floor/tile/masonic/single,
+/area/indoors/town/keep/courtagent)
 "oRH" = (
 /obj/structure/fluff/railing/tall/palisade{
 	dir = 4
@@ -23491,6 +23876,14 @@
 /obj/structure/flora/ausbushes/ywflowers,
 /turf/open/floor/snow/patchy,
 /area/outdoors/town)
+"oSh" = (
+/obj/machinery/light/fueled/torchholder/l,
+/turf/open/floor/herringbone,
+/area/under/town/basement)
+"oSj" = (
+/obj/structure/table/wood/plain_alt,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "oSE" = (
 /obj/machinery/light/fueled/wallfire/candle{
 	pixel_x = -32;
@@ -24561,6 +24954,13 @@
 /mob/living/simple_animal/hostile/retaliate/mirespider/angry,
 /turf/open/floor/cobble,
 /area/under/cave)
+"pCU" = (
+/obj/item/clothing/neck/talkstone,
+/obj/item/clothing/ring/courtagent_ring,
+/obj/item/clothing/ring/courtagent_ring,
+/obj/structure/closet/crate/chest,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "pDd" = (
 /obj/structure/fluff/railing/border{
 	dir = 1
@@ -24927,6 +25327,9 @@
 /obj/structure/flora/grass/bush/wall/tall/tundra,
 /turf/open/floor/grass,
 /area/outdoors/town)
+"pOg" = (
+/turf/open/floor/carpet/lord/center,
+/area/indoors/town/keep/courtagent)
 "pOV" = (
 /obj/structure/hotspring,
 /turf/open/floor/grass/cold,
@@ -24990,6 +25393,10 @@
 	climbdiff = 1
 	},
 /area/under/town/basement)
+"pQT" = (
+/obj/structure/fermentation_keg/water,
+/turf/open/floor/tile/kitchen,
+/area/indoors/town/keep/courtagent)
 "pQU" = (
 /obj/structure/table/wood/crafted,
 /obj/machinery/light/fueled/wallfire/candle,
@@ -25259,6 +25666,13 @@
 /obj/machinery/light/fueled/firebowl,
 /turf/open/floor/dirt,
 /area/outdoors/exposed/church/graveyard)
+"pXX" = (
+/obj/structure/table/wood/large_new{
+	icon_state = "alt_largetable";
+	dir = 10
+	},
+/turf/open/floor/carpet/lord/center,
+/area/indoors/town/keep/courtagent)
 "pYB" = (
 /obj/effect/landmark/start/late/orthodoxist{
 	dir = 1
@@ -25487,6 +25901,13 @@
 "qck" = (
 /turf/closed/wall/mineral/wooddark,
 /area/under/cavewet)
+"qcn" = (
+/obj/structure/mirror/courtagent{
+	pixel_x = 0;
+	pixel_y = -32
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "qcu" = (
 /obj/structure/fake_machine/scomm,
 /turf/open/floor/dirt/road,
@@ -25511,6 +25932,10 @@
 /obj/machinery/light/fueled/wallfire/candle/r,
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/villagegarrison)
+"qdL" = (
+/obj/structure/bookcase/random,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "qdU" = (
 /obj/structure/table/wood/plain,
 /obj/machinery/light/fueled/wallfire/candle{
@@ -25519,6 +25944,11 @@
 	},
 /turf/open/floor/ruinedwood,
 /area/indoors/town)
+"qee" = (
+/turf/open/floor/carpet/lord/corner{
+	dir = 8
+	},
+/area/indoors/town/keep/courtagent)
 "qfd" = (
 /obj/machinery/light/fueled/wallfire/candle{
 	pixel_y = -32
@@ -25959,6 +26389,10 @@
 	},
 /turf/closed/mineral,
 /area/under/cave)
+"qyJ" = (
+/obj/structure/bars,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "qyP" = (
 /obj/structure/table/wood/plain,
 /obj/item/reagent_containers/food/snacks/biscuit/poison,
@@ -27325,6 +27759,41 @@
 	},
 /turf/open/floor/carpet/red,
 /area/indoors/town/keep/knight)
+"ruv" = (
+/obj/structure/closet/crate/crafted_closet{
+	name = "Church Attire"
+	},
+/obj/item/clothing/shirt/robe/astrata,
+/obj/item/clothing/head/roguehood/astrata,
+/obj/item/clothing/head/roguehood/nochood,
+/obj/item/clothing/shirt/robe/noc,
+/obj/item/clothing/wrists/wrappings,
+/obj/item/clothing/wrists/nocwrappings,
+/obj/item/clothing/face/operavisage,
+/obj/item/clothing/shirt/robe/eora,
+/obj/item/clothing/head/padded/deathshroud,
+/obj/item/clothing/pants/trou/leather/mourning,
+/obj/item/clothing/shirt/robe/necra,
+/obj/item/clothing/head/padded/pestra,
+/obj/item/clothing/shirt/robe/pestra,
+/obj/item/clothing/head/padded/briarthorns,
+/obj/item/clothing/shirt/robe/dendor,
+/obj/item/clothing/head/padded/abyssor,
+/obj/item/clothing/shirt/robe/abyssor,
+/obj/item/clothing/head/helmet/leather/headscarf,
+/obj/item/clothing/cloak/stabard/templar/ravox,
+/obj/item/clothing/head/roguehood/colored/random,
+/obj/item/clothing/shirt/robe/colored/purple,
+/obj/item/clothing/head/headband/colored/red,
+/obj/item/clothing/shirt/robe/colored/red,
+/obj/item/clothing/shoes/sandals,
+/obj/item/clothing/shoes/sandals,
+/obj/item/clothing/shoes/sandals,
+/obj/item/clothing/shoes/boots,
+/obj/item/clothing/shoes/boots,
+/obj/item/clothing/shoes/boots,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "ruE" = (
 /obj/structure/table/wood/plain_alt,
 /obj/item/weapon/hammer/steel{
@@ -27509,6 +27978,9 @@
 	},
 /turf/open/floor/grass/cold,
 /area/outdoors/basin)
+"rCd" = (
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "rCe" = (
 /obj/structure/rack,
 /obj/item/rope,
@@ -27916,6 +28388,26 @@
 /obj/machinery/light/fueled/wallfire/candle/lamp,
 /turf/open/floor/cobblerock,
 /area/indoors/town/cell)
+"rNR" = (
+/obj/structure/rack/shelf/biggest,
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 5;
+	pixel_y = -8
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -5;
+	pixel_y = -8
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = 5;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/cup/wooden{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/turf/open/floor/tile/kitchen,
+/area/indoors/town/keep/courtagent)
 "rOa" = (
 /obj/structure/table/wood/plain_alt,
 /obj/item/recipe_book/gravemaking,
@@ -28603,6 +29095,9 @@
 /obj/machinery/light/fueledstreet/orange/wall,
 /turf/open/floor/cobble,
 /area/outdoors/town)
+"soM" = (
+/turf/open/floor/herringbone,
+/area/under/town/basement)
 "spc" = (
 /obj/structure/fluff/railing/border{
 	dir = 5
@@ -28895,6 +29390,20 @@
 "sxi" = (
 /turf/open/floor/carpet/royalblack,
 /area/indoors/town)
+"sya" = (
+/obj/structure/closet/crate/chest,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/paper,
+/obj/item/natural/feather,
+/obj/item/natural/feather,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "syh" = (
 /obj/structure/chair/wood/alt/chair3,
 /obj/effect/decal/carpet/square/black{
@@ -28994,6 +29503,16 @@
 /obj/machinery/light/fueled/wallfire/candle,
 /turf/open/floor/wood,
 /area/indoors/town)
+"sBL" = (
+/obj/structure/closet/crate/chest/crafted,
+/obj/item/reagent_containers/food/snacks/hardtack,
+/obj/item/reagent_containers/food/snacks/hardtack,
+/obj/item/reagent_containers/food/snacks/hardtack,
+/obj/item/reagent_containers/food/snacks/cooked/coppiette,
+/obj/item/reagent_containers/food/snacks/cooked/coppiette,
+/obj/item/reagent_containers/food/snacks/cooked/coppiette,
+/turf/open/floor/tile/kitchen,
+/area/indoors/town/keep/courtagent)
 "sBR" = (
 /obj/structure/door/iron,
 /turf/open/floor/cobblerock,
@@ -30434,6 +30953,17 @@
 /obj/machinery/tanningrack,
 /turf/open/floor/blocks/stonered,
 /area/indoors/town/keep/kitchen)
+"txi" = (
+/obj/structure/closet/crate/chest{
+	name = "Rings"
+	},
+/obj/item/clothing/ring/apothecary_ring,
+/obj/item/clothing/ring/feldsher_ring,
+/obj/item/clothing/ring/silver/makers_guild,
+/obj/item/clothing/ring/gold/guild_mercator,
+/obj/machinery/light/fueled/torchholder/r,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "txJ" = (
 /turf/closed/wall/mineral/decowood,
 /area/outdoors/town)
@@ -30546,6 +31076,12 @@
 /obj/item/reagent_containers/glass/bottle/poison,
 /turf/open/floor/cobble,
 /area/under/cave)
+"tAH" = (
+/obj/machinery/light/fueled/torchholder{
+	dir = 8
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "tAK" = (
 /obj/machinery/light/fueled/wallfire/candle,
 /obj/structure/chair/bench/coucha/r,
@@ -30987,6 +31523,10 @@
 	},
 /turf/open/floor/cobblerock/alt,
 /area/under/cave)
+"tQM" = (
+/obj/structure/chair/bench/coucha,
+/turf/open/floor/carpet/lord/center,
+/area/indoors/town/keep/courtagent)
 "tRy" = (
 /obj/structure/fluff/railing/wood{
 	dir = 8;
@@ -32355,6 +32895,11 @@
 /obj/structure/door/red,
 /turf/open/floor/tile/kitchen,
 /area/outdoors/basin)
+"uGf" = (
+/turf/open/floor/carpet/lord/corner{
+	dir = 1
+	},
+/area/indoors/town/keep/courtagent)
 "uGC" = (
 /obj/structure/fluff/walldeco/church/line,
 /obj/structure/chair/bench/church/mid{
@@ -32498,6 +33043,22 @@
 /obj/machinery/light/fueled/smelter/great,
 /turf/open/floor/grass/yel,
 /area/outdoors/basin)
+"uLI" = (
+/obj/structure/table/wood/plain_alt,
+/obj/item/reagent_containers/glass/carafe/silver/redwine{
+	pixel_x = -7;
+	pixel_y = 14
+	},
+/obj/item/reagent_containers/glass/cup/silver{
+	pixel_x = 0;
+	pixel_y = 3
+	},
+/obj/item/reagent_containers/glass/cup/silver{
+	pixel_x = 10;
+	pixel_y = 13
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "uLM" = (
 /obj/effect/decal/cleanable/dirt/cobweb{
 	dir = 1
@@ -33329,6 +33890,17 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/ruinedwood,
 /area/indoors/town)
+"vpw" = (
+/obj/structure/table/wood/large_new{
+	dir = 8;
+	icon_state = "alt_largetable"
+	},
+/obj/item/candle/scandle/lit{
+	pixel_x = 9;
+	pixel_y = 11
+	},
+/turf/open/floor/carpet/lord/center,
+/area/indoors/town/keep/courtagent)
 "vpz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/fluff/railing/border{
@@ -33501,6 +34073,10 @@
 /obj/structure/chair/bench/couch/lord_secondary,
 /turf/open/floor/tile/masonic/spiral,
 /area/indoors/town/keep/throne)
+"vxD" = (
+/obj/machinery/light/fueled/torchholder/c,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "vxM" = (
 /turf/closed/wall/mineral/stone/window,
 /area/indoors/town/garrison)
@@ -34638,9 +35214,6 @@
 /obj/structure/chair/wood/alt/chair_noble/red{
 	dir = 1
 	},
-/obj/effect/landmark/start/courtagent{
-	dir = 1
-	},
 /turf/open/floor/carpet/red,
 /area/indoors/town/keep/halls/w)
 "whG" = (
@@ -34716,6 +35289,14 @@
 	},
 /turf/open/floor/ruinedwood/darker,
 /area/indoors/town/smithy)
+"wjz" = (
+/obj/structure/door/iron{
+	name = "Sleeping Quarters"
+	},
+/obj/effect/mapping_helpers/access/locker,
+/obj/effect/mapping_helpers/access/keyset/manor/courtagent,
+/turf/open/floor/tile/masonic/single,
+/area/indoors/town/keep/courtagent)
 "wjP" = (
 /obj/structure/table/wood/reinforced,
 /obj/structure/fluff/walldeco/med5{
@@ -34879,6 +35460,22 @@
 "woD" = (
 /turf/open/floor/ruinedwood,
 /area/indoors/town/keep/gate)
+"woX" = (
+/obj/structure/rack/shelf/biggest,
+/obj/item/rope{
+	pixel_x = 0;
+	pixel_y = -2
+	},
+/obj/item/rope{
+	pixel_x = 9;
+	pixel_y = 4
+	},
+/obj/item/rope{
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "wpi" = (
 /turf/open/floor/dirt,
 /area/outdoors/town/roofs)
@@ -35931,6 +36528,13 @@
 /obj/item/clothing/shirt/robe/newmage/adept,
 /turf/open/floor/ruinedwood/spiralfade,
 /area/indoors/town/keep/magician)
+"wVF" = (
+/obj/structure/table/wood/large_new{
+	dir = 8;
+	icon_state = "alt_largetable"
+	},
+/turf/open/floor/carpet/lord/center,
+/area/indoors/town/keep/courtagent)
 "wWm" = (
 /obj/structure/table/wood/crafted,
 /obj/item/reagent_containers/glass/cup/wooden{
@@ -36832,6 +37436,12 @@
 /obj/structure/flora/hotspring_rocks/small/two,
 /turf/open/floor/cobblerock/alt,
 /area/outdoors/basin)
+"xFG" = (
+/obj/structure/rack/shelf/biggest,
+/obj/item/flashlight/flare/torch/lantern,
+/obj/item/flashlight/flare/torch/lantern,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "xFI" = (
 /obj/structure/ladder,
 /turf/open/floor/naturalstone,
@@ -37297,6 +37907,12 @@
 "xTy" = (
 /turf/closed/mineral/bedrock,
 /area/under/town/basement)
+"xTA" = (
+/obj/machinery/light/fueled/torchholder{
+	dir = 1
+	},
+/turf/open/floor/tile/masonic/single,
+/area/indoors/town/keep/courtagent)
 "xTC" = (
 /obj/structure/door{
 	name = "guard's barracks"
@@ -37538,6 +38154,12 @@
 	},
 /turf/open/openspace,
 /area/outdoors/town)
+"ybR" = (
+/obj/machinery/light/fueled/torchholder{
+	dir = 8
+	},
+/turf/open/floor/tile/masonic/single,
+/area/indoors/town/keep/courtagent)
 "ybV" = (
 /obj/structure/fermentation_keg/random/water,
 /turf/open/floor/tile/diamond/blue,
@@ -37744,6 +38366,32 @@
 /obj/effect/mapping_helpers/access/locker,
 /turf/open/floor/herringbone,
 /area/indoors/town/clinic_large)
+"ykC" = (
+/obj/structure/closet/crate/crafted_closet{
+	name = "Noble Attire"
+	},
+/obj/item/clothing/head/helmet/skullcap/grenzelhoft,
+/obj/item/clothing/gloves/angle/grenzel,
+/obj/item/clothing/pants/grenzelpants,
+/obj/item/clothing/shirt/grenzelhoft,
+/obj/item/clothing/shoes/rare/grenzelhoft,
+/obj/item/clothing/cloak/raincloak/furcloak,
+/obj/item/clothing/head/fancyhat,
+/obj/item/clothing/shoes/boots,
+/obj/item/clothing/shirt/dress/silkdress/colored/random,
+/obj/item/clothing/pants/tights/colored/black,
+/obj/item/clothing/shirt/tunic/colored/random,
+/obj/item/clothing/shoes/shalal,
+/obj/item/clothing/head/crown/circlet,
+/obj/item/clothing/cloak/raincloak/colored/purple,
+/obj/item/clothing/shirt/tunic/colored/purple,
+/obj/item/clothing/gloves/leather,
+/obj/item/clothing/shirt/dress/gown,
+/obj/item/clothing/shirt/dress/gown/fallgown,
+/obj/item/clothing/shirt/dress/gown/summergown,
+/obj/item/clothing/shirt/dress/gown/wintergown,
+/turf/open/floor/herringbone,
+/area/indoors/town/keep/courtagent)
 "ylX" = (
 /obj/structure/chair/wood/alt,
 /turf/open/floor/carpet/royalblack,
@@ -128256,18 +128904,18 @@ odL
 (49,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+uus
+uus
+uus
+uus
+uus
+uus
+uus
+uus
+uus
+uus
+uus
+uus
 nJJ
 nJJ
 nJJ
@@ -128458,18 +129106,18 @@ odL
 (50,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+uus
 nJJ
 nJJ
 nJJ
@@ -128660,24 +129308,24 @@ odL
 (51,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+eUg
+cNg
+ijw
+dVt
+fOw
+gHN
+dVt
+fOw
+gHN
+oRo
+njq
+uus
+uus
+uus
+uus
+uus
+uus
+uus
 nJJ
 nJJ
 aZv
@@ -128862,24 +129510,24 @@ odL
 (52,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+njq
+cgp
+ijw
+uGf
+gMD
+gMD
+gMD
+gMD
+and
+xTA
+eUg
+eUg
+eUg
+njq
+eUg
+eUg
+eUg
+uus
 nJJ
 qbL
 qbL
@@ -129064,24 +129712,24 @@ odL
 (53,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+eUg
+rNR
+oRo
+lAj
+pOg
+pOg
+pOg
+pOg
+cxt
+oRo
+eUg
+eUg
+pCU
+woX
+cZS
+xFG
+eUg
+uus
 nJJ
 qbL
 qbL
@@ -129266,24 +129914,24 @@ odL
 (54,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+njq
+pQT
+oRo
+kYS
+bDV
+bDV
+bDV
+bDV
+qee
+xTA
+eUg
+mal
+rCd
+rCd
+rCd
+oiy
+eUg
+uus
 nJJ
 qbL
 qbL
@@ -129468,24 +130116,24 @@ odL
 (55,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+eUg
+sBL
+oRo
+ybR
+fOw
+gHN
+ybR
+fOw
+gHN
+oRo
+njq
+jMv
+uGf
+and
+rCd
+rCd
+eUg
+uus
 nJJ
 qbL
 qbL
@@ -129670,24 +130318,24 @@ odL
 (56,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+eUg
+eUg
+wjz
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+rCd
+lAj
+cxt
+qcn
+eUg
+eUg
+uus
 nJJ
 qbL
 qbL
@@ -129872,24 +130520,24 @@ odL
 (57,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+eUg
+qdL
+rCd
+rCd
+hGr
+hlj
+hGr
+rCd
+uLI
+oSj
+eUg
+vxD
+lAj
+cxt
+eeW
+eUg
+uus
+uus
 nJJ
 qbL
 qbL
@@ -130074,23 +130722,23 @@ odL
 (58,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+njq
+rCd
+uGf
+gMD
+gMD
+iXD
+gMD
+iXD
+and
+bBh
+eUg
+rCd
+lAj
+cxt
+ikY
+njq
+uus
 nJJ
 nJJ
 qbL
@@ -130276,23 +130924,23 @@ odL
 (59,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+dzj
+rCd
+kNR
+tQM
+eFj
+wVF
+vpw
+pXX
+kIC
+rCd
+qyJ
+rCd
+lAj
+cxt
+ruv
+eUg
+uus
 nJJ
 nJJ
 qbL
@@ -130478,23 +131126,23 @@ odL
 (60,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+eUg
+rCd
+lAj
+hNg
+iNY
+mMC
+mMC
+kNA
+kIC
+rCd
+maB
+rCd
+lAj
+cxt
+iMJ
+eUg
+uus
 nJJ
 nJJ
 qbL
@@ -130680,23 +131328,23 @@ odL
 (61,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+njq
+rCd
+kYS
+bDV
+bDV
+oMt
+bDV
+oMt
+qee
+bBh
+eUg
+rCd
+kYS
+qee
+ykC
+njq
+uus
 nJJ
 nJJ
 qbL
@@ -130882,23 +131530,23 @@ odL
 (62,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+eUg
+qdL
+rCd
+rCd
+tAH
+rCd
+tAH
+rCd
+rCd
+sya
+eUg
+txi
+hir
+rCd
+otF
+eUg
+uus
 nJJ
 nJJ
 qbL
@@ -131084,23 +131732,23 @@ odL
 (63,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+eUg
+eUg
+eUg
+eUg
+eUg
+lMf
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+eUg
+uus
 nJJ
 nJJ
 qbL
@@ -131286,23 +131934,23 @@ odL
 (64,1,3) = {"
 odL
 uus
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+uus
+uus
+uus
+mos
+oSh
+soM
+oSh
+mos
+uus
+uus
+uus
+uus
+uus
+uus
+uus
+uus
+uus
 nJJ
 nJJ
 qbL
@@ -131490,13 +132138,13 @@ odL
 uus
 nJJ
 nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+uus
+mos
+bPu
+cqx
+soM
+mos
+uus
 nJJ
 nJJ
 nJJ
@@ -131692,13 +132340,13 @@ odL
 uus
 nJJ
 nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+uus
+mos
+bPu
+bPu
+bPu
+mos
+uus
 nJJ
 nJJ
 nJJ
@@ -131894,13 +132542,13 @@ odL
 uus
 nJJ
 nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+uus
+mos
+mos
+mos
+mos
+mos
+uus
 nJJ
 nJJ
 nJJ
@@ -132096,13 +132744,13 @@ odL
 uus
 nJJ
 nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+uus
+uus
+uus
+uus
+uus
+uus
+uus
 nJJ
 nJJ
 nJJ
@@ -171488,11 +172136,11 @@ uus
 nJJ
 nJJ
 nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+qbL
+qbL
+qbL
+qbL
+qbL
 nJJ
 nJJ
 nJJ
@@ -171690,11 +172338,11 @@ uus
 nJJ
 nJJ
 nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+qbL
+bbi
+mGU
+mGU
+qbL
 nJJ
 nJJ
 nJJ
@@ -171893,9 +172541,9 @@ qbL
 qbL
 qbL
 qbL
-qbL
-qbL
-qbL
+mTe
+khJ
+mTe
 qbL
 qbL
 qbL
@@ -172094,11 +172742,11 @@ uus
 nJJ
 nJJ
 nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+qbL
+mTe
+mGU
+mGU
+qbL
 nJJ
 nJJ
 nJJ
@@ -172296,11 +172944,11 @@ uus
 nJJ
 nJJ
 nJJ
-nJJ
-nJJ
-nJJ
-nJJ
-nJJ
+qbL
+cas
+mGU
+mTe
+qbL
 nJJ
 nJJ
 nJJ
@@ -172499,8 +173147,8 @@ qbL
 qDi
 qDi
 eqb
-qDi
-qDi
+fuO
+grA
 qDi
 qDi
 eqb
@@ -172701,9 +173349,9 @@ qbL
 wdW
 wdW
 dxB
-tpw
-tpw
-tpw
+owX
+tck
+tck
 wdW
 wdW
 tpw
