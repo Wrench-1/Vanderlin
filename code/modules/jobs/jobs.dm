@@ -9,6 +9,7 @@ GLOBAL_LIST_INIT(noble_positions, list(
 	/datum/job/archivist::title,
 	/datum/job/courtphys::title,
 	/datum/job/minor_noble::title,
+	/datum/job/courtagent::title,
 	/datum/job/sunlord::title,
 ))
 GLOBAL_PROTECT(noble_positions)
@@ -24,7 +25,7 @@ GLOBAL_LIST_INIT(noble_courthand_positions, list(
 	/datum/job/archivist::title,
 	/datum/job/courtphys::title,
 	/datum/job/minor_noble::title,
-	/datum/job/adventurer/courtagent::title,
+	/datum/job/courtagent::title,
 	/datum/job/sunlord::title,
 ))
 GLOBAL_PROTECT(noble_positions)

@@ -22871,8 +22871,8 @@
 /obj/item/inqarticles/indexer{
 	pixel_x = 2
 	},
-/obj/item/speakerinq,
-/obj/item/listeningdevice,
+/obj/item/speaker/inq,
+/obj/item/listeningdevice/inq,
 /obj/machinery/light/fueled/wallfire/candle/blue{
 	pixel_y = -32
 	},
