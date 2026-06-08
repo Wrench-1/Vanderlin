@@ -511,9 +511,12 @@
 		var/mob/living/carbon/human/H = TARGET_GHOST
 		if(H.family_datum == SSfamilytree.ruling_family)
 			to_chat(user, span_warning("I can't turn a member of the royal family into a finger."))
-			return
-	var/choice = tgui_alert(attacked_target, "Do you wish to become one of the Hand's fingers?", "Binding Contract", list("Yes", "No"))
-	if(choice != "Yes")
+/obj/item/frumentarii/attackby(obj/item/I, mob/living/user, list/modifiers)
+	if(!istype(I, /obj/item/natural/thorn) && !istype(I, /obj/item/natural/feather))
+		return ..()
+
+	var/choice = tgui_alert(user, "What would you like to do?", "Reattach/Sever Finger", list("Reattach", "Sever"))
+	if(!choice)
 		return
 
 	GLOB.court_agents += attacked_target.real_name
