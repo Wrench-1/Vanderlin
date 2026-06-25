@@ -2174,6 +2174,13 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/concrete,
 /area/indoors/town/clocktower)
+"aks" = (
+/obj/structure/fluff/statue/knight,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave{
+	dir = 4
+	},
+/turf/open/floor/cobble,
+/area/indoors/mountains/anvil/keep)
 "akt" = (
 /obj/structure/stairs/stone{
 	dir = 4
@@ -4146,6 +4153,11 @@
 	},
 /turf/open/floor/cobble,
 /area/indoors/mountains/anvil/upperkeep)
+"aui" = (
+/mob/living/carbon/human/species/goblin/npc/ambush/cave,
+/obj/effect/decal/cleanable/blood/splatter,
+/turf/open/floor/cobble,
+/area/indoors/mountains/anvil/keep)
 "auj" = (
 /obj/structure/chair/bench/church{
 	dir = 1
@@ -6801,6 +6813,13 @@
 /obj/machinery/artificer_table,
 /turf/open/floor/concrete,
 /area/indoors/town/clocktower)
+"aGu" = (
+/obj/structure/fluff/statue/knight/r,
+/mob/living/carbon/human/species/goblin/npc/ambush/cave{
+	dir = 8
+	},
+/turf/open/floor/cobble,
+/area/indoors/mountains/anvil/keep)
 "aGz" = (
 /turf/open/water/river{
 	dir = 8
@@ -9321,11 +9340,6 @@
 /obj/structure/fermentation_keg/random/water,
 /turf/open/floor/metal/alt,
 /area/indoors/town/clocktower)
-"aSQ" = (
-/obj/structure/closet/crate/drawer,
-/obj/item/clothing/neck/talkstone,
-/turf/open/floor/carpet/royalblack,
-/area/indoors/town/church/inquisition)
 "aSR" = (
 /obj/machinery/light/fueled/wallfire/candle/r,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -11090,13 +11104,6 @@
 	},
 /turf/open/floor/blocks/newstone,
 /area/indoors/mountains/anvil/upperkeep)
-"cuF" = (
-/obj/structure/fluff/statue/knight/r,
-/mob/living/carbon/human/species/goblin/npc/ambush/cave{
-	dir = 8
-	},
-/turf/open/floor/cobble,
-/area/indoors/mountains/anvil/keep)
 "cws" = (
 /obj/structure/rack,
 /obj/item/gun/ballistic/bow/cross/slur,
@@ -11647,25 +11654,6 @@
 	dir = 8
 	},
 /area/indoors/mountains/anvil/upperkeep)
-"faN" = (
-/obj/structure/rack/shelf/biggest,
-/obj/structure/fluff/walldeco/church/line{
-	dir = 4
-	},
-/obj/structure/fluff/walldeco/church/line{
-	dir = 8
-	},
-/obj/item/rope/chain,
-/obj/item/rope/chain,
-/obj/item/rope/chain,
-/obj/item/rope/chain,
-/obj/machinery/light/fueled/wallfire/candle/blue/r,
-/obj/item/listeningdevice/inq,
-/obj/item/listeningdevice/inq,
-/obj/item/speaker/inq,
-/obj/item/inqarticles/bmirror,
-/turf/open/floor/churchbrick,
-/area/indoors/town/church/inquisition)
 "feL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/lootable_structure/grain_barrel,
@@ -11689,6 +11677,25 @@
 /obj/item/ingot/gold,
 /turf/open/floor/tile/diamond/blue,
 /area/under/mountains/anvil/upper)
+"fuI" = (
+/obj/structure/rack/shelf/biggest,
+/obj/structure/fluff/walldeco/church/line{
+	dir = 4
+	},
+/obj/structure/fluff/walldeco/church/line{
+	dir = 8
+	},
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/item/rope/chain,
+/obj/machinery/light/fueled/wallfire/candle/blue/r,
+/obj/item/listeningdevice/inq,
+/obj/item/listeningdevice/inq,
+/obj/item/speaker/inq,
+/obj/item/inqarticles/bmirror,
+/turf/open/floor/churchbrick,
+/area/indoors/town/church/inquisition)
 "fvT" = (
 /obj/structure/chair/bench/church,
 /turf/open/floor/herringbone,
@@ -11847,11 +11854,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/herringbone,
 /area/under/mountains/anvil/upper)
-"gus" = (
-/mob/living/carbon/human/species/goblin/npc/ambush/cave,
-/obj/effect/decal/cleanable/blood/splatter,
-/turf/open/floor/cobble,
-/area/indoors/mountains/anvil/keep)
 "gBK" = (
 /obj/machinery/light/fueled/forge,
 /turf/open/floor/plasteel/maniac/damaged,
@@ -14239,13 +14241,6 @@
 /obj/structure/chair/wood/alt/chair_noble/purple,
 /turf/open/floor/carpet/lord/center,
 /area/indoors/mountains/anvil/upperkeep)
-"uvq" = (
-/obj/structure/fluff/statue/knight,
-/mob/living/carbon/human/species/goblin/npc/ambush/cave{
-	dir = 4
-	},
-/turf/open/floor/cobble,
-/area/indoors/mountains/anvil/keep)
 "uwA" = (
 /obj/structure/mirror/fancy{
 	pixel_x = 31;
@@ -14666,6 +14661,12 @@
 "wAI" = (
 /turf/open/water,
 /area/outdoors/mountains/anvil/peak)
+"wBu" = (
+/obj/structure/closet/crate/drawer,
+/obj/item/clothing/neck/talkstone,
+/obj/item/storage/belt/pouch/coins/rich,
+/turf/open/floor/carpet/royalblack,
+/area/indoors/town/church/inquisition)
 "wEG" = (
 /obj/item/natural/rock/random_ore,
 /turf/open/floor/grass/cold,
@@ -68706,7 +68707,7 @@ ahv
 ahv
 ahv
 aWI
-uvq
+aks
 afn
 aWI
 aWI
@@ -70940,7 +70941,7 @@ aKq
 aaE
 aMC
 aEF
-gus
+aui
 aQE
 afn
 afn
@@ -71550,7 +71551,7 @@ aaE
 adn
 abZ
 abZ
-cuF
+aGu
 afn
 aTw
 afn
@@ -71940,7 +71941,7 @@ aWI
 aWI
 aWI
 aWI
-uvq
+aks
 afn
 aQE
 afn
@@ -72145,7 +72146,7 @@ aWI
 afn
 adn
 afn
-cuF
+aGu
 aWI
 apS
 abZ
@@ -86593,7 +86594,7 @@ aVr
 aVr
 alC
 ado
-faN
+fuI
 aIS
 awI
 aFz
@@ -129421,7 +129422,7 @@ aTv
 avU
 aer
 aer
-aSQ
+wBu
 aHa
 aHa
 aVr
