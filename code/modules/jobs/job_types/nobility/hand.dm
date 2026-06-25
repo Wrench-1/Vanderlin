@@ -357,7 +357,7 @@
 	backpack_contents = list(
 		/obj/item/weapon/knife/dagger/steel = 1,
 		/obj/item/reagent_containers/glass/bottle/poison = 1,
-		/obj/item/paper/scroll/frumentarii/roundstart = 1,
+		/obj/item/frumentarii = 1,
 		/obj/item/flint = 1,
 		/obj/item/bait = 1,
 		/obj/item/flashlight/flare/torch/lantern/bronzelamptern = 1,
