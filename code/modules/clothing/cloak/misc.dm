@@ -436,7 +436,7 @@
 
 /obj/item/clothing/cloak/cadwyn/ravox
 	name = "cadwyn ravox cloak"
-	desc = "test"
+	desc = "A partially shredded red tabard.  Let your allies take shelter behind its bold colour as you bear the attack."
 	icon_state = "cadwyncloak_ravox"
 	item_state = "cadwyncloak_ravox"
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
