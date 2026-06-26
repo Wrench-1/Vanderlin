@@ -417,7 +417,7 @@
 //............... Ravox helmet ......................//
 /obj/item/clothing/head/helmet/heavy/necked/cadwyn/ravox
 	name = "cadwyn ravox helmet"
-	desc = "test"
+	desc = "A blindfolded helmet, horned like the ox. The Cadwyn Order does not need to see to trust in its purpose."
 	icon_state = "cadwynhelmet_ravox"
 	item_state = "cadwynhelmet_ravox"
 	item_weight = 4.5 KILOGRAMS
