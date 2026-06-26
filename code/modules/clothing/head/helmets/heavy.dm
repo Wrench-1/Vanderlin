@@ -405,6 +405,32 @@
 	item_state = "abyssorhelm"
 	item_weight = 5.5 KILOGRAMS
 
+//............... Cadwyn heavy helmets ......................//
+//............... Astrata helmet ......................//
+/obj/item/clothing/head/helmet/heavy/necked/cadwyn/astrata
+	name = "cadwyn astrata helmet"
+	desc = "test"
+	icon_state = "cadwynhelmet_astrata"
+	item_state = "cadwynhelmet_astrata"
+	item_weight = 5.5 KILOGRAMS
+
+//............... Ravox helmet ......................//
+/obj/item/clothing/head/helmet/heavy/necked/cadwyn/ravox
+	name = "cadwyn ravox helmet"
+	desc = "test"
+	icon_state = "cadwynhelmet_ravox"
+	item_state = "cadwynhelmet_ravox"
+	item_weight = 4.5 KILOGRAMS
+
+//............... Necra helmet ......................//
+/obj/item/clothing/head/helmet/heavy/necked/cadwyn/necra
+	name = "cadwyn necra helmet"
+	desc = "test"
+	icon_state = "cadwynhelmet_necra"
+	item_state = "cadwynhelmet_necra"
+	item_weight = 4.5 KILOGRAMS
+
+//............... Other heavy helmets ......................//
 //................ Deep Abyssor Helmet ............. //
 /obj/item/clothing/head/helmet/heavy/necked/deepabyssor
 	name = "deep abyssor helmet"

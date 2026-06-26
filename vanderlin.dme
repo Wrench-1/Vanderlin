@@ -3200,6 +3200,7 @@
 #include "code\modules\jobs\job_types\adventurer\types\combat\warrior.dm"
 #include "code\modules\jobs\job_types\adventurer\types\combat\rare\assassin.dm"
 #include "code\modules\jobs\job_types\adventurer\types\combat\rare\bladesinger.dm"
+#include "code\modules\jobs\job_types\adventurer\types\combat\rare\cadwyn.dm"
 #include "code\modules\jobs\job_types\adventurer\types\combat\rare\freelancer.dm"
 #include "code\modules\jobs\job_types\adventurer\types\combat\rare\heartfelt.dm"
 #include "code\modules\jobs\job_types\adventurer\types\combat\rare\heartfelthand.dm"

@@ -425,3 +425,25 @@
 	slot_flags = ITEM_SLOT_BACK_R|ITEM_SLOT_CLOAK
 	color = "#FFFFFF"
 	detail_color = "#FFFFFF"
+
+//............... Cadwyn Order Cloaks ......................//
+/obj/item/clothing/cloak/cadwyn/astrata
+	name = "cadwyn astrata cloak"
+	desc = "test"
+	icon_state = "cadwyncloak_astrata"
+	item_state = "cadwyncloak_astrata"
+	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
+
+/obj/item/clothing/cloak/cadwyn/ravox
+	name = "cadwyn ravox cloak"
+	desc = "test"
+	icon_state = "cadwyncloak_ravox"
+	item_state = "cadwyncloak_ravox"
+	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
+
+/obj/item/clothing/cloak/cadwyn/necra
+	name = "cadwyn necra cloak"
+	desc = "test"
+	icon_state = "cadwyncloak_necra"
+	item_state = "cadwyncloak_necra"
+	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
