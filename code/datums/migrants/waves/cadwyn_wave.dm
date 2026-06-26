@@ -123,7 +123,7 @@
 	roles = list(
 		/datum/migrant_role/cadwyncrusader = 3
 	)
-	greet_text = "The influence of Z grows by the dae and more and more people fall victim to their foul deeds. The Cadwyn Order of Valoria has dispatched you and your bretherin to quell these threats and recruit more members to the Order."
+	greet_text = "The influence of Z grows by the dae and more and more people fall victim to their foul deeds. The Cadwyn Order of Valoria has dispatched you and your brethren to quell these threats and recruit more members to the Order."
 
 /datum/migrant_wave/cadwyncrusade_down_one
 	name = "The Cadwyn Order Crusade"
