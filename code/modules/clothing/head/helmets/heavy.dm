@@ -425,7 +425,7 @@
 //............... Necra helmet ......................//
 /obj/item/clothing/head/helmet/heavy/necked/cadwyn/necra
 	name = "cadwyn necra helmet"
-	desc = "test"
+	desc = "A skull-faced metal helm topped with a hood. Your face does not matter - the forces of Z will only see their own death reflected in you."
 	icon_state = "cadwynhelmet_necra"
 	item_state = "cadwynhelmet_necra"
 	item_weight = 4.5 KILOGRAMS
