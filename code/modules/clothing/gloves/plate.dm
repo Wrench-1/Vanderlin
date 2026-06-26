@@ -147,5 +147,5 @@
 //............... Cadwyn gloves ............... //
 /obj/item/clothing/gloves/plate/cadwyn
 	name = "cadwyn order gauntlets"
-	desc = "test"
+	desc = "Metal gauntlets wrapped in the chains the Order is named for. Let no bite or claw reach you."
 	icon_state = "cadwyngauntlets"
