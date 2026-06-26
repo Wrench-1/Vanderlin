@@ -429,7 +429,7 @@
 //............... Cadwyn Order Cloaks ......................//
 /obj/item/clothing/cloak/cadwyn/astrata
 	name = "cadwyn astrata cloak"
-	desc = "test"
+	desc = "A golden-coloured cloak, torn into strips at the ends. Let it mark you as a threat to any deadite monster as you stand tall above the charge."
 	icon_state = "cadwyncloak_astrata"
 	item_state = "cadwyncloak_astrata"
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
