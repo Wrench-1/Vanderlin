@@ -443,7 +443,7 @@
 
 /obj/item/clothing/cloak/cadwyn/necra
 	name = "cadwyn necra cloak"
-	desc = "test"
+	desc = "A dark cloak secured with a silver buckle. The edge is torn from the dangerous melees with the deadite horde."
 	icon_state = "cadwyncloak_necra"
 	item_state = "cadwyncloak_necra"
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
