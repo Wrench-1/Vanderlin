@@ -428,21 +428,21 @@
 
 //............... Cadwyn Order Cloaks ......................//
 /obj/item/clothing/cloak/cadwyn/astrata
-	name = "cadwyn astrata cloak"
+	name = "bright tabard"
 	desc = "A golden-coloured cloak, torn into strips at the ends. Let it mark you as a threat to any deadite monster as you stand tall above the charge."
 	icon_state = "cadwyncloak_astrata"
 	item_state = "cadwyncloak_astrata"
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
 
 /obj/item/clothing/cloak/cadwyn/ravox
-	name = "cadwyn ravox cloak"
+	name = "tattered surcoat"
 	desc = "A partially shredded red tabard.  Let your allies take shelter behind its bold colour as you bear the attack."
 	icon_state = "cadwyncloak_ravox"
 	item_state = "cadwyncloak_ravox"
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
 
 /obj/item/clothing/cloak/cadwyn/necra
-	name = "cadwyn necra cloak"
+	name = "dark cloak"
 	desc = "A dark cloak secured with a silver buckle. The edge is torn from the dangerous melees with the deadite horde."
 	icon_state = "cadwyncloak_necra"
 	item_state = "cadwyncloak_necra"

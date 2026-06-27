@@ -408,7 +408,7 @@
 //............... Cadwyn heavy helmets ......................//
 //............... Astrata helmet ......................//
 /obj/item/clothing/head/helmet/heavy/necked/cadwyn/astrata
-	name = "cadwyn astrata helmet"
+	name = "cadwyn plumed helm"
 	desc = "A helmet with a large plume, forged for the Cadwyn Order. Let the forces of Z see you coming, and tremble."
 	icon_state = "cadwynhelmet_astrata"
 	item_state = "cadwynhelmet_astrata"
@@ -416,7 +416,7 @@
 
 //............... Ravox helmet ......................//
 /obj/item/clothing/head/helmet/heavy/necked/cadwyn/ravox
-	name = "cadwyn ravox helmet"
+	name = "cadwyn ox-helm"
 	desc = "A blindfolded helmet, horned like the ox. The Cadwyn Order does not need to see to trust in its purpose."
 	icon_state = "cadwynhelmet_ravox"
 	item_state = "cadwynhelmet_ravox"
@@ -424,7 +424,7 @@
 
 //............... Necra helmet ......................//
 /obj/item/clothing/head/helmet/heavy/necked/cadwyn/necra
-	name = "cadwyn necra helmet"
+	name = "cadwyn skull-helm"
 	desc = "A skull-faced metal helm topped with a hood. Your face does not matter - the forces of Z will only see their own death reflected in you."
 	icon_state = "cadwynhelmet_necra"
 	item_state = "cadwynhelmet_necra"

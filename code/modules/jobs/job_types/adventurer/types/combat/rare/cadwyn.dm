@@ -33,7 +33,9 @@
 
 /datum/job/advclass/combat/cadwyn
 	title = "Cadwyn Order Emissary"
-	tutorial = "test"
+	tutorial = "You are an Emissary of the Cadwyn Order. You have been sent away from Valoria in order to assist the local clergy with the growing threat of Z and find and recruit more members to the Order. \
+	As the influence of Z grows and the Deadite hordes grow more numerous, so to does the need for strong and pious warriors to help combat this threat. \
+	Lend them your aid, and find those who wish to dedicate themselves to the war against Z."
 	allowed_races = RACES_TEMPLAR
 	allowed_patrons = list(/datum/patron/divine/astrata, /datum/patron/divine/necra, /datum/patron/divine/ravox)
 	outfit = /datum/outfit/adventurer/cadwyn
