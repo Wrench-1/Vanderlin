@@ -692,3 +692,38 @@
 	block2add = FOV_BEHIND
 	worn_x_dimension = 64
 	worn_y_dimension = 64
+
+//............... Legacy Totod Order Helmets ...............//
+/obj/item/clothing/head/helmet/heavy/crusader
+	name = "bucket helm"
+	desc = "Proud knights of the Totod order displays their faith and their allegiance openly."
+	icon_state = "totodhelm"
+	mob_overlay_icon = 'icons/roguetown/clothing/onmob/64x64/head.dmi'
+	bloody_icon = 'icons/effects/blood64x64.dmi'
+	bloody_icon_state = "helmetblood_big"
+	worn_x_dimension = 64
+	worn_y_dimension = 64
+
+/obj/item/clothing/head/helmet/heavy/crusader/t
+	desc = "A silver gilded bucket helm, inscriptions in old Psydonic are found embezeled on every inch of silver. Grenzelhoft specializes in these helmets, the Totod order has been purchasing them en-masse."
+	icon_state = "crusader_helmt2"
+	icon = 'icons/roguetown/clothing/special/crusader.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/crusader.dmi'
+	bloody_icon = 'icons/effects/blood.dmi'
+	bloody_icon_state = "itemblood"
+	worn_x_dimension = 32
+	worn_y_dimension = 32
+
+/obj/item/clothing/cloak/cape/crusader/Initialize(mapload, ...)
+	. = ..()
+	AddComponent(/datum/component/storage/concrete/grid/crusader_helm)
+
+/obj/item/clothing/cloak/cape/crusader/dropped(mob/living/carbon/human/user)
+	..()
+	if(QDELETED(src))
+		return
+	var/datum/component/storage/STR = GetComponent(/datum/component/storage)
+	if(STR)
+		var/list/things = STR.contents()
+		for(var/obj/item/I in things)
+			STR.remove_from_storage(I, get_turf(src))

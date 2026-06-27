@@ -447,3 +447,12 @@
 	icon_state = "cadwyncloak_necra"
 	item_state = "cadwyncloak_necra"
 	sleeved = 'icons/roguetown/clothing/onmob/cloaks.dmi'
+
+//............... Legacy Totod Order Cloaks ......................//
+/obj/item/clothing/cloak/cape/crusader
+	name = "desert cape"
+	desc = "Zaladin is known for its legacies in tailoring, this particular cape is interwoven with fine stained silks and leather - a sand elf design, renowned for its style and durability."
+	icon_state = "crusader_cloak"
+	icon = 'icons/roguetown/clothing/special/crusader.dmi'
+	mob_overlay_icon = 'icons/roguetown/clothing/special/onmob/crusader.dmi'
+	sleeved = 'icons/roguetown/clothing/special/onmob/crusader.dmi'
