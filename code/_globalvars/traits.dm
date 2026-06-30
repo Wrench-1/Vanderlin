@@ -209,6 +209,7 @@ GLOBAL_LIST_INIT(traits_by_type, list(
 		"Inflexible" = TRAIT_UNDODGING,
 		"Graceless" = TRAIT_UNPARRYING,
 		"Agent of the Court" = TRAIT_COURTAGENT,
+		"Know Gallowband Secrets" = TRAIT_GALLOWBAND_SECRETS,
 	),
 	/obj/item/bodypart = list(
 		"TRAIT_PARALYSIS" = TRAIT_PARALYSIS

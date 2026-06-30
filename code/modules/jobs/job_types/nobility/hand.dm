@@ -104,7 +104,8 @@
 	honorary = "General"
 
 	traits = list(
-		TRAIT_HEAVYARMOR
+		TRAIT_HEAVYARMOR,
+		TRAIT_MEDIUMARMOR,
 	)
 
 /datum/outfit/hand/handclassic
