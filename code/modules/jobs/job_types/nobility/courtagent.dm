@@ -20,6 +20,7 @@
 	give_bank_account = 30
 	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
 	job_bitflag = BITFLAG_GARRISON // counts for antag shit
+	is_foreigner = TRUE // Court Agents should not be appearing on the Relationships list. This maintains their anonymity
 
 	exp_type = list(EXP_TYPE_LIVING)
 	exp_types_granted = list(EXP_TYPE_NOBLE, EXP_TYPE_COMBAT) //noble EXP as new Court Agents may want to transition to playing Hand with enough hours played
