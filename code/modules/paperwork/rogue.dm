@@ -284,8 +284,6 @@
 		marquevalue += 2
 		REMOVE_TRAIT(user, TRAIT_HAS_CONFESSED, TRAIT_GENERIC)
 		update_appearance()
-	else
-		return
 
 /obj/item/paper/inqslip/arrival
 	name = "arrival slip"
@@ -306,31 +304,44 @@
 		signee = user
 		update_appearance()
 
-/obj/item/paper/inqslip/attack(mob/living/carbon/human/M, mob/user, list/modifiers)
+/obj/item/paper/inqslip/interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
+	if(!ishuman(interacting_with))
+		return NONE
+
+	var/mob/living/M = interacting_with
+
 	if(sealed)
-		return
+		return ITEM_INTERACT_BLOCKING
+
 	if(signed)
 		to_chat(user, span_warning("It's already been signed."))
-		return
+		return ITEM_INTERACT_BLOCKING
+
 	if(paired && !paired.full)
 		to_chat(user, span_warning("I should separate [paired] from [src] before signing it."))
-		return
+		return ITEM_INTERACT_BLOCKING
+
 	if(sliptype != 2)
 		if(M != user)
 			to_chat(user, span_warning("This is meant to be signed by the holder."))
-			return
+			return ITEM_INTERACT_BLOCKING
+
 	if(!M.get_bleed_rate())
 		to_chat(user, span_warning("It must be signed in blood."))
-		return
+		return ITEM_INTERACT_BLOCKING
+
 	if(sliptype == 1)
 		if(signee == M)
 			attemptsign(user)
 		else
 			to_chat(user, span_warning("This slip isn't meant for me."))
+
 	else if(!sliptype)
 		attemptsign(user)
 	else
 		attemptsign(M, user)
+
+	return ITEM_INTERACT_SUCCESS
 
 /obj/item/paper/inqslip/attack_self(mob/user)
 	if(!signed)
@@ -481,6 +492,7 @@
 	throw_speed = 1
 	slot_flags = null
 	resistance_flags = FIRE_PROOF // let's maybe not burn this
+
 	var/max_agents = 5
 
 /obj/item/frumentarii/examine(mob/user)
@@ -496,39 +508,63 @@
 		for(var/name in GLOB.court_agents)
 			to_chat(user, span_notice(name))
 
-/obj/item/frumentarii/afterattack(atom/target, mob/living/user, proximity_flag, list/modifiers)
-	. = ..()
-	if(!user.mind)
-		return
+/obj/item/frumentarii/interact_with_atom(atom/interacting_with, mob/living/user, list/modifiers)
+	if(!isliving(interacting_with))
+		return NONE
+
 	if(!HAS_TRAIT(user, TRAIT_NOBLE_BLOOD) && !HAS_TRAIT(user, TRAIT_NOBLE_POWER))
 		return
+
+	var/mob/living/M = interacting_with
+
+	if(!M.client)
+		return NONE
+
+	if(M.real_name in GLOB.court_agents)
+		return ITEM_INTERACT_BLOCKING
+
 	if(length(GLOB.court_agents) >= max_agents)
-		to_chat(user, span_notice("[src] is full"))
-	if(!isliving(target))
-		return
-	var/mob/living/attacked_target = target
-	if(!attacked_target.client)
-		return
-	if(HAS_TRAIT(attacked_target, TRAIT_COURTAGENT))
-		to_chat(user, span_warning("They are already an Agent of the Court."))
-		return
-	if(ishuman(target))
-		var/mob/living/carbon/human/H = TARGET_GHOST
+		balloon_alert(user, "too many fingers!")
+		return ITEM_INTERACT_BLOCKING
+
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
 		if(H.family_datum == SSfamilytree.ruling_family)
-			to_chat(user, span_warning("I can't turn a member of the royal family into a finger."))
-			return
-	var/choice = tgui_alert(attacked_target, "Do you wish to become one of the Hand's fingers?", "Binding Contract", list("Yes", "No"))
-	if(choice != "Yes")
+			balloon_alert(user, "can't turn royalty!")
+			return ITEM_INTERACT_BLOCKING
+
+	var/choice = tgui_alert(M, "Do you wish to become one of the Hand's fingers?", "Binding Contract", DEFAULT_INPUT_CHOICES)
+	if(choice != CHOICE_YES)
 		return
 
-	GLOB.court_agents += attacked_target.real_name
-	ADD_TRAIT(attacked_target, TRAIT_COURTAGENT, TRAIT_GENERIC)
-	ADD_TRAIT(attacked_target, TRAIT_KNOW_COURTAGENT_DOORS, TRAIT_GENERIC)
+	GLOB.court_agents += M.real_name
+	ADD_TRAIT(M, TRAIT_COURTAGENT, TRAIT_GENERIC)
+	ADD_TRAIT(M, TRAIT_KNOW_COURTAGENT_DOORS, TRAIT_GENERIC)
 
-	if(!HAS_TRAIT(attacked_target, TRAIT_KNOWCOURTAGENTS))
-		ADD_TRAIT(attacked_target.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
-		attacked_target.playsound_local(attacked_target, 'sound/misc/notice (2).ogg', 100, FALSE)
-		to_chat(attacked_target, span_smallgreen("I now know the names and faces of the Court Agents working in the Kingdom"))
+	if(!HAS_TRAIT(M, TRAIT_KNOWCOURTAGENTS))
+		ADD_TRAIT(M.mind, TRAIT_KNOWCOURTAGENTS, TRAIT_GENERIC)
+		M.playsound_local(M, 'sound/misc/notice (2).ogg', 100, FALSE)
+		to_chat(M, span_smallgreen("I now know the names and faces of the Court Agents working in the Kingdom"))
+
+	return ITEM_INTERACT_SUCCESS
+
+/*
+/obj/item/paper/scroll/frumentarii/attackby(obj/item/P, mob/living/carbon/human/user, list/modifiers)
+	. = ..()
+	if(istype(P, /obj/item/natural/thorn) || istype(P, /obj/item/natural/feather))
+		if(!open)
+			return
+	if(length(GLOB.court_agents) <= 0)
+		to_chat(user, span_warning("There are no Fingers to sever."))
+		return
+	else
+		var/severChoice = browser_input_list (user, "Sever a Finger", "THE LIST", GLOB.court_agents)
+		if(!severChoice || QDELETED(src) || QDELETED (user))
+			return
+		GLOB.court_agents -= severChoice
+		GLOB.ex_court_agents += severChoice
+		playsound(src, 'sound/items/write.ogg', 50, FALSE, -4, ignore_walls = FALSE)
+*/
 
 /obj/item/frumentarii/attackby(obj/item/I, mob/living/user, list/modifiers)
 	if(!istype(I, /obj/item/natural/thorn) && !istype(I, /obj/item/natural/feather))
