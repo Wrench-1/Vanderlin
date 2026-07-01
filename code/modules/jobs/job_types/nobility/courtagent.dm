@@ -113,9 +113,9 @@
 
 	switch(weapon_choice)
 		if("Steel Knuckles")
-			spawned.equip_to_slot_or_del(new /obj/item/weapon/knuckles, ITEM_SLOT_BELT_L, TRUE)
+			spawned.put_in_hands(new /obj/item/weapon/knuckles(spawned), TRUE)
 		if("Steel Katar")
-			spawned.equip_to_slot_or_del(new /obj/item/weapon/katar, ITEM_SLOT_BELT_L, TRUE)
+			spawned.put_in_hands(new /obj/item/weapon/katar(spawned), TRUE)
 		if("Bare Handed")
 			spawned.equip_to_slot_or_del(new /obj/item/clothing/gloves/bandages/pugilist, ITEM_SLOT_GLOVES, TRUE)
 			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/bruiser/barehanded)
@@ -185,11 +185,11 @@
 
 	switch(weapon_choice)
 		if("Shortbow")
-			spawned.equip_to_slot_or_del(new /obj/item/gun/ballistic/bow, ITEM_SLOT_BACK_L, TRUE)
+			spawned.put_in_hands(new /obj/item/gun/ballistic/bow(spawned), TRUE)
 			spawned.equip_to_slot_or_del(new /obj/item/ammo_holder/quiver/arrows, ITEM_SLOT_BELT_L, TRUE)
 			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/hitman/shortbow)
 		if("Crossbow")
-			spawned.equip_to_slot_or_del(new /obj/item/gun/ballistic/bow/cross, ITEM_SLOT_BACK_L, TRUE)
+			spawned.put_in_hands(new /obj/item/gun/ballistic/bow/cross(spawned), TRUE)
 			spawned.equip_to_slot_or_del(new /obj/item/ammo_holder/quiver/bolts, ITEM_SLOT_BELT_L, TRUE)
 			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/hitman/crossbow)
 
@@ -329,7 +329,7 @@
 
 	switch(weapon_choice)
 		if("Sword & Shield")
-			spawned.equip_to_slot_or_del(new /obj/item/weapon/shield/heater, ITEM_SLOT_BACK_L, TRUE)
+			spawned.put_in_hands(new /obj/item/weapon/shield/heater(spawned), TRUE)
 			spawned.equip_to_slot_or_del(new /obj/item/weapon/sword/scimitar/messer, ITEM_SLOT_BELT_L, TRUE)
 			spawned.attributes?.add_sheet(/datum/attribute_holder/sheet/job/courtagent/protector/swordshield)
 		if("Rapier")
