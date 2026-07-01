@@ -548,24 +548,6 @@
 
 	return ITEM_INTERACT_SUCCESS
 
-/*
-/obj/item/paper/scroll/frumentarii/attackby(obj/item/P, mob/living/carbon/human/user, list/modifiers)
-	. = ..()
-	if(istype(P, /obj/item/natural/thorn) || istype(P, /obj/item/natural/feather))
-		if(!open)
-			return
-	if(length(GLOB.court_agents) <= 0)
-		to_chat(user, span_warning("There are no Fingers to sever."))
-		return
-	else
-		var/severChoice = browser_input_list (user, "Sever a Finger", "THE LIST", GLOB.court_agents)
-		if(!severChoice || QDELETED(src) || QDELETED (user))
-			return
-		GLOB.court_agents -= severChoice
-		GLOB.ex_court_agents += severChoice
-		playsound(src, 'sound/items/write.ogg', 50, FALSE, -4, ignore_walls = FALSE)
-*/
-
 /obj/item/frumentarii/attackby(obj/item/I, mob/living/user, list/modifiers)
 	if(!istype(I, /obj/item/natural/thorn) && !istype(I, /obj/item/natural/feather))
 		return ..()
