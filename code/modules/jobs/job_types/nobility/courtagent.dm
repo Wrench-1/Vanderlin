@@ -17,7 +17,6 @@
 
 	outfit = /datum/outfit/courtagent
 	advclass_cat_rolls = list(CTAG_COURTAGENT = 20)
-	give_bank_account = 30
 	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
 	job_bitflag = BITFLAG_GARRISON // counts for antag shit
 	is_foreigner = TRUE // Court Agents should not be appearing on the Relationships list. This maintains their anonymity
