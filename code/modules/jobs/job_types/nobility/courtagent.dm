@@ -7,7 +7,7 @@
 	Garrison and Court members know who you are."
 	department_flag = NOBLEMEN
 	job_flags = (JOB_EQUIP_RANK | JOB_SHOW_IN_CREDITS | JOB_NEW_PLAYER_JOINABLE)
-	faction = FACTION_FOREIGNERS // Court Agents should not be appearing on the Relationships list. This maintains their anonymity
+	faction = FACTION_TOWN
 	total_positions = 3
 	spawn_positions = 3
 	bypass_lastclass = TRUE
@@ -19,7 +19,7 @@
 	advclass_cat_rolls = list(CTAG_COURTAGENT = 20)
 	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
 	job_bitflag = BITFLAG_GARRISON // counts for antag shit
-	is_foreigner = TRUE // Court Agents should not be appearing on the Relationships list. This maintains their anonymity
+	give_bank_account = FALSE // Court Agents should not be appearing on the Relationships list. This maintains their anonymity
 
 	exp_type = list(EXP_TYPE_LIVING)
 	exp_types_granted = list(EXP_TYPE_NOBLE, EXP_TYPE_COMBAT) //noble EXP as new Court Agents may want to transition to playing Hand with enough hours played
